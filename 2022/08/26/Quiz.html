@@ -133,66 +133,41 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="k">def</span> <span class="nf">question_and_answer</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Question: "</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
-    <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Answer: "</span> <span class="o">+</span> <span class="n">msg</span><span class="p">)</span>
-
-<span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"Name the Python output command mentioned in this lesson?"</span><span class="p">)</span>
-<span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"If you see many lines of code in order, what would College Board call it?"</span><span class="p">)</span>
-<span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"Describe a keyword used in Python to define a function?"</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">getpass</span><span class="o">,</span> <span class="nn">sys</span>
-
-<span class="k">def</span> <span class="nf">question_with_response</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Question: "</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
-    <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-    <span class="k">return</span> <span class="n">msg</span>
-
-<span class="n">questions</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Hello, '</span> <span class="o">+</span> <span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">" running "</span> <span class="o">+</span> <span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"You will be asked "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" questions."</span><span class="p">)</span>
-<span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"Are you ready to take a test?"</span><span class="p">)</span>
-
-<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"What command is used to include other functions that were previously developed?"</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"import"</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
-    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
-
-<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"What command is used to evaluate correct or incorrect response in this example?"</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"if"</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
-    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
-
-<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"Each 'if' command contains an '_________' to determine a true or false condition?"</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"expression"</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
-    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">" you scored "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct</span><span class="p">)</span> <span class="o">+</span><span class="s2">"/"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">))</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">QandA</span> <span class="o">=</span> <span class="p">[</span>
+   <span class="s2">"1. True or False, def is a key word in Python that defines a function"</span><span class="p">,</span> <span class="s2">"True"</span><span class="p">,</span>
+   <span class="s2">"2. True or False, In Python anatomy of you will NOT be importing libraries and functions?"</span><span class="p">,</span> <span class="s2">"False"</span><span class="p">,</span>
+   <span class="s2">"3. True or False, Hello world is a string literal?"</span><span class="p">,</span> <span class="s2">"True"</span><span class="p">,</span>
+   <span class="s2">"4. True or False,?"</span><span class="p">,</span> <span class="s2">"Answer"</span><span class="p">,</span>
+   <span class="s2">"5. True or False, Input and Output in Jupyter Notebook Input is NOT in line with Output?"</span><span class="p">,</span> <span class="s2">"True"</span><span class="p">,</span>
+   <span class="s2">"6. True or False, an if expression is not evaluated for true or false"</span><span class="p">,</span> <span class="s2">"False"</span><span class="p">,</span>  
+   <span class="s2">"7. True or False, return command in function does not return msg input by user"</span><span class="p">,</span>  <span class="s2">"False"</span><span class="p">,</span>
+   <span class="s2">"8. True or False, false takes branch of code directly under else command"</span><span class="p">,</span> <span class="s2">"True"</span><span class="p">,</span>
+   <span class="s2">"9. True or False, correct += 1 is NOT the way to add one to the score"</span><span class="p">,</span> <span class="s2">"False"</span><span class="p">,</span>
+   <span class="s2">"10. True or False,?"</span><span class="p">,</span> <span class="s2">"Answer"</span><span class="p">,</span>
+   <span class="p">]</span>
+ 
+<span class="c1">#total points and using new quiz var</span>
+<span class="n">points</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">current</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">quiz</span> <span class="o">=</span> <span class="mi">1</span>
+ 
+<span class="nb">print</span> <span class="p">(</span><span class="s2">"Welcome to my true or false quiz!"</span><span class="p">)</span>
+ 
+<span class="c1">#Using while lets me loop function</span>
+<span class="k">while</span> <span class="n">quiz</span> <span class="o">&lt;</span> <span class="mi">11</span><span class="p">:</span>
+   <span class="n">question</span> <span class="o">=</span> <span class="nb">input</span> <span class="p">(</span><span class="n">QandA</span><span class="p">[</span><span class="n">current</span><span class="p">])</span>
+   <span class="k">if</span> <span class="n">question</span> <span class="o">==</span> <span class="n">QandA</span><span class="p">[</span><span class="n">current</span><span class="o">+</span><span class="mi">1</span><span class="p">]:</span>
+       <span class="nb">print</span> <span class="p">(</span><span class="s2">"That's correct!"</span><span class="p">)</span>
+       <span class="n">points</span> <span class="o">=</span> <span class="n">points</span> <span class="o">+</span><span class="mi">1</span>
+       <span class="n">current</span> <span class="o">=</span> <span class="n">current</span> <span class="o">+</span><span class="mi">2</span>
+   <span class="k">else</span><span class="p">:</span>
+       <span class="nb">print</span> <span class="p">(</span><span class="s2">"Sorry, that is incorrect!"</span><span class="p">)</span>
+       <span class="n">points</span> <span class="o">=</span> <span class="n">points</span> <span class="o">-</span><span class="mi">1</span>
+       <span class="n">current</span> <span class="o">=</span> <span class="n">current</span> <span class="o">-</span><span class="mi">2</span>
+       <span class="n">quiz</span> <span class="o">=</span> <span class="n">quiz</span> <span class="o">+</span><span class="mi">1</span>
+ 
+<span class="c1">#Final Message</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">"You got "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">current</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"/"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">QandA</span><span class="p">))</span> <span class="o">+</span> <span class="s2">" correct"</span><span class="p">)</span>
 </pre></div>
 
     </div>
