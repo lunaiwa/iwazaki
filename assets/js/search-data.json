@@ -73,7 +73,7 @@
   
       ,"page1": {
           "title": "About Me",
-          "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
+          "content": "This is Luna Iwazaki’s Website .",
           "url": "https://lunaiwa.github.io/iwazaki/about/",
           "relUrl": "/about/",
           "date": ""
@@ -84,6 +84,22 @@
   
 
   
+      ,"page3": {
+          "title": "Week Schedule",
+          "content": "Work from the week and the hacks special assignments! . &lt;!DOCTYPE html&gt; . A basic HTML table . Week Work From the Week Hacks . 1 | worklink | worklink | . 2 | worklink | worklink | . .",
+          "url": "https://lunaiwa.github.io/iwazaki/schedule/",
+          "relUrl": "/schedule/",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+
+  
   
 
   
@@ -92,18 +108,13 @@
   
 
   
-
-  
   
 
   
   
 
   
-  
-
-  
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://lunaiwa.github.io/iwazaki/robots.txt",
