@@ -6,7 +6,7 @@ permalink: /schedule/
 
 >Work from the week and the hacks special assignments!
 
-<!DOCTYPE html>
+
 <html>
 <style>
 table, th, td {
