@@ -655,29 +655,28 @@ Taiyo Iwazaki
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Invalid input. Please try again
-Come back again!
-Total Number of Records:  3
-Luna Iwazaki
-	 Residence: San Diego
-	 Birth Day: Novemeber 19
-	 Favorite Game: Snake
-	 Email: lunaiwazaki@gmail.com
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb Cell 15</span> in <span class="ansi-cyan-fg">&lt;cell line: 1&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> infoDb.append({
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span>     "FirstName": "Luna",
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span>     "LastName": "Iwazaki",
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span>     "DOB": "Novemeber 19",
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span>     "Residence": "San Diego",
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span>     "Fav_Game": "Snake",
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span>     "Email": "lunaiwazaki@gmail.com",
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> })
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=9'&gt;10&lt;/a&gt;</span> infoDb.append({
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span>     "FirstName": "Taiyo",
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=11'&gt;12&lt;/a&gt;</span>     "LastName": "Iwazaki",
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=15'&gt;16&lt;/a&gt;</span>     "Fav_Game": "Valorent",
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=16'&gt;17&lt;/a&gt;</span> })
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=18'&gt;19&lt;/a&gt;</span> def print_data2(d_rec): #formatting
 
-Taiyo Iwazaki
-	 Residence: San Diego
-	 Birth Day: Novemeber 19
-	 Favorite Game: Valorent
-	 Email: taiyoiwazaki@gmail.com
-
-Ethan Tran
-	 Residence: San Diego
-	 Birth Day: July 10
-	 Favorite Game: Tetris
-	 Email: ethantran@gmail.com
-
-</pre>
+<span class="ansi-red-fg">NameError</span>: name 'infoDb' is not defined</pre>
 </div>
 </div>
 
@@ -756,20 +755,51 @@ Question: What is the definition of INPUT? 	 instructions given to a computer 	 
 Answer: instructions given to a computer
 Correct!
 Question: What is a squence? 	 a line of code 	 several lines of code  	 a button
-Answer: several lines of code
-Correct!
-Question: What is an output? 	 information a computer gives 	 a computer tab 	 going outside
-Answer: information a computer gives
-Correct!
-Question: What does a variable do? 	 gives variety 	 a way to store your paper files 	 way to name, store data, and reference data
-Answer: way to name, store data, and reference data
-Correct!
-Question: What are lists? 	 something for the grocery 	 the square brackets for grouping and ordering 	 a square
-Answer: the square brackets for grouping and ordering
-Correct!
-You scored 5 /5 correct answers!
-Here is a record of your quiz answers: {'Question 1': 'instructions given to a computer', 'Question 2': 'several lines of code', 'Question 3': 'information a computer gives', 'Question 4': 'way to name, store data, and reference data', 'Question 5': 'the square brackets for grouping and ordering'}
 </pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">KeyboardInterrupt</span>                         Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb Cell 17</span> in <span class="ansi-cyan-fg">&lt;cell line: 21&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=17'&gt;18&lt;/a&gt;</span>     return msg
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=19'&gt;20&lt;/a&gt;</span> Q1 = question_and_answer("What is the definition of INPUT? \t instructions given to a computer \t computer paper \t paper instructions", "instructions given to a computer")
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=20'&gt;21&lt;/a&gt;</span> Q2 = question_and_answer("What is a squence? \t a line of code \t several lines of code  \t a button", "several lines of code")
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=21'&gt;22&lt;/a&gt;</span> Q3 = question_and_answer("What is an output? \t information a computer gives \t a computer tab \t going outside", "information a computer gives")
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=22'&gt;23&lt;/a&gt;</span> Q4 = question_and_answer("What does a variable do? \t gives variety \t a way to store your paper files \t way to name, store data, and reference data", "way to name, store data, and reference data")
+
+<span class="ansi-green-intense-fg ansi-bold">/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb Cell 17</span> in <span class="ansi-cyan-fg">question_and_answer</span><span class="ansi-blue-fg">(prompt, answer)</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span> def question_and_answer(prompt, answer):
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span>     print("Question: " + prompt)
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span>     msg = input()
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span>     print("Answer: " + msg)
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span>     if answer == msg.lower():
+
+File <span class="ansi-green-fg">/Applications/anaconda3/lib/python3.9/site-packages/ipykernel/kernelbase.py:1177</span>, in <span class="ansi-cyan-fg">Kernel.raw_input</span><span class="ansi-blue-fg">(self, prompt)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1173</span> if not self._allow_stdin:
+<span class="ansi-green-intense-fg ansi-bold">   1174</span>     raise StdinNotImplementedError(
+<span class="ansi-green-intense-fg ansi-bold">   1175</span>         "raw_input was called, but this frontend does not support input requests."
+<span class="ansi-green-intense-fg ansi-bold">   1176</span>     )
+<span class="ansi-green-fg">-&gt; 1177</span> return self._input_request(
+<span class="ansi-green-intense-fg ansi-bold">   1178</span>     str(prompt),
+<span class="ansi-green-intense-fg ansi-bold">   1179</span>     self._parent_ident["shell"],
+<span class="ansi-green-intense-fg ansi-bold">   1180</span>     self.get_parent("shell"),
+<span class="ansi-green-intense-fg ansi-bold">   1181</span>     password=False,
+<span class="ansi-green-intense-fg ansi-bold">   1182</span> )
+
+File <span class="ansi-green-fg">/Applications/anaconda3/lib/python3.9/site-packages/ipykernel/kernelbase.py:1219</span>, in <span class="ansi-cyan-fg">Kernel._input_request</span><span class="ansi-blue-fg">(self, prompt, ident, parent, password)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1216</span>             break
+<span class="ansi-green-intense-fg ansi-bold">   1217</span> except KeyboardInterrupt:
+<span class="ansi-green-intense-fg ansi-bold">   1218</span>     # re-raise KeyboardInterrupt, to truncate traceback
+<span class="ansi-green-fg">-&gt; 1219</span>     raise KeyboardInterrupt("Interrupted by user") from None
+<span class="ansi-green-intense-fg ansi-bold">   1220</span> except Exception:
+<span class="ansi-green-intense-fg ansi-bold">   1221</span>     self.log.warning("Invalid Message:", exc_info=True)
+
+<span class="ansi-red-fg">KeyboardInterrupt</span>: Interrupted by user</pre>
 </div>
 </div>
 
