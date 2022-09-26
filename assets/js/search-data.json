@@ -180,6 +180,17 @@
   
 
   
+      ,"page7": {
+          "title": "sub",
+          "content": "[Home](https://lunaiwa.github.io/iwazaki/) . [Repository](https://github.com/lunaiwa/iwazaki) | . [Week Ticket](https://github.com/lunaiwa/iwazaki/issues/7#issue-1386497747) | . .",
+          "url": "https://lunaiwa.github.io/iwazaki/categories/",
+          "relUrl": "/categories/",
+          "date": ""
+      }
+      
+  
+
+  
 
   
   
@@ -191,7 +202,7 @@
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://lunaiwa.github.io/iwazaki/robots.txt",
