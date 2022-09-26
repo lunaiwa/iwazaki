@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>JavaScript | iwazaki</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="JavaScript" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Basics in Java" />
+<meta property="og:description" content="Basics in Java" />
+<link rel="canonical" href="https://lunaiwa.github.io/iwazaki/java/2022/09/26/JavaSh.html" />
+<meta property="og:url" content="https://lunaiwa.github.io/iwazaki/java/2022/09/26/JavaSh.html" />
+<meta property="og:site_name" content="iwazaki" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-09-26T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="JavaScript" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-26T00:00:00-05:00","datePublished":"2022-09-26T00:00:00-05:00","description":"Basics in Java","headline":"JavaScript","mainEntityOfPage":{"@type":"WebPage","@id":"https://lunaiwa.github.io/iwazaki/java/2022/09/26/JavaSh.html"},"url":"https://lunaiwa.github.io/iwazaki/java/2022/09/26/JavaSh.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/iwazaki/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://lunaiwa.github.io/iwazaki/feed.xml" title="iwazaki" /><link rel="shortcut icon" type="image/x-icon" href="/iwazaki/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/iwazaki/">iwazaki</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/iwazaki/about/">About Me</a><a class="page-link" href="/iwazaki/issues/">Week Schedule</a><a class="page-link" href="/iwazaki/search/">Search</a><a class="page-link" href="/iwazaki/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">JavaScript</h1><p class="page-description">Basics in Java</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-26T00:00:00-05:00" itemprop="datePublished">
+        Sep 26, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/iwazaki/categories/#java">java</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/lunaiwa/iwazaki/tree/master/_notebooks/2022-09-26-JavaSh.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/iwazaki/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/lunaiwa/iwazaki/master?filepath=_notebooks%2F2022-09-26-JavaSh.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/iwazaki/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/lunaiwa/iwazaki/blob/master/_notebooks/2022-09-26-JavaSh.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/iwazaki/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Flunaiwa%2Fiwazaki%2Fblob%2Fmaster%2F_notebooks%2F2022-09-26-JavaSh.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/iwazaki/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#console.log-outputs">console.log outputs </a></li>
+<li class="toc-entry toc-h2"><a href="#Functions">Functions </a></li>
+<li class="toc-entry toc-h2"><a href="#Loose-Language">Loose Language </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-09-26-JavaSh.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="console.log-outputs">
+<a class="anchor" href="#console.log-outputs" aria-hidden="true"><span class="octicon octicon-link"></span></a>console.log outputs<a class="anchor-link" href="#console.log-outputs"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>console.log output</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"Hello, Luna!"</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>console.log output using variable</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">var</span> <span class="n">msg</span> <span class="o">=</span> <span class="s2">"Hello, Luna!"</span><span class="p">;</span>
+<span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">msg</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [10]</span>
+<span class="ansi-red-fg">    var msg = "Hello, World!";</span>
+        ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>console.log using fuction</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">function</span> <span class="n">logIt</span><span class="p">(</span><span class="n">output</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">output</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="n">logIt</span><span class="p">(</span><span class="n">msg</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [8]</span>
+<span class="ansi-red-fg">    function logIt(answer) {</span>
+             ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Functions">
+<a class="anchor" href="#Functions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Functions<a class="anchor-link" href="#Functions"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>reusing function</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"Reuse of logIT"</span><span class="p">)</span>
+<span class="n">logIt</span><span class="p">(</span><span class="s2">"Hello, People!"</span><span class="p">);</span>
+<span class="n">logIt</span><span class="p">(</span><span class="mi">2022</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/sony/iwazaki-1/_notebooks/2022-09-26-JavaSh.ipynb Cell 11</span> in <span class="ansi-cyan-fg">&lt;cell line: 1&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-26-JavaSh.ipynb#X23sZmlsZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> console.log("Reuse of logIT")
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-26-JavaSh.ipynb#X23sZmlsZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span> logIt("Hello, All!");  
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-26-JavaSh.ipynb#X23sZmlsZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span> logIt(2022)
+
+<span class="ansi-red-fg">NameError</span>: name 'console' is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>building functions object</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">//</span> <span class="n">define</span> <span class="n">a</span> <span class="n">function</span> <span class="n">to</span> <span class="n">hold</span> <span class="n">data</span> <span class="k">for</span> <span class="n">a</span> <span class="n">Person</span>
+<span class="n">function</span> <span class="n">Person</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">ghID</span><span class="p">,</span> <span class="n">classOf</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">ghID</span> <span class="o">=</span> <span class="n">ghID</span><span class="p">;</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">classOf</span> <span class="o">=</span> <span class="n">classOf</span><span class="p">;</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">role</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">//</span> <span class="n">define</span> <span class="n">a</span> <span class="n">setter</span> <span class="k">for</span> <span class="n">role</span> <span class="ow">in</span> <span class="n">Person</span> <span class="n">data</span>
+<span class="n">Person</span><span class="o">.</span><span class="n">prototype</span><span class="o">.</span><span class="n">setRole</span> <span class="o">=</span> <span class="n">function</span><span class="p">(</span><span class="n">role</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">role</span> <span class="o">=</span> <span class="n">role</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">//</span> <span class="n">define</span> <span class="n">a</span> <span class="n">JSON</span> <span class="n">conversion</span> <span class="s2">"method"</span> <span class="n">associated</span> <span class="k">with</span> <span class="n">Person</span>
+<span class="n">Person</span><span class="o">.</span><span class="n">prototype</span><span class="o">.</span><span class="n">toJSON</span> <span class="o">=</span> <span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">const</span> <span class="n">obj</span> <span class="o">=</span> <span class="p">{</span><span class="n">name</span><span class="p">:</span> <span class="n">this</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">ghID</span><span class="p">:</span> <span class="n">this</span><span class="o">.</span><span class="n">ghID</span><span class="p">,</span> <span class="n">classOf</span><span class="p">:</span> <span class="n">this</span><span class="o">.</span><span class="n">classOf</span><span class="p">,</span> <span class="n">role</span><span class="p">:</span> <span class="n">this</span><span class="o">.</span><span class="n">role</span><span class="p">};</span>
+    <span class="n">const</span> <span class="n">json</span> <span class="o">=</span> <span class="n">JSON</span><span class="o">.</span><span class="n">stringify</span><span class="p">(</span><span class="n">obj</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">json</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">//</span> <span class="n">make</span> <span class="n">a</span> <span class="n">new</span> <span class="n">Person</span> <span class="ow">and</span> <span class="n">assign</span> <span class="n">to</span> <span class="n">variable</span> <span class="n">teacher</span>
+<span class="n">var</span> <span class="n">teacher</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Person</span><span class="p">(</span><span class="s2">"Teacher"</span><span class="p">,</span> <span class="s2">"Teach"</span><span class="p">,</span> <span class="mi">3000</span><span class="p">);</span>
+<span class="n">teacher</span><span class="o">.</span><span class="n">setRole</span><span class="p">(</span><span class="s2">"Teacher"</span><span class="p">);</span>
+
+<span class="o">//</span> <span class="n">output</span> <span class="n">of</span> <span class="n">Object</span> <span class="ow">and</span> <span class="n">JSON</span><span class="o">/</span><span class="n">string</span> <span class="n">associated</span> <span class="k">with</span> <span class="n">Teacher</span>
+<span class="n">logItType</span><span class="p">(</span><span class="n">teacher</span><span class="p">);</span>  <span class="o">//</span> <span class="nb">object</span> <span class="nb">type</span> <span class="ow">is</span> <span class="n">easy</span> <span class="n">to</span> <span class="n">work</span> <span class="k">with</span> <span class="ow">in</span> <span class="n">JavaScript</span>
+<span class="n">logItType</span><span class="p">(</span><span class="n">teacher</span><span class="o">.</span><span class="n">toJSON</span><span class="p">());</span>  <span class="o">//</span> <span class="n">json</span><span class="o">/</span><span class="n">string</span> <span class="ow">is</span> <span class="n">useful</span> <span class="n">when</span> <span class="n">passing</span> <span class="n">data</span> <span class="n">on</span> <span class="n">internet</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Loose-Language">
+<a class="anchor" href="#Loose-Language" aria-hidden="true"><span class="octicon octicon-link"></span></a>Loose Language<a class="anchor-link" href="#Loose-Language"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">function</span> <span class="n">logItType</span><span class="p">(</span><span class="n">output</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">typeof</span> <span class="n">output</span><span class="p">,</span> <span class="s2">";"</span><span class="p">,</span> <span class="n">output</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"Looking at dynamic nature of types in JavaScript"</span><span class="p">)</span>
+<span class="n">logItType</span><span class="p">(</span><span class="s2">"hello"</span><span class="p">);</span> <span class="o">//</span> <span class="n">String</span>
+<span class="n">logItType</span><span class="p">(</span><span class="mi">2020</span><span class="p">);</span>    <span class="o">//</span> <span class="n">Number</span>
+<span class="n">logItType</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]);</span>  <span class="o">//</span> <span class="n">Object</span> <span class="ow">is</span> <span class="n">generic</span> <span class="k">for</span> <span class="n">this</span> <span class="n">Array</span><span class="p">,</span> <span class="n">which</span> <span class="n">similar</span> <span class="n">to</span> <span class="n">Python</span> <span class="n">List</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>building list</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">//</span> <span class="n">define</span> <span class="n">a</span> <span class="n">student</span> <span class="n">Array</span> <span class="n">of</span> <span class="n">Person</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="n">var</span> <span class="n">students</span> <span class="o">=</span> <span class="p">[</span> 
+    <span class="n">new</span> <span class="n">Person</span><span class="p">(</span><span class="s2">"Anthony"</span><span class="p">,</span> <span class="s2">"tonyhieu"</span><span class="p">,</span> <span class="mi">2022</span><span class="p">),</span>
+    <span class="n">new</span> <span class="n">Person</span><span class="p">(</span><span class="s2">"Bria"</span><span class="p">,</span> <span class="s2">"B-G101"</span><span class="p">,</span> <span class="mi">2023</span><span class="p">),</span>
+    <span class="n">new</span> <span class="n">Person</span><span class="p">(</span><span class="s2">"Allie"</span><span class="p">,</span> <span class="s2">"xiaoa0"</span><span class="p">,</span> <span class="mi">2023</span><span class="p">),</span>
+    <span class="n">new</span> <span class="n">Person</span><span class="p">(</span><span class="s2">"Tigran"</span><span class="p">,</span> <span class="s2">"Tigran7"</span><span class="p">,</span> <span class="mi">2023</span><span class="p">),</span>
+    <span class="n">new</span> <span class="n">Person</span><span class="p">(</span><span class="s2">"Rebecca"</span><span class="p">,</span> <span class="s2">"Rebecca-123"</span><span class="p">,</span> <span class="mi">2023</span><span class="p">),</span>
+    <span class="n">new</span> <span class="n">Person</span><span class="p">(</span><span class="s2">"Vidhi"</span><span class="p">,</span> <span class="s2">"unknown"</span><span class="p">,</span> <span class="mi">2024</span><span class="p">)</span>
+<span class="p">];</span>
+
+<span class="o">//</span> <span class="n">define</span> <span class="n">a</span> <span class="n">classroom</span> <span class="ow">and</span> <span class="n">build</span> <span class="n">Classroom</span> <span class="n">objects</span> <span class="ow">and</span> <span class="n">json</span>
+<span class="n">function</span> <span class="n">Classroom</span><span class="p">(</span><span class="n">teacher</span><span class="p">,</span> <span class="n">students</span><span class="p">){</span> <span class="o">//</span> <span class="mi">1</span> <span class="n">teacher</span><span class="p">,</span> <span class="n">many</span> <span class="n">student</span>
+    <span class="o">//</span> <span class="n">start</span> <span class="n">Classroom</span> <span class="k">with</span> <span class="n">Teacher</span>
+    <span class="n">teacher</span><span class="o">.</span><span class="n">setRole</span><span class="p">(</span><span class="s2">"Teacher"</span><span class="p">);</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">teacher</span> <span class="o">=</span> <span class="n">teacher</span><span class="p">;</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">classroom</span> <span class="o">=</span> <span class="p">[</span><span class="n">teacher</span><span class="p">];</span>
+    <span class="o">//</span> <span class="n">add</span> <span class="n">each</span> <span class="n">Student</span> <span class="n">to</span> <span class="n">Classroom</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">students</span> <span class="o">=</span> <span class="n">students</span><span class="p">;</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">students</span><span class="o">.</span><span class="n">forEach</span><span class="p">(</span><span class="n">student</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="n">student</span><span class="o">.</span><span class="n">setRole</span><span class="p">(</span><span class="s2">"Student"</span><span class="p">);</span> <span class="n">this</span><span class="o">.</span><span class="n">classroom</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">student</span><span class="p">);</span> <span class="p">});</span>
+    <span class="o">//</span> <span class="n">build</span> <span class="n">json</span><span class="o">/</span><span class="n">string</span> <span class="nb">format</span> <span class="n">of</span> <span class="n">Classroom</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">json</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">classroom</span><span class="o">.</span><span class="n">forEach</span><span class="p">(</span><span class="n">person</span> <span class="o">=&gt;</span> <span class="n">this</span><span class="o">.</span><span class="n">json</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">person</span><span class="o">.</span><span class="n">toJSON</span><span class="p">()));</span>
+<span class="p">}</span>
+
+<span class="o">//</span> <span class="n">make</span> <span class="n">a</span> <span class="n">CompSci</span> <span class="n">classroom</span> <span class="kn">from</span> <span class="nn">formerly</span> <span class="n">defined</span> <span class="n">teacher</span> <span class="ow">and</span> <span class="n">students</span>
+<span class="n">compsci</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Classroom</span><span class="p">(</span><span class="n">teacher</span><span class="p">,</span> <span class="n">students</span><span class="p">);</span>
+
+<span class="o">//</span> <span class="n">output</span> <span class="n">of</span> <span class="n">Objects</span> <span class="ow">and</span> <span class="n">JSON</span> <span class="ow">in</span> <span class="n">CompSci</span> <span class="n">classroom</span>
+<span class="n">logItType</span><span class="p">(</span><span class="n">compsci</span><span class="o">.</span><span class="n">classroom</span><span class="p">);</span>  <span class="o">//</span> <span class="n">constructed</span> <span class="n">classroom</span> <span class="nb">object</span>
+<span class="n">logItType</span><span class="p">(</span><span class="n">compsci</span><span class="o">.</span><span class="n">classroom</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">);</span>  <span class="o">//</span> <span class="n">abstract</span> <span class="mi">1</span><span class="n">st</span> <span class="n">objects</span> <span class="n">name</span>
+<span class="n">logItType</span><span class="p">(</span><span class="n">compsci</span><span class="o">.</span><span class="n">json</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>  <span class="o">//</span> <span class="n">show</span> <span class="n">json</span> <span class="n">conversion</span> <span class="n">of</span> <span class="mi">1</span><span class="n">st</span> <span class="nb">object</span> <span class="n">to</span> <span class="n">string</span>
+<span class="n">logItType</span><span class="p">(</span><span class="n">JSON</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">compsci</span><span class="o">.</span><span class="n">json</span><span class="p">[</span><span class="mi">0</span><span class="p">]));</span>  <span class="o">//</span> <span class="n">show</span> <span class="n">JSON</span><span class="o">.</span><span class="n">parse</span> <span class="n">inverse</span> <span class="n">of</span> <span class="n">JSON</span><span class="o">.</span><span class="n">stringify</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>format to HTML</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">//</span> <span class="n">define</span> <span class="n">an</span> <span class="n">HTML</span> <span class="n">conversion</span> <span class="s2">"method"</span> <span class="n">associated</span> <span class="k">with</span> <span class="n">Classroom</span>
+<span class="n">Classroom</span><span class="o">.</span><span class="n">prototype</span><span class="o">.</span><span class="n">_toHtml</span> <span class="o">=</span> <span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="o">//</span> <span class="n">HTML</span> <span class="n">Style</span> <span class="ow">is</span> <span class="n">build</span> <span class="n">using</span> <span class="n">inline</span> <span class="n">structure</span>
+    <span class="n">var</span> <span class="n">style</span> <span class="o">=</span> <span class="p">(</span>
+      <span class="s2">"display:inline-block;"</span> <span class="o">+</span>
+      <span class="s2">"background:black;"</span> <span class="o">+</span>
+      <span class="s2">"border: 2px solid grey;"</span> <span class="o">+</span>
+      <span class="s2">"box-shadow: 0.8em 0.4em 0.4em grey;"</span>
+    <span class="p">);</span>
+  
+    <span class="o">//</span> <span class="n">HTML</span> <span class="n">Body</span> <span class="n">of</span> <span class="n">Table</span> <span class="ow">is</span> <span class="n">build</span> <span class="k">as</span> <span class="n">a</span> <span class="n">series</span> <span class="n">of</span> <span class="n">concatenations</span> <span class="p">(</span><span class="o">+=</span><span class="p">)</span>
+    <span class="n">var</span> <span class="n">body</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
+    <span class="o">//</span> <span class="n">Heading</span> <span class="k">for</span> <span class="n">Array</span> <span class="n">Columns</span>
+    <span class="n">body</span> <span class="o">+=</span> <span class="s2">"&lt;tr&gt;"</span><span class="p">;</span>
+    <span class="n">body</span> <span class="o">+=</span> <span class="s2">"&lt;th&gt;&lt;mark&gt;"</span> <span class="o">+</span> <span class="s2">"Name"</span> <span class="o">+</span> <span class="s2">"&lt;/mark&gt;&lt;/th&gt;"</span><span class="p">;</span>
+    <span class="n">body</span> <span class="o">+=</span> <span class="s2">"&lt;th&gt;&lt;mark&gt;"</span> <span class="o">+</span> <span class="s2">"GitHub ID"</span> <span class="o">+</span> <span class="s2">"&lt;/mark&gt;&lt;/th&gt;"</span><span class="p">;</span>
+    <span class="n">body</span> <span class="o">+=</span> <span class="s2">"&lt;th&gt;&lt;mark&gt;"</span> <span class="o">+</span> <span class="s2">"Class Of"</span> <span class="o">+</span> <span class="s2">"&lt;/mark&gt;&lt;/th&gt;"</span><span class="p">;</span>
+    <span class="n">body</span> <span class="o">+=</span> <span class="s2">"&lt;th&gt;&lt;mark&gt;"</span> <span class="o">+</span> <span class="s2">"Role"</span> <span class="o">+</span> <span class="s2">"&lt;/mark&gt;&lt;/th&gt;"</span><span class="p">;</span>
+    <span class="n">body</span> <span class="o">+=</span> <span class="s2">"&lt;/tr&gt;"</span><span class="p">;</span>
+    <span class="o">//</span> <span class="n">Data</span> <span class="n">of</span> <span class="n">Array</span><span class="p">,</span> <span class="n">iterate</span> <span class="n">through</span> <span class="n">each</span> <span class="n">row</span> <span class="n">of</span> <span class="n">compsci</span><span class="o">.</span><span class="n">classroom</span> 
+    <span class="k">for</span> <span class="p">(</span><span class="n">var</span> <span class="n">row</span> <span class="n">of</span> <span class="n">compsci</span><span class="o">.</span><span class="n">classroom</span><span class="p">)</span> <span class="p">{</span>
+      <span class="o">//</span> <span class="n">tr</span> <span class="k">for</span> <span class="n">each</span> <span class="n">row</span><span class="p">,</span> <span class="n">a</span> <span class="n">new</span> <span class="n">line</span>
+      <span class="n">body</span> <span class="o">+=</span> <span class="s2">"&lt;tr&gt;"</span><span class="p">;</span>
+      <span class="o">//</span> <span class="n">td</span> <span class="k">for</span> <span class="n">each</span> <span class="n">column</span> <span class="n">of</span> <span class="n">data</span>
+      <span class="n">body</span> <span class="o">+=</span> <span class="s2">"&lt;td&gt;"</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s2">"&lt;/td&gt;"</span><span class="p">;</span>
+      <span class="n">body</span> <span class="o">+=</span> <span class="s2">"&lt;td&gt;"</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">ghID</span> <span class="o">+</span> <span class="s2">"&lt;/td&gt;"</span><span class="p">;</span>
+      <span class="n">body</span> <span class="o">+=</span> <span class="s2">"&lt;td&gt;"</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">classOf</span> <span class="o">+</span> <span class="s2">"&lt;/td&gt;"</span><span class="p">;</span>
+      <span class="n">body</span> <span class="o">+=</span> <span class="s2">"&lt;td&gt;"</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">role</span> <span class="o">+</span> <span class="s2">"&lt;/td&gt;"</span><span class="p">;</span>
+      <span class="o">//</span> <span class="n">tr</span> <span class="n">to</span> <span class="n">end</span> <span class="n">line</span>
+      <span class="n">body</span> <span class="o">+=</span> <span class="s2">"&lt;tr&gt;"</span><span class="p">;</span>
+    <span class="p">}</span>
+  
+     <span class="o">//</span> <span class="n">Build</span> <span class="ow">and</span> <span class="n">HTML</span> <span class="n">fragment</span> <span class="n">of</span> <span class="n">div</span><span class="p">,</span> <span class="n">table</span><span class="p">,</span> <span class="n">table</span> <span class="n">body</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="s2">"&lt;div style='"</span> <span class="o">+</span> <span class="n">style</span> <span class="o">+</span> <span class="s2">"'&gt;"</span> <span class="o">+</span>
+        <span class="s2">"&lt;table&gt;"</span> <span class="o">+</span>
+          <span class="n">body</span> <span class="o">+</span>
+        <span class="s2">"&lt;/table&gt;"</span> <span class="o">+</span>
+      <span class="s2">"&lt;/div&gt;"</span>
+    <span class="p">);</span>
+  
+  <span class="p">};</span>
+  
+  <span class="o">//</span> <span class="n">IJavaScript</span> <span class="n">HTML</span> <span class="n">processor</span> <span class="n">receive</span> <span class="n">parameter</span> <span class="n">of</span> <span class="n">defined</span> <span class="n">HTML</span> <span class="n">fragment</span>
+  <span class="err">$$</span><span class="o">.</span><span class="n">html</span><span class="p">(</span><span class="n">compsci</span><span class="o">.</span><span class="n">_toHtml</span><span class="p">());</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [11]</span>
+<span class="ansi-red-fg">    // define an HTML conversion "method" associated with Classroom</span>
+    ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="lunaiwa/iwazaki"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/iwazaki/java/2022/09/26/JavaSh.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/iwazaki/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/iwazaki/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/iwazaki/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>luna&#39;s artist portfolio</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/luna_iwa" target="_blank" title="luna_iwa"><svg class="svg-icon grey"><use xlink:href="/iwazaki/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://www.instagram.com/lunaiwazaki" target="_blank" title="lunaiwazaki"><svg class="svg-icon grey"><use xlink:href="/iwazaki/assets/minima-social-icons.svg#instagram"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
