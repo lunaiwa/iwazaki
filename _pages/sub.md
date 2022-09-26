@@ -1,3 +1,9 @@
+---
+layout: page
+permalink: /categories/
+title: sub
+---
+
 <html>
 <style>
 table, th, td {
