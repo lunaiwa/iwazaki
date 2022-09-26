@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /categories/
+permalink: /issues/
 title: sub
 ---
 
