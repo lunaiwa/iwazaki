@@ -3,7 +3,4 @@ layout: page
 title: API
 ---
 
-{
-  "content-length": "22292",
-  "content-type": "application/json; charset=utf-8"
-}
+<a href="https://lunaiwa.github.io/iwazaki/api/2022/10/10/API.html">API</a>
