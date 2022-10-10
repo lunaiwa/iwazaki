@@ -7,7 +7,8 @@ image: /images/rapidapi.png
 categories: [code]
 tags: [code]
 ---
-GET /search/?q=%3CREQUIRED%3E&type=multi&offset=0&limit=10&numberOfTopResults=5 HTTP/1.1
+GET /search/?q=multi&type=playlists&offset=0&limit=10&numberOfTopResults=5 HTTP/1.1
 X-Rapidapi-Key: 4d84578a4bmshef588b2a5b86609p11c974jsnf5b5615ebc33
 X-Rapidapi-Host: spotify23.p.rapidapi.com
 Host: spotify23.p.rapidapi.com
+
