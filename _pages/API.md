@@ -1,7 +1,15 @@
 ---
-title: API 
+title: Fetch of Python data using RapidAPI
 layout: default
+description: An introductory example of talking to Backend Python application serving 3rd Party API.  Fetching data and formatting results is a way to visuals information, in this case Covid19 statistics across the Globe. 
+permalink: /data/covid
+image: /images/rapidapi.png
+categories: []
+tags: [javascript, fetch, dom, getElementID, appendChild]
+week: 8
+type: pbl
 ---
+
 {% include nav_data.html %}
 
 [Review Frontend Code](https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_posts/2022-07-10-PBL-rapidapi.md), [Review Backend Code](https://github.com/nighthawkcoders/flask_portfolio/blob/main/api/covid.py)
@@ -121,5 +129,3 @@ layout: default
     resultContainer.appendChild(tr);
   });
 </script>
-
-
