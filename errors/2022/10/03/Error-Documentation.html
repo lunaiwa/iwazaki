@@ -297,6 +297,7 @@ drink  $0.99
 <span class="n">current_order</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="c1"># order of the user</span>
 
+<span class="c1"># this is where the user prints the order</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Menu:"</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">menu</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="s2">"  $"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span> 
@@ -309,10 +310,10 @@ drink  $0.99
     <span class="n">total</span> <span class="o">+=</span> <span class="p">(</span><span class="n">menu</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">*</span> <span class="n">quantity</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">quantity</span><span class="p">))</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">item</span> <span class="o">+</span> <span class="s2">"(s)"</span> <span class="o">+</span> <span class="s2">" added"</span><span class="p">)</span>
     
-
+<span class="c1"># user orders more or finishes order</span>
     <span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Type 'done' for final order or add on more to the order."</span><span class="p">)</span>
     <span class="n">item</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
-    
+ <span class="c1">#order is being printed   </span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Order:"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">current_order</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Price:"</span><span class="p">)</span>
