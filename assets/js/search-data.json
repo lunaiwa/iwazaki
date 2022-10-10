@@ -204,6 +204,17 @@
 
   
       ,"page1": {
+          "title": "API Example",
+          "content": "GET /search/?q=%3CREQUIRED%3E&amp;type=multi&amp;offset=0&amp;limit=10&amp;numberOfTopResults=5 HTTP/1.1 X-Rapidapi-Key: 4d84578a4bmshef588b2a5b86609p11c974jsnf5b5615ebc33 X-Rapidapi-Host: spotify23.p.rapidapi.com Host: spotify23.p.rapidapi.com .",
+          "url": "https://lunaiwa.github.io/iwazaki/data/covid",
+          "relUrl": "/data/covid",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page2": {
           "title": "About Me",
           "content": "This is Luna Iwazaki’s Website .",
           "url": "https://lunaiwa.github.io/iwazaki/about/",
@@ -216,7 +227,7 @@
   
 
   
-      ,"page3": {
+      ,"page4": {
           "title": "Week Schedule",
           "content": "Work from the week and the hacks special assignments! . Week Date Hacks . 0 | 2022-08-22 | worklink | . 1 | 2022-08-29 | [issue 1](lunaiwa/iwazaki/issues/3#) | . 2 | 2022-09-06 | [issue 2](lunaiwa/iwazaki/issues/4#) | . .",
           "url": "https://lunaiwa.github.io/iwazaki/issues/",
@@ -235,7 +246,7 @@
   
 
   
-      ,"page7": {
+      ,"page8": {
           "title": "sub",
           "content": "[Home](https://lunaiwa.github.io/iwazaki/) . [Repository](https://github.com/lunaiwa/iwazaki) | . [Week Ticket](https://github.com/lunaiwa/iwazaki/issues/7#issue-1386497747) | . .",
           "url": "https://lunaiwa.github.io/iwazaki/issues/",
@@ -259,7 +270,7 @@
   
 
   
-      ,"page13": {
+      ,"page14": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://lunaiwa.github.io/iwazaki/robots.txt",
