@@ -124,7 +124,7 @@
     
         ,"post11": {
             "title": "Vocab Notes",
-            "content": "Vocabulary . input = instructions given to a computer | sequence = several lines of code | output = infromation computer gives | key -&gt; value | variables = way to name, store data, and reference data | lists and dictionaries = variable with extended fetures for storing + retrieving data | lists = [] the square brackets for grouping and ordering | dictionaries = {} curley brackets for grouping into key-value relationships | data extraction = extracting data using things such as infodb which is data (not a procedure) | . Linux and Ubuntu . pwd = print directory | mkdir = make directory | cd = change directory | ls = list directory | def = procedure | td = table data | print = to write out | .",
+            "content": "Vocabulary . input = instructions given to a computer | sequence = several lines of code | output = infromation computer gives | key -&gt; value | variables = way to name, store data, and reference data | lists and dictionaries = variable with extended fetures for storing + retrieving data | lists = [] the square brackets for grouping and ordering | dictionaries = {} curley brackets for grouping into key-value relationships | data extraction = extracting data using things such as infodb which is data (not a procedure) | . Linux and Ubuntu . pwd = print directory | mkdir = make directory | cd = change directory | ls = list directory | def = procedure | td = table data | print = to write out | . Git Vocab . &quot;git clone&quot; makes local Git repo (decentralized) from cloud (GitHub/Git) | &quot;git commit&quot; makes snapshot of original parent on local database | &quot;git push&quot; | . Collaboration . team = people that come together to work together! | .",
             "url": "https://lunaiwa.github.io/iwazaki/coding/2022/09/05/Vocab-Notes.html",
             "relUrl": "/coding/2022/09/05/Vocab-Notes.html",
             "date": " • Sep 5, 2022"
@@ -204,10 +204,10 @@
 
   
       ,"page1": {
-          "title": "API Example",
-          "content": "GET /search/?q=multi&amp;type=playlists&amp;offset=0&amp;limit=10&amp;numberOfTopResults=5 HTTP/1.1 X-Rapidapi-Key: 4d84578a4bmshef588b2a5b86609p11c974jsnf5b5615ebc33 X-Rapidapi-Host: spotify23.p.rapidapi.com Host: spotify23.p.rapidapi.com .",
-          "url": "https://lunaiwa.github.io/iwazaki/data/covid",
-          "relUrl": "/data/covid",
+          "title": "API",
+          "content": "GET /api HTTP/1.1 X-Rapidapi-Key: 4d84578a4bmshef588b2a5b86609p11c974jsnf5b5615ebc33 X-Rapidapi-Host: corona-virus-world-and-india-data.p.rapidapi.com Host: corona-virus-world-and-india-data.p.rapidapi.com .",
+          "url": "https://lunaiwa.github.io/iwazaki/_pages/API.html",
+          "relUrl": "/_pages/API.html",
           "date": ""
       }
       
