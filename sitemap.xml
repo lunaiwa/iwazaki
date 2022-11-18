@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://lunaiwa.github.io/iwazaki/frontend/binary</loc>
+<lastmod>2022-07-07T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>https://lunaiwa.github.io/iwazaki/art/2022/08/24/First-Post.html</loc>
 <lastmod>2022-08-24T00:00:00-05:00</lastmod>
 </url>
@@ -21,27 +25,27 @@
 <lastmod>2022-08-29T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://lunaiwa.github.io/iwazaki/coding/2022/09/05/Lists-and-Dictionaries.html</loc>
+<loc>https://lunaiwa.github.io/iwazaki/python/2022/09/05/Lists-and-Dictionaries.html</loc>
 <lastmod>2022-09-05T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://lunaiwa.github.io/iwazaki/coding/2022/09/05/Vocab-Notes.html</loc>
+<loc>https://lunaiwa.github.io/iwazaki/notes/2022/09/05/Vocab-Notes.html</loc>
 <lastmod>2022-09-05T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://lunaiwa.github.io/iwazaki/coding/2022/09/11/Findings-And-New-App.html</loc>
+<loc>https://lunaiwa.github.io/iwazaki/notes/2022/09/11/Findings-And-New-App.html</loc>
 <lastmod>2022-09-11T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://lunaiwa.github.io/iwazaki/endoftri/2022/09/11/Performance-Task-Planning.html</loc>
+<loc>https://lunaiwa.github.io/iwazaki/planning/2022/09/11/Performance-Task-Planning.html</loc>
 <lastmod>2022-09-11T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://lunaiwa.github.io/iwazaki/endoftri/2022/09/12/AP-Testing-Prep.html</loc>
+<loc>https://lunaiwa.github.io/iwazaki/planning/2022/09/12/AP-Testing-Prep.html</loc>
 <lastmod>2022-09-12T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://lunaiwa.github.io/iwazaki/human-day/2022/09/15/Human-Day.html</loc>
+<loc>https://lunaiwa.github.io/iwazaki/notes/2022/09/15/Human-Day.html</loc>
 <lastmod>2022-09-15T00:00:00-05:00</lastmod>
 </url>
 <url>
@@ -91,6 +95,10 @@
 <url>
 <loc>https://lunaiwa.github.io/iwazaki/final/2022/11/05/Final-Edit.html</loc>
 <lastmod>2022-11-05T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://lunaiwa.github.io/iwazaki/lesson%20plans/2022/11/14/LessonPlans.html</loc>
+<lastmod>2022-11-14T00:00:00-06:00</lastmod>
 </url>
 <url>
 <loc>https://lunaiwa.github.io/iwazaki/_pages/API.html</loc>
