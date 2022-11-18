@@ -4,7 +4,7 @@ description: Bash Installation
 title: Installation Check
 toc: true
 comments: true
-categories: [coding]
+categories: [python]
 nb_path: _notebooks/2022-08-25-tool_check.ipynb
 layout: notebook
 ---

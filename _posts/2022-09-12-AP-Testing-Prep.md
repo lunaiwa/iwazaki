@@ -4,7 +4,7 @@ description: Preparing for the end of the year AP testing
 title: APCSP Test Prep
 toc: true
 comments: true
-categories: [EndofTri]
+categories: [planning]
 nb_path: _notebooks/2022-09-12-AP-Testing-Prep.ipynb
 layout: notebook
 ---

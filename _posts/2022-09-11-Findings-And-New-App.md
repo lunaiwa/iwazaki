@@ -4,7 +4,7 @@ description: New app quiz and finidings
 title: Findings and New App
 toc: true
 comments: truediv
-categories: [coding]
+categories: [notes]
 nb_path: _notebooks/2022-09-11-Findings-And-New-App.ipynb
 layout: notebook
 ---

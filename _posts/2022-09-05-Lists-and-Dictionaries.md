@@ -4,7 +4,7 @@ description: Data Abstraction using Python Lists [] and Python Dictionaries {}.
 title: Lists, Dictionaries, Iteration
 toc: true
 comments: true
-categories: [coding]
+categories: [python]
 nb_path: _notebooks/2022-09-05-Lists-and-Dictionaries.ipynb
 layout: notebook
 ---

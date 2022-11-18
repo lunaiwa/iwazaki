@@ -4,7 +4,7 @@ description: Jupyter Notebook
 title: Jupyter
 toc: true
 comments: true
-categories: [coding]
+categories: [jupyter]
 nb_path: _notebooks/2022-08-24-Juypter-Notebook.ipynb
 layout: notebook
 ---

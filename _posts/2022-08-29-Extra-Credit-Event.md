@@ -4,7 +4,7 @@ description: Insights and takeaways from event
 title: Alumni Panel Event
 toc: true
 comments: true
-categories: [coding]
+categories: [notes]
 nb_path: _notebooks/2022-08-29-Extra-Credit-Event.ipynb
 layout: notebook
 ---

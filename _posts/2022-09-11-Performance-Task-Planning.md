@@ -4,7 +4,7 @@ description: Planning for end of the trimester assignment
 title: Performance Task Planning/Draft
 toc: true
 comments: true
-categories: [EndofTri]
+categories: [planning]
 nb_path: _notebooks/2022-09-11-Performance-Task-Planning.ipynb
 layout: notebook
 ---

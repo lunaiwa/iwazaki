@@ -4,7 +4,7 @@ description: Vocabulary for APCSP
 title: Vocab Notes
 toc: true
 comments: true
-categories: [coding]
+categories: [notes]
 nb_path: _notebooks/2022-09-05-Vocab-Notes.ipynb
 layout: notebook
 ---
@@ -45,6 +45,26 @@ layout: notebook
 <li>def = procedure</li>
 <li>td = table data</li>
 <li>print = to write out</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Git-Vocab">Git Vocab<a class="anchor-link" href="#Git-Vocab"> </a></h3><ul>
+<li>"git clone" makes local Git repo (decentralized) from cloud (GitHub/Git)</li>
+<li>"git commit" makes snapshot of original parent on local database</li>
+<li>"git push"</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Collaboration">Collaboration<a class="anchor-link" href="#Collaboration"> </a></h3><ul>
+<li>team = people that come together to work together!</li>
 </ul>
 
 </div>
