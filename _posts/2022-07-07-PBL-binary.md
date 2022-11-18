@@ -2,7 +2,6 @@
 title: Binary Math
 layout: notebook
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
-permalink: /frontend/binary
 image: /images/binary.png
 tags: [html]
 week: 13
