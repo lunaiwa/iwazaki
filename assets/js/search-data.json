@@ -2,7 +2,7 @@
   
     
         "post0": {
-            "title": "Unit 3 Sections 3 and 4 HACKS",
+            "title": "Unit 3.3-3.4 HACKS",
             "content": "Hacks 1 . Describe the different parts of an algorithm, sequencing, selection, and iteration in the image below . Set item to number to search for. | Get text number in the list. | If number = item, display &quot;item found&quot; | If he are more numbers in the list, go back to Step 2 | Display &quot;item found&quot; | sequencing: | Selection: | Iteration: | . Hacks 2 . Evaluate the arithmetic expression for this code . num1 = 5 num2 = num1 * 3 num3 = num2 / num1 * (9 % 2) * 4 result = (num3 % num1 + num2) % num3 * 3 / 5 . Hacks 3 . Finish the crossword puzzle . 1. 2. 3. . Hacks 4 . The length of the string | False | &gt; . | print(&quot;Hello World&quot;[3:8]) . lo Wo . .",
             "url": "https://lunaiwa.github.io/iwazaki/unit%203/2022/11/29/3.3-3.4HACKS.html",
             "relUrl": "/unit%203/2022/11/29/3.3-3.4HACKS.html",
