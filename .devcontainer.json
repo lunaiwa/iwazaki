@@ -1,12 +1,12 @@
 {
-    "name": "fastpages-codespaces",
+    "name": "fastpages-codepage",
     "dockerComposeFile": "docker-compose.yml",
     "service": "watcher",
     "mounts": [ "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind" ],
     "forwardPorts": [4000, 8080],
-    "appPort": [4000, 8080],
     "extensions": ["ms-python.python",
-                   "ms-azuretools.vscode-docker"],
+                   "ms-retools.vscode-docker"],
     "runServices": ["converter", "notebook", "jekyll", "watcher"]
 }
+
 
