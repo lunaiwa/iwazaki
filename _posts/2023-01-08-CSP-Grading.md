@@ -48,35 +48,14 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://github.com/lunaiwa/iwazaki/issues/13#issue-1525225100">Collegeboard Grading Table</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Submission-#-1">Submission # 1<a class="anchor-link" href="#Submission-#-1"> </a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://secure-media.collegeboard.org/apc/ap-computer-science-principles-2022-create-performance-task-sample-f-video.mp4">Video</a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-2022-create-performance-task-sample-f.pdf">Written Response</a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="">Personal Rubric</a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://drive.google.com/file/d/1heOeGcmxqTjG4Hqf0Vi1YFUZt_Trs_CE/view">Collegeboard Rubric</a>: 6/6</p>
-
 </div>
 </div>
 </div>
@@ -89,7 +68,12 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Why did this section recieve these points?</p>
+<ul>
+<li>I feel that college board had graded this student harshly, they had a great overall assignment and most of the time I was surprised when I saw the score since I feel that the student had done well in most parts.</li>
+<li>The purpose and function was not well done though, they only described the function and not the purpose</li>
+<li>purpose=why this program exists to be done</li>
+<li>function=the action of the program</li>
+</ul>
 
 </div>
 </div>
@@ -102,42 +86,18 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://www.youtube.com/watch?v=tEXoC-zYsrU">Video</a></p>
+<p><strong>Reflection</strong></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-2022-create-performance-task-sample-f.pdf">Written Response</a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="">Personal Rubric</a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://drive.google.com/file/d/1h1BDVPlYfXE5Lg1AZ8VdWJf6erT3hQ4e/view">Collegeboard Rubric</a>: 6/6</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Reflection:</strong></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Why did this section recieve these points?</p>
+<ul>
+<li>The explinations were very through and the videos and writing were able to fulfill all of the requirements that were needed</li>
+<li>The student showed amazing work and their steps were very clear and consisice. </li>
+<li>Overall this student followed all of the AP Collegeboard requirments needed for this assignment</li>
+</ul>
 
 </div>
 </div>
