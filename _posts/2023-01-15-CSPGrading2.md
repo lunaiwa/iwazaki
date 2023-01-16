@@ -50,7 +50,7 @@ on the criteria and why a submission may have failed to meet the standard</p>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>inin</p>
+<blockquote><p>The purpose of the project was not well described and clear! Most of all of the explinations made were not clear or consice enough to meet the college board standards. Their explinations most of the time don't connect to their program. But, the testing was clear and showed understanding of the college board standards. This student needed thourogh explinations and more connection to their code to recive their full points.</p>
 </blockquote>
 
 </div>
@@ -80,7 +80,7 @@ on the criteria and why a submission may have failed to meet the standard</p>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>imim</p>
+<blockquote><p>This student was very clear with their work! They had alternative ideas and showed they had full understanding with the college board requirements. They fulfilled all the requirments and college board also gave them full points. If I were to do the APCSP tests I would use this as a reference of what my work would look like since it is so well done!!</p>
 </blockquote>
 
 </div>
@@ -110,7 +110,15 @@ on the criteria and why a submission may have failed to meet the standard</p>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>imim</p>
+<blockquote><p>Compared to student 2 I think student 3 had also done a well job. Although they had recived 5/6 points I think this student deserves full points. The student had clearly answered the prompt and described their code well. As Mr.Mort said lots of people struggle with function and purpose and that is where this student had fallen short. They only described the function which is a fatal flaw!!</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p>Function vs. Purpose:<br>Function: the kind of action or activity proper to a person, thing. Purpose: the reason for which something exists or is done, made, used, etc.</p>
 </blockquote>
 
 </div>
@@ -140,7 +148,7 @@ on the criteria and why a submission may have failed to meet the standard</p>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>imin</p>
+<blockquote><p>This student had missed some important components in the CSP project. They were missing the managing complexity and how a list had contributed to their program! They did not earn full points for a row since they did not hit the crieteria for those points.</p>
 </blockquote>
 
 </div>
