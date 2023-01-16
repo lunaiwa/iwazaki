@@ -21,43 +21,17 @@ layout: notebook
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://github.com/lunaiwa/iwazaki/issues/16#issue-1534290881">Submission Scoring</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Submission-1">Submission 1<a class="anchor-link" href="#Submission-1"> </a></h3>
 </div>
 </div>
 </div>
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Company</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Contact</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Country</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">Alfreds</span> <span class="n">Futterkiste</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">Maria</span> <span class="n">Anders</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">Germany</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">Centro</span> <span class="n">comercial</span> <span class="n">Moctezuma</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">Francisco</span> <span class="n">Chang</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">Mexico</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
-  <span class="o">&lt;/</span><span class="n">table</span><span class="o">&gt;</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Reflection</strong></p>
@@ -67,7 +41,17 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>ok</p>
+<p>on any discrepancies in your scoring versus the ap scoring
+on what your program will need to fulfill all requirements
+on the criteria and why a submission may have failed to meet the standard</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p>inin</p>
+</blockquote>
 
 </div>
 </div>
@@ -87,7 +71,17 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>ok</p>
+<p>on any discrepancies in your scoring versus the ap scoring
+on what your program will need to fulfill all requirements
+on the criteria and why a submission may have failed to meet the standard</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p>imim</p>
+</blockquote>
 
 </div>
 </div>
@@ -107,7 +101,17 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>ok</p>
+<p>on any discrepancies in your scoring versus the ap scoring
+on what your program will need to fulfill all requirements
+on the criteria and why a submission may have failed to meet the standard</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p>imim</p>
+</blockquote>
 
 </div>
 </div>
@@ -127,7 +131,17 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>ok</p>
+<p>on any discrepancies in your scoring versus the ap scoring
+on what your program will need to fulfill all requirements
+on the criteria and why a submission may have failed to meet the standard</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p>imin</p>
+</blockquote>
 
 </div>
 </div>
