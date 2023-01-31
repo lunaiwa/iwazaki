@@ -27,7 +27,7 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include image.html alt="Screen Shot 2023-01-31 at 8 53 54 AM" max-width="810" file="<a href="https://user-images.githubusercontent.com/111661543/215829374-9a405eff-a1ca-4ca9-bf19-bbc817fcedc2.png">https://user-images.githubusercontent.com/111661543/215829374-9a405eff-a1ca-4ca9-bf19-bbc817fcedc2.png</a>" %}</p>
+<p>{% include image.html max-width="810" file="<a href="https://user-images.githubusercontent.com/111661543/215829374-9a405eff-a1ca-4ca9-bf19-bbc817fcedc2.png">https://user-images.githubusercontent.com/111661543/215829374-9a405eff-a1ca-4ca9-bf19-bbc817fcedc2.png</a>" %}</p>
 
 </div>
 </div>
@@ -47,7 +47,7 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include image.html alt="Screen Shot 2023-01-31 at 8 54 28 AM" max-width="818" file="<a href="https://user-images.githubusercontent.com/111661543/215829495-f16ae390-33ee-4b9f-80fa-2bbb81ab6ce9.png">https://user-images.githubusercontent.com/111661543/215829495-f16ae390-33ee-4b9f-80fa-2bbb81ab6ce9.png</a>" %}</p>
+<p>{% include image.html max-width="818" file="<a href="https://user-images.githubusercontent.com/111661543/215829495-f16ae390-33ee-4b9f-80fa-2bbb81ab6ce9.png">https://user-images.githubusercontent.com/111661543/215829495-f16ae390-33ee-4b9f-80fa-2bbb81ab6ce9.png</a>" %}</p>
 
 </div>
 </div>
@@ -70,7 +70,7 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include image.html alt="Screen Shot 2023-01-31 at 8 55 01 AM" max-width="813" file="<a href="https://user-images.githubusercontent.com/111661543/215829608-0f7779f0-d65a-4521-a238-a41f70ab0926.png">https://user-images.githubusercontent.com/111661543/215829608-0f7779f0-d65a-4521-a238-a41f70ab0926.png</a>" %}</p>
+<p>{% include image.html max-width="813" file="<a href="https://user-images.githubusercontent.com/111661543/215829608-0f7779f0-d65a-4521-a238-a41f70ab0926.png">https://user-images.githubusercontent.com/111661543/215829608-0f7779f0-d65a-4521-a238-a41f70ab0926.png</a>" %}</p>
 
 </div>
 </div>
@@ -90,7 +90,7 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include image.html alt="Screen Shot 2023-01-31 at 8 55 55 AM" max-width="829" file="<a href="https://user-images.githubusercontent.com/111661543/215829827-d56cb2a5-8caa-4487-93b7-90fac82290ca.png">https://user-images.githubusercontent.com/111661543/215829827-d56cb2a5-8caa-4487-93b7-90fac82290ca.png</a>" %}</p>
+<p>{% include image.html max-width="829" file="<a href="https://user-images.githubusercontent.com/111661543/215829827-d56cb2a5-8caa-4487-93b7-90fac82290ca.png">https://user-images.githubusercontent.com/111661543/215829827-d56cb2a5-8caa-4487-93b7-90fac82290ca.png</a>" %}</p>
 
 </div>
 </div>
@@ -103,7 +103,7 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include image.html alt="Screen Shot 2023-01-31 at 8 56 28 AM" max-width="823" file="<a href="https://user-images.githubusercontent.com/111661543/215829961-30fa0dc3-f735-48c3-8489-bc57f52beba3.png">https://user-images.githubusercontent.com/111661543/215829961-30fa0dc3-f735-48c3-8489-bc57f52beba3.png</a>" %}</p>
+<p>{% include image.html max-width="823" file="<a href="https://user-images.githubusercontent.com/111661543/215829961-30fa0dc3-f735-48c3-8489-bc57f52beba3.png">https://user-images.githubusercontent.com/111661543/215829961-30fa0dc3-f735-48c3-8489-bc57f52beba3.png</a>" %}</p>
 
 </div>
 </div>
@@ -123,7 +123,7 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include image.html alt="Screen Shot 2023-01-31 at 8 56 58 AM" max-width="817" file="<a href="https://user-images.githubusercontent.com/111661543/215830091-7e67ab34-6a5a-41dc-9df4-c477c62e8785.png">https://user-images.githubusercontent.com/111661543/215830091-7e67ab34-6a5a-41dc-9df4-c477c62e8785.png</a>" %}</p>
+<p>{% include image.html max-width="817" file="<a href="https://user-images.githubusercontent.com/111661543/215830091-7e67ab34-6a5a-41dc-9df4-c477c62e8785.png">https://user-images.githubusercontent.com/111661543/215830091-7e67ab34-6a5a-41dc-9df4-c477c62e8785.png</a>" %}</p>
 
 </div>
 </div>
@@ -143,7 +143,7 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include image.html alt="Screen Shot 2023-01-31 at 8 57 27 AM" max-width="821" file="<a href="https://user-images.githubusercontent.com/111661543/215830197-7178b70a-45a8-4a80-a9f2-457743d9edf1.png">https://user-images.githubusercontent.com/111661543/215830197-7178b70a-45a8-4a80-a9f2-457743d9edf1.png</a>" %}</p>
+<p>{% include image.html max-width="821" file="<a href="https://user-images.githubusercontent.com/111661543/215830197-7178b70a-45a8-4a80-a9f2-457743d9edf1.png">https://user-images.githubusercontent.com/111661543/215830197-7178b70a-45a8-4a80-a9f2-457743d9edf1.png</a>" %}</p>
 
 </div>
 </div>
