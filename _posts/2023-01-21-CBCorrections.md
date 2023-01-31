@@ -27,13 +27,6 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include image.html max-width="810" file="<a href="https://user-images.githubusercontent.com/111661543/215829374-9a405eff-a1ca-4ca9-bf19-bbc817fcedc2.png">https://user-images.githubusercontent.com/111661543/215829374-9a405eff-a1ca-4ca9-bf19-bbc817fcedc2.png</a>" %}</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <p>This option is correct. If the difference between the variable borrows and the variable returns is 0, they must have the same value. This would indicate that each time the particular laptop was borrowed it was returned, which would indicate the laptop is not currently borrowed.</p>
 
 </div>
@@ -42,13 +35,6 @@ layout: notebook
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Q10-Boolean-expressions-equivalent-to-num-greater-than-or-equal-to-15">Q10 Boolean expressions equivalent to num greater than or equal to 15<a class="anchor-link" href="#Q10-Boolean-expressions-equivalent-to-num-greater-than-or-equal-to-15"> </a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include image.html max-width="818" file="<a href="https://user-images.githubusercontent.com/111661543/215829495-f16ae390-33ee-4b9f-80fa-2bbb81ab6ce9.png">https://user-images.githubusercontent.com/111661543/215829495-f16ae390-33ee-4b9f-80fa-2bbb81ab6ce9.png</a>" %}</p>
-
 </div>
 </div>
 </div>
@@ -64,47 +50,7 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Q17-selection-equivalent-to-Boolean-expression">Q17 selection equivalent to Boolean expression<a class="anchor-link" href="#Q17-selection-equivalent-to-Boolean-expression"> </a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include image.html max-width="813" file="<a href="https://user-images.githubusercontent.com/111661543/215829608-0f7779f0-d65a-4521-a238-a41f70ab0926.png">https://user-images.githubusercontent.com/111661543/215829608-0f7779f0-d65a-4521-a238-a41f70ab0926.png</a>" %}</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Q30-use-drawCircle-to-draw-figure-on-a-coordinate-grid">Q30 use drawCircle to draw figure on a coordinate grid<a class="anchor-link" href="#Q30-use-drawCircle-to-draw-figure-on-a-coordinate-grid"> </a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include image.html alt="Screen Shot 2023-01-31 at 8 55 34 AM" max-width="827" file="<a href="https://user-images.githubusercontent.com/111661543/215829733-bdfaece5-6bb3-4ff4-bc59-a3dfdab99a1e.png">https://user-images.githubusercontent.com/111661543/215829733-bdfaece5-6bb3-4ff4-bc59-a3dfdab99a1e.png</a>" %}</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include image.html max-width="829" file="<a href="https://user-images.githubusercontent.com/111661543/215829827-d56cb2a5-8caa-4487-93b7-90fac82290ca.png">https://user-images.githubusercontent.com/111661543/215829827-d56cb2a5-8caa-4487-93b7-90fac82290ca.png</a>" %}</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Q33-Find-maximum-value-algorithms">Q33 Find maximum value algorithms<a class="anchor-link" href="#Q33-Find-maximum-value-algorithms"> </a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include image.html max-width="823" file="<a href="https://user-images.githubusercontent.com/111661543/215829961-30fa0dc3-f735-48c3-8489-bc57f52beba3.png">https://user-images.githubusercontent.com/111661543/215829961-30fa0dc3-f735-48c3-8489-bc57f52beba3.png</a>" %}</p>
-
 </div>
 </div>
 </div>
@@ -123,13 +69,6 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include image.html max-width="817" file="<a href="https://user-images.githubusercontent.com/111661543/215830091-7e67ab34-6a5a-41dc-9df4-c477c62e8785.png">https://user-images.githubusercontent.com/111661543/215830091-7e67ab34-6a5a-41dc-9df4-c477c62e8785.png</a>" %}</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <p>C is incorrect. While statements II and III are correct, statement I is also correct because software simulations can usually be built before a prototype car.</p>
 
 </div>
@@ -138,13 +77,6 @@ layout: notebook
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Q49-What-problems-can-be-solved-with-algorithms">Q49 What problems can be solved with algorithms<a class="anchor-link" href="#Q49-What-problems-can-be-solved-with-algorithms"> </a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include image.html max-width="821" file="<a href="https://user-images.githubusercontent.com/111661543/215830197-7178b70a-45a8-4a80-a9f2-457743d9edf1.png">https://user-images.githubusercontent.com/111661543/215830197-7178b70a-45a8-4a80-a9f2-457743d9edf1.png</a>" %}</p>
-
 </div>
 </div>
 </div>
