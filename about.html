@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width", initial-scale="1.0">
+    <!--helps make the website responsive-->
+    <title>CARS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--this is the link of the google font chosen aka fonts.google.com(poppins)!! Please see luna if you want the font to change!!!-->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="inventory.html">INVENTORY</a></li>
+                    <li><a href="ds.html">DEALERSHIPS</a></li>
+                    <li><a href="cars.html">SEARCH</a></li>
+                </ul>
+            </div>
+        </nav>
+    <div class = "sub-header">
+        <h1 style="text-align: center; color: rgb(114, 142, 167);">About Us</h1>
+    </div>
+    <div class = "sub-header h1">
+        <p> Welcome to our car page!
+        </p>
+    </div>
+    <div class="bottom"></div>
+
+</section>
+      <!-- Begin Page Content-->
+
+      <!DOCTYPE html>
+      <html>
+      <head>
+          <title>Become A Subscriber Today</title>
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      </head>
+      <body>
+          <h1>Enter Your Initials</h1>
+          <form id="initials-form">
+              <label for="initials-input">Initials:</label>
+              <input type="text" id="initials-input" name="initials">
+              <button type="submit">Submit</button>
+          </form>
+          <p id="message"></p>
+      </body>
+      </html>
+
+<script>
+    $(document).ready(function() {
+	$("#initials-form").submit(function(event) {
+		// Prevent the default form submission behavior
+		event.preventDefault();
+
+		// Get the user's initials from the input field
+		var initials = $("#initials-input").val();
+
+		// Send an AJAX POST request to the server to validate the initials
+		$.ajax({
+			url: "validate_initials.py",
+			method: "POST",
+			data: { initials: initials },
+			success: function(response) {
+				// Display the validation message returned by the server
+				$("#message").text(response);
+			}
+		});
+	});
+});
+</script>
+
