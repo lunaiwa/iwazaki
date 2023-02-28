@@ -1,7 +1,7 @@
 ---
 keywords: fastai
 description: A post that is part of my review ticket that is dedicated to my outline/write-up of materials needed for College Board
-title: Project Approval
+title: College Board Write-Up
 toc: true
 comments: true
 categories: [APCSP Requirements]
@@ -66,6 +66,13 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>My program works to help users input their names into our database. By inputting their names into the database they are able to show their initials onto the website to show they are part of the subscribers list. By clicking onto the text box users will only be able to insert The first and last initial of your name. Due to the formatting of the text box users will only be allowed to use this format or else there will be a warning screen given to the user's input. The users then can click the input button and this adds their names into the database.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Purpose: Allows users to recive emails from our company about new information inputed into our website</p>
 
 </div>
@@ -101,6 +108,13 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>The user inputs their information into the text box/form and when the button is clicked their data is automatically input into the database. Their information is carried from the database into the table in the website. Their initials are then displayed onto the website's table. The initial information in the text box will only allow initials to be input into the table, this is a measure to make sure that the user's information will not be as revealed. The text box also has restrictions which only allows the user to input letters and the "." so then there won't be any numbers input into the "subscriber's initials" table.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>First Segment: Show the user emails in the database</p>
 
 </div>
@@ -123,6 +137,13 @@ layout: notebook
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Row 3 - Managing Complexity:</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Each of the user information is sorted well,</p>
 
 </div>
 </div>

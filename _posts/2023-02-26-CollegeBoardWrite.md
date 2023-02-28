@@ -67,7 +67,14 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The user data is input into the database using the list read_user().</p>
+<p>img 2</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The user data is input into the database using the list read_user(). When the button is pressed the user input initial will be put into the database and then shown onto the website.</p>
 
 </div>
 </div>
