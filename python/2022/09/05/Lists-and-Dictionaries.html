@@ -1,66 +1,76 @@
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Lists, Dictionaries, Iteration | iwazaki</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Lists, Dictionaries, Iteration" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Data Abstraction using Python Lists [] and Python Dictionaries {}." />
+<meta property="og:description" content="Data Abstraction using Python Lists [] and Python Dictionaries {}." />
+<link rel="canonical" href="https://lunaiwa.github.io/iwazaki/python/2022/09/05/Lists-and-Dictionaries.html" />
+<meta property="og:url" content="https://lunaiwa.github.io/iwazaki/python/2022/09/05/Lists-and-Dictionaries.html" />
+<meta property="og:site_name" content="iwazaki" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-09-05T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Lists, Dictionaries, Iteration" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-05T00:00:00-05:00","datePublished":"2022-09-05T00:00:00-05:00","description":"Data Abstraction using Python Lists [] and Python Dictionaries {}.","headline":"Lists, Dictionaries, Iteration","mainEntityOfPage":{"@type":"WebPage","@id":"https://lunaiwa.github.io/iwazaki/python/2022/09/05/Lists-and-Dictionaries.html"},"url":"https://lunaiwa.github.io/iwazaki/python/2022/09/05/Lists-and-Dictionaries.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/iwazaki/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://lunaiwa.github.io/iwazaki/feed.xml" title="iwazaki" /><link rel="shortcut icon" type="image/x-icon" href="/iwazaki/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Lists, Dictionaries, Iteration</h1><p class="page-description">Data Abstraction using Python Lists [] and Python Dictionaries {}.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-05T00:00:00-05:00" itemprop="datePublished">
-        Sep 5, 2022
-      </time>
-       • <span class="read-time" title="Estimated read time">
-    
-    
-      8 min read
-    
-</span></p>
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
 
-    
-      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
-      
-        <a class="category-tags-link" href="/iwazaki/categories/#python">python</a>
-        
-      
-      </p>
-    
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
 
-    
-      
-        <div class="pb-5 d-flex flex-justify-center">
-          <div class="px-2">
+  <div class="wrapper"><a class="site-title" rel="author" href="/iwazaki/">iwazaki</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
 
-    <a href="https://github.com/lunaiwa/iwazaki/tree/master/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb" role="button" target="_blank">
-<img class="notebook-badge-image" src="/iwazaki/assets/badges/github.svg" alt="View On GitHub">
-    </a>
-</div>
-
-          <div class="px-2">
-    <a href="https://mybinder.org/v2/gh/lunaiwa/iwazaki/master?filepath=_notebooks%2F2022-09-05-Lists-and-Dictionaries.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/iwazaki/assets/badges/binder.svg" alt="Open In Binder"/>
-    </a>
-</div>
-
-          <div class="px-2">
-    <a href="https://colab.research.google.com/github/lunaiwa/iwazaki/blob/master/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/iwazaki/assets/badges/colab.svg" alt="Open In Colab"/>
-    </a>
-</div>
-          <div class="px-2">
-  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Flunaiwa%2Fiwazaki%2Fblob%2Fmaster%2F_notebooks%2F2022-09-05-Lists-and-Dictionaries.ipynb" target="_blank">
-      <img class="notebook-badge-image" src="/iwazaki/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
-  </a>
-</div>
-
-        </div>
-      </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h3"><a href="#Variable">Variable </a></li>
-<li class="toc-entry toc-h3"><a href="#Dictionaires">Dictionaires </a></li>
-<li class="toc-entry toc-h3"><a href="#Loop-Output">Loop Output </a></li>
-<li class="toc-entry toc-h3"><a href="#Loops-and-Index">Loops and Index </a></li>
-<li class="toc-entry toc-h3"><a href="#While-Loop-Output">While Loop Output </a></li>
-<li class="toc-entry toc-h3"><a href="#Recursive-Loop">Recursive Loop </a></li>
-<li class="toc-entry toc-h3"><a href="#Add-Search-Delete">Add-Search-Delete </a></li>
-<li class="toc-entry toc-h3"><a href="#Quiz">Quiz </a></li>
-</ul><!--
+        <div class="trigger"><a class="page-link" href="/iwazaki/_pages/API.html">API</a><a class="page-link" href="/iwazaki/about/">About Me</a><a class="page-link" href="/iwazaki/issues/">Week Schedule</a><a class="page-link" href="/iwazaki/search/">Search</a><a class="page-link" href="/iwazaki/issues/">sub</a><a class="page-link" href="/iwazaki/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
@@ -69,14 +79,9 @@
 
 <div class="container" id="notebook-container">
         
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Variable">
-<a class="anchor" href="#Variable" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variable<a class="anchor-link" href="#Variable"> </a>
-</h3>
-<blockquote>
-<p>Variables have types :string, integer, and float. Lists and Dictionaries is a key type!</p>
+<h3 id="Variable">Variable<a class="anchor-link" href="#Variable"> </a></h3><blockquote><p>Variables have types :string, integer, and float. Lists and Dictionaries is a key type!</p>
 </blockquote>
 
 </div>
@@ -89,39 +94,39 @@
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">"Luna Iwazaki"</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"name"</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Luna Iwazaki&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
 
 <span class="nb">print</span><span class="p">()</span>
 
 <span class="c1"># variable of type integer</span>
 <span class="n">age</span> <span class="o">=</span> <span class="mi">16</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"age"</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">age</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;age&quot;</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">age</span><span class="p">))</span>
 
 <span class="nb">print</span><span class="p">()</span>
 
 <span class="c1"># variable of type float</span>
 <span class="n">score</span> <span class="o">=</span> <span class="mf">3.00</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"score"</span><span class="p">,</span> <span class="n">score</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">score</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;score&quot;</span><span class="p">,</span> <span class="n">score</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">score</span><span class="p">))</span>
 
 <span class="nb">print</span><span class="p">()</span>
 
 <span class="c1"># variable of type list (many values in one variable)</span>
-<span class="n">langs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Python"</span><span class="p">,</span> <span class="s2">"JavaScript"</span><span class="p">,</span> <span class="s2">"Java"</span><span class="p">,</span> <span class="s2">"bash"</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"langs"</span><span class="p">,</span> <span class="n">langs</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">langs</span><span class="p">),</span> <span class="s2">"length"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">langs</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"- langs[3]"</span><span class="p">,</span> <span class="n">langs</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="nb">type</span><span class="p">(</span><span class="n">langs</span><span class="p">[</span><span class="mi">3</span><span class="p">]))</span>
+<span class="n">langs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="s2">&quot;JavaScript&quot;</span><span class="p">,</span> <span class="s2">&quot;Java&quot;</span><span class="p">,</span> <span class="s2">&quot;bash&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;langs&quot;</span><span class="p">,</span> <span class="n">langs</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">langs</span><span class="p">),</span> <span class="s2">&quot;length&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">langs</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- langs[3]&quot;</span><span class="p">,</span> <span class="n">langs</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="nb">type</span><span class="p">(</span><span class="n">langs</span><span class="p">[</span><span class="mi">3</span><span class="p">]))</span>
 
 <span class="nb">print</span><span class="p">()</span>
 
 <span class="c1"># variable of type dictionary (a group of keys and values)</span>
 <span class="n">person</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">"name"</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span>
-    <span class="s2">"age"</span><span class="p">:</span> <span class="n">age</span><span class="p">,</span>
-    <span class="s2">"score"</span><span class="p">:</span> <span class="n">score</span><span class="p">,</span>
-    <span class="s2">"langs"</span><span class="p">:</span> <span class="n">langs</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span>
+    <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="n">age</span><span class="p">,</span>
+    <span class="s2">&quot;score&quot;</span><span class="p">:</span> <span class="n">score</span><span class="p">,</span>
+    <span class="s2">&quot;langs&quot;</span><span class="p">:</span> <span class="n">langs</span>
 <span class="p">}</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"person"</span><span class="p">,</span> <span class="n">person</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">person</span><span class="p">),</span> <span class="s2">"length"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">person</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'- person["name"]'</span><span class="p">,</span> <span class="n">person</span><span class="p">[</span><span class="s2">"name"</span><span class="p">],</span> <span class="nb">type</span><span class="p">(</span><span class="n">person</span><span class="p">[</span><span class="s2">"name"</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;person&quot;</span><span class="p">,</span> <span class="n">person</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">person</span><span class="p">),</span> <span class="s2">&quot;length&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">person</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;- person[&quot;name&quot;]&#39;</span><span class="p">,</span> <span class="n">person</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">],</span> <span class="nb">type</span><span class="p">(</span><span class="n">person</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">]))</span>
 </pre></div>
 
     </div>
@@ -134,17 +139,17 @@
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>name Luna Iwazaki &lt;class 'str'&gt;
+<pre>name Luna Iwazaki &lt;class &#39;str&#39;&gt;
 
-age 16 &lt;class 'int'&gt;
+age 16 &lt;class &#39;int&#39;&gt;
 
-score 3.0 &lt;class 'float'&gt;
+score 3.0 &lt;class &#39;float&#39;&gt;
 
-langs ['Python', 'JavaScript', 'Java', 'bash'] &lt;class 'list'&gt; length 4
-- langs[3] bash &lt;class 'str'&gt;
+langs [&#39;Python&#39;, &#39;JavaScript&#39;, &#39;Java&#39;, &#39;bash&#39;] &lt;class &#39;list&#39;&gt; length 4
+- langs[3] bash &lt;class &#39;str&#39;&gt;
 
-person {'name': 'Luna Iwazaki', 'age': 16, 'score': 3.0, 'langs': ['Python', 'JavaScript', 'Java', 'bash']} &lt;class 'dict'&gt; length 4
-- person["name"] Luna Iwazaki &lt;class 'str'&gt;
+person {&#39;name&#39;: &#39;Luna Iwazaki&#39;, &#39;age&#39;: 16, &#39;score&#39;: 3.0, &#39;langs&#39;: [&#39;Python&#39;, &#39;JavaScript&#39;, &#39;Java&#39;, &#39;bash&#39;]} &lt;class &#39;dict&#39;&gt; length 4
+- person[&#34;name&#34;] Luna Iwazaki &lt;class &#39;str&#39;&gt;
 </pre>
 </div>
 </div>
@@ -155,12 +160,9 @@ person {'name': 'Luna Iwazaki', 'age': 16, 'score': 3.0, 'langs': ['Python', 'Ja
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Dictionaires">
-<a class="anchor" href="#Dictionaires" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dictionaires<a class="anchor-link" href="#Dictionaires"> </a>
-</h3>
+<h3 id="Dictionaires">Dictionaires<a class="anchor-link" href="#Dictionaires"> </a></h3>
 </div>
 </div>
 </div>
@@ -175,23 +177,23 @@ person {'name': 'Luna Iwazaki', 'age': 16, 'score': 3.0, 'langs': ['Python', 'Ja
 
 <span class="c1"># Append to List a Dictionary of key/values </span>
 <span class="n">infoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Luna"</span><span class="p">,</span>
-    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Iwazaki"</span><span class="p">,</span>
-    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"November 19"</span><span class="p">,</span>
-    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
-    <span class="s2">"Fav_Game"</span><span class="p">:</span> <span class="s2">"Snake"</span><span class="p">,</span>
-    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"lunaiwazaki@gmail.com"</span><span class="p">,</span>
-    <span class="s2">"Shapes"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"heart"</span><span class="p">,</span> <span class="s2">"circle"</span><span class="p">,</span> <span class="s2">"star"</span><span class="p">]</span>
+    <span class="s2">&quot;FirstName&quot;</span><span class="p">:</span> <span class="s2">&quot;Luna&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;LastName&quot;</span><span class="p">:</span> <span class="s2">&quot;Iwazaki&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;DOB&quot;</span><span class="p">:</span> <span class="s2">&quot;November 19&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Residence&quot;</span><span class="p">:</span> <span class="s2">&quot;San Diego&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Fav_Game&quot;</span><span class="p">:</span> <span class="s2">&quot;Snake&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Email&quot;</span><span class="p">:</span> <span class="s2">&quot;lunaiwazaki@gmail.com&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Shapes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;heart&quot;</span><span class="p">,</span> <span class="s2">&quot;circle&quot;</span><span class="p">,</span> <span class="s2">&quot;star&quot;</span><span class="p">]</span>
 <span class="p">})</span>
 
 <span class="n">infoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Taiyo"</span><span class="p">,</span>
-    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Iwazaki"</span><span class="p">,</span>
-    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"Novemebr 19"</span><span class="p">,</span>
-    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
-    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"taiyoiwazaki@gmail.com"</span><span class="p">,</span>
-    <span class="s2">"Fav_Game"</span><span class="p">:</span> <span class="s2">"Valorent"</span><span class="p">,</span>
-    <span class="s2">"Shapes"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"square"</span><span class="p">,</span> <span class="s2">"circle"</span><span class="p">,</span> <span class="s2">"triangle"</span><span class="p">]</span>
+    <span class="s2">&quot;FirstName&quot;</span><span class="p">:</span> <span class="s2">&quot;Taiyo&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;LastName&quot;</span><span class="p">:</span> <span class="s2">&quot;Iwazaki&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;DOB&quot;</span><span class="p">:</span> <span class="s2">&quot;Novemebr 19&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Residence&quot;</span><span class="p">:</span> <span class="s2">&quot;San Diego&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Email&quot;</span><span class="p">:</span> <span class="s2">&quot;taiyoiwazaki@gmail.com&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Fav_Game&quot;</span><span class="p">:</span> <span class="s2">&quot;Valorent&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Shapes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;square&quot;</span><span class="p">,</span> <span class="s2">&quot;circle&quot;</span><span class="p">,</span> <span class="s2">&quot;triangle&quot;</span><span class="p">]</span>
 <span class="p">})</span>
 
 <span class="c1"># Print the data structure</span>
@@ -208,7 +210,7 @@ person {'name': 'Luna Iwazaki', 'age': 16, 'score': 3.0, 'langs': ['Python', 'Ja
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[{'FirstName': 'Luna', 'LastName': 'Iwazaki', 'DOB': 'November 19', 'Residence': 'San Diego', 'Fav_Game': 'Snake', 'Email': 'lunaiwazaki@gmail.com', 'Shapes': ['heart', 'circle', 'star']}, {'FirstName': 'Taiyo', 'LastName': 'Iwazaki', 'DOB': 'Novemebr 19', 'Residence': 'San Diego', 'Email': 'taiyoiwazaki@gmail.com', 'Fav_Game': 'Valorent', 'Shapes': ['square', 'circle', 'triangle']}]
+<pre>[{&#39;FirstName&#39;: &#39;Luna&#39;, &#39;LastName&#39;: &#39;Iwazaki&#39;, &#39;DOB&#39;: &#39;November 19&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;Fav_Game&#39;: &#39;Snake&#39;, &#39;Email&#39;: &#39;lunaiwazaki@gmail.com&#39;, &#39;Shapes&#39;: [&#39;heart&#39;, &#39;circle&#39;, &#39;star&#39;]}, {&#39;FirstName&#39;: &#39;Taiyo&#39;, &#39;LastName&#39;: &#39;Iwazaki&#39;, &#39;DOB&#39;: &#39;Novemebr 19&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;Email&#39;: &#39;taiyoiwazaki@gmail.com&#39;, &#39;Fav_Game&#39;: &#39;Valorent&#39;, &#39;Shapes&#39;: [&#39;square&#39;, &#39;circle&#39;, &#39;triangle&#39;]}]
 </pre>
 </div>
 </div>
@@ -219,14 +221,9 @@ person {'name': 'Luna Iwazaki', 'age': 16, 'score': 3.0, 'langs': ['Python', 'Ja
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Loop-Output">
-<a class="anchor" href="#Loop-Output" aria-hidden="true"><span class="octicon octicon-link"></span></a>Loop Output<a class="anchor-link" href="#Loop-Output"> </a>
-</h3>
-<blockquote>
-<p>List printing</p>
+<h3 id="Loop-Output">Loop Output<a class="anchor-link" href="#Loop-Output"> </a></h3><blockquote><p>List printing</p>
 </blockquote>
 
 </div>
@@ -240,7 +237,7 @@ person {'name': 'Luna Iwazaki', 'age': 16, 'score': 3.0, 'langs': ['Python', 'Ja
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">for_loop</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"For loop output</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;For loop output</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">infoDb</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
 
@@ -259,8 +256,8 @@ person {'name': 'Luna Iwazaki', 'age': 16, 'score': 3.0, 'langs': ['Python', 'Ja
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>For loop output
 
-{'FirstName': 'Luna', 'LastName': 'Iwazaki', 'DOB': 'November 19', 'Residence': 'San Diego', 'Fav_Game': 'Snake', 'Email': 'lunaiwazaki@gmail.com', 'Shapes': ['heart', 'circle', 'star']}
-{'FirstName': 'Taiyo', 'LastName': 'Iwazaki', 'DOB': 'Novemebr 19', 'Residence': 'San Diego', 'Email': 'taiyoiwazaki@gmail.com', 'Fav_Game': 'Valorent', 'Shapes': ['square', 'circle', 'triangle']}
+{&#39;FirstName&#39;: &#39;Luna&#39;, &#39;LastName&#39;: &#39;Iwazaki&#39;, &#39;DOB&#39;: &#39;November 19&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;Fav_Game&#39;: &#39;Snake&#39;, &#39;Email&#39;: &#39;lunaiwazaki@gmail.com&#39;, &#39;Shapes&#39;: [&#39;heart&#39;, &#39;circle&#39;, &#39;star&#39;]}
+{&#39;FirstName&#39;: &#39;Taiyo&#39;, &#39;LastName&#39;: &#39;Iwazaki&#39;, &#39;DOB&#39;: &#39;Novemebr 19&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;Email&#39;: &#39;taiyoiwazaki@gmail.com&#39;, &#39;Fav_Game&#39;: &#39;Valorent&#39;, &#39;Shapes&#39;: [&#39;square&#39;, &#39;circle&#39;, &#39;triangle&#39;]}
 </pre>
 </div>
 </div>
@@ -271,12 +268,9 @@ person {'name': 'Luna Iwazaki', 'age': 16, 'score': 3.0, 'langs': ['Python', 'Ja
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Loops-and-Index">
-<a class="anchor" href="#Loops-and-Index" aria-hidden="true"><span class="octicon octicon-link"></span></a>Loops and Index<a class="anchor-link" href="#Loops-and-Index"> </a>
-</h3>
+<h3 id="Loops-and-Index">Loops and Index<a class="anchor-link" href="#Loops-and-Index"> </a></h3>
 </div>
 </div>
 </div>
@@ -288,18 +282,18 @@ person {'name': 'Luna Iwazaki', 'age': 16, 'score': 3.0, 'langs': ['Python', 'Ja
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">print_data</span><span class="p">(</span><span class="n">d_rec</span><span class="p">):</span> <span class="c1">#formatting</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"FirstName"</span><span class="p">],</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"LastName"</span><span class="p">])</span>  <span class="c1"># using comma puts space between values</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Residence:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Residence"</span><span class="p">])</span> <span class="c1"># \t is a tab indent</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Birth Day:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"DOB"</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Game"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Fav_Game"</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Email:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Email"</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Shapes: "</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>  <span class="c1"># end="" make sure no return occurs</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"Shapes"</span><span class="p">]))</span>  <span class="c1"># join allows printing a string list with separator</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;FirstName&quot;</span><span class="p">],</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;LastName&quot;</span><span class="p">])</span>  <span class="c1"># using comma puts space between values</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Residence:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Residence&quot;</span><span class="p">])</span> <span class="c1"># \t is a tab indent</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Birth Day:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;DOB&quot;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Game&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Fav_Game&quot;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Email:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Email&quot;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Shapes: &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>  <span class="c1"># end=&quot;&quot; make sure no return occurs</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Shapes&quot;</span><span class="p">]))</span>  <span class="c1"># join allows printing a string list with separator</span>
     <span class="nb">print</span><span class="p">()</span>
 
 <span class="c1"># for loop iterates on length of InfoDb</span>
 <span class="k">def</span> <span class="nf">for_loop</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"For loop with index output</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;For loop with index output</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">infoDb</span><span class="p">)</span> <span class="c1">#figures out the length of the list infoDb (which is 2 because there are 2 dictionaries in the list)</span>
     <span class="n">ran</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="n">length</span><span class="p">)</span> <span class="c1">#defines ran as the range of the length. (this is 0 and 1 because the length is 2)</span>
     <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="n">ran</span><span class="p">):</span> <span class="c1">#index is 0 and 1 so it takes the indexes of infoDb. 0 would be the first dictionary and 1 would be the second. reversed prints them as 1 0 instead of 0 1</span>
@@ -344,12 +338,9 @@ Luna Iwazaki
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="While-Loop-Output">
-<a class="anchor" href="#While-Loop-Output" aria-hidden="true"><span class="octicon octicon-link"></span></a>While Loop Output<a class="anchor-link" href="#While-Loop-Output"> </a>
-</h3>
+<h3 id="While-Loop-Output">While Loop Output<a class="anchor-link" href="#While-Loop-Output"> </a></h3>
 </div>
 </div>
 </div>
@@ -361,7 +352,7 @@ Luna Iwazaki
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">while_loop</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"While loop output</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;While loop output</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> 
     <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">infoDb</span><span class="p">):</span> <span class="c1">#length is 2 so while i is less than, it will keep printing</span>
         <span class="n">record</span> <span class="o">=</span> <span class="n">infoDb</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="c1">#defines the record as the index of the list</span>
@@ -408,12 +399,9 @@ Taiyo Iwazaki
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Recursive-Loop">
-<a class="anchor" href="#Recursive-Loop" aria-hidden="true"><span class="octicon octicon-link"></span></a>Recursive Loop<a class="anchor-link" href="#Recursive-Loop"> </a>
-</h3>
+<h3 id="Recursive-Loop">Recursive Loop<a class="anchor-link" href="#Recursive-Loop"> </a></h3>
 </div>
 </div>
 </div>
@@ -431,7 +419,7 @@ Taiyo Iwazaki
         <span class="n">recursive_loop</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="c1">#adds 1 to the original index and returns until i is no longer &lt;2</span>
     <span class="k">return</span>
     
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Recursive loop output</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Recursive loop output</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
 <span class="n">recursive_loop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
@@ -472,12 +460,9 @@ Taiyo Iwazaki
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Add-Search-Delete">
-<a class="anchor" href="#Add-Search-Delete" aria-hidden="true"><span class="octicon octicon-link"></span></a>Add-Search-Delete<a class="anchor-link" href="#Add-Search-Delete"> </a>
-</h3>
+<h3 id="Add-Search-Delete">Add-Search-Delete<a class="anchor-link" href="#Add-Search-Delete"> </a></h3>
 </div>
 </div>
 </div>
@@ -489,85 +474,85 @@ Taiyo Iwazaki
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">infoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Luna"</span><span class="p">,</span>
-    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Iwazaki"</span><span class="p">,</span>
-    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"Novemeber 19"</span><span class="p">,</span>
-    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
-    <span class="s2">"Fav_Game"</span><span class="p">:</span> <span class="s2">"Snake"</span><span class="p">,</span>
-    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"lunaiwazaki@gmail.com"</span><span class="p">,</span>
+    <span class="s2">&quot;FirstName&quot;</span><span class="p">:</span> <span class="s2">&quot;Luna&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;LastName&quot;</span><span class="p">:</span> <span class="s2">&quot;Iwazaki&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;DOB&quot;</span><span class="p">:</span> <span class="s2">&quot;Novemeber 19&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Residence&quot;</span><span class="p">:</span> <span class="s2">&quot;San Diego&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Fav_Game&quot;</span><span class="p">:</span> <span class="s2">&quot;Snake&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Email&quot;</span><span class="p">:</span> <span class="s2">&quot;lunaiwazaki@gmail.com&quot;</span><span class="p">,</span>
 <span class="p">})</span>
 
 <span class="n">infoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Taiyo"</span><span class="p">,</span>
-    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Iwazaki"</span><span class="p">,</span>
-    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"Novemeber 19"</span><span class="p">,</span>
-    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
-    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"taiyoiwazaki@gmail.com"</span><span class="p">,</span>
-    <span class="s2">"Fav_Game"</span><span class="p">:</span> <span class="s2">"Valorent"</span><span class="p">,</span>
+    <span class="s2">&quot;FirstName&quot;</span><span class="p">:</span> <span class="s2">&quot;Taiyo&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;LastName&quot;</span><span class="p">:</span> <span class="s2">&quot;Iwazaki&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;DOB&quot;</span><span class="p">:</span> <span class="s2">&quot;Novemeber 19&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Residence&quot;</span><span class="p">:</span> <span class="s2">&quot;San Diego&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Email&quot;</span><span class="p">:</span> <span class="s2">&quot;taiyoiwazaki@gmail.com&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Fav_Game&quot;</span><span class="p">:</span> <span class="s2">&quot;Valorent&quot;</span><span class="p">,</span>
 <span class="p">})</span>
 
 <span class="k">def</span> <span class="nf">print_data2</span><span class="p">(</span><span class="n">d_rec</span><span class="p">):</span> <span class="c1">#formatting</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"FirstName"</span><span class="p">],</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"LastName"</span><span class="p">])</span>  <span class="c1"># using comma puts space between values</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Residence:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Residence"</span><span class="p">])</span> <span class="c1"># \t is a tab indent</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Birth Day:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"DOB"</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Favorite Game:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Fav_Game"</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Email:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Email"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;FirstName&quot;</span><span class="p">],</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;LastName&quot;</span><span class="p">])</span>  <span class="c1"># using comma puts space between values</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Residence:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Residence&quot;</span><span class="p">])</span> <span class="c1"># \t is a tab indent</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Birth Day:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;DOB&quot;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Favorite Game:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Fav_Game&quot;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Email:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Email&quot;</span><span class="p">])</span>
     <span class="nb">print</span><span class="p">()</span>
 
 <span class="k">def</span> <span class="nf">data_entry</span><span class="p">():</span> <span class="c1">#defining the function that asks for user input</span>
-    <span class="n">Firstname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What is your firstname?"</span><span class="p">)</span>
-    <span class="n">Lastname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What is your lastname"</span><span class="p">)</span>
-    <span class="n">DOB</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"When is your birthday"</span><span class="p">)</span>
-    <span class="n">Email</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What is your Email"</span><span class="p">)</span>
-    <span class="n">Movie</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What is your favorite game?"</span><span class="p">)</span>
-    <span class="n">Residence</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Where do you live?"</span><span class="p">)</span>
+    <span class="n">Firstname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What is your firstname?&quot;</span><span class="p">)</span>
+    <span class="n">Lastname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What is your lastname&quot;</span><span class="p">)</span>
+    <span class="n">DOB</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;When is your birthday&quot;</span><span class="p">)</span>
+    <span class="n">Email</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What is your Email&quot;</span><span class="p">)</span>
+    <span class="n">Movie</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What is your favorite game?&quot;</span><span class="p">)</span>
+    <span class="n">Residence</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Where do you live?&quot;</span><span class="p">)</span>
 
     <span class="n">infoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span> <span class="c1">#appends the user input to the dictionary</span>
-        <span class="s2">"FirstName"</span><span class="p">:</span> <span class="n">Firstname</span><span class="p">,</span>
-        <span class="s2">"LastName"</span><span class="p">:</span> <span class="n">Lastname</span><span class="p">,</span>
-        <span class="s2">"DOB"</span><span class="p">:</span> <span class="n">DOB</span><span class="p">,</span>
-        <span class="s2">"Email"</span><span class="p">:</span> <span class="n">Email</span><span class="p">,</span>
-        <span class="s2">"Residence"</span><span class="p">:</span> <span class="n">Residence</span><span class="p">,</span>
-        <span class="s2">"Fav_Game"</span><span class="p">:</span> <span class="n">Movie</span><span class="p">,</span>
+        <span class="s2">&quot;FirstName&quot;</span><span class="p">:</span> <span class="n">Firstname</span><span class="p">,</span>
+        <span class="s2">&quot;LastName&quot;</span><span class="p">:</span> <span class="n">Lastname</span><span class="p">,</span>
+        <span class="s2">&quot;DOB&quot;</span><span class="p">:</span> <span class="n">DOB</span><span class="p">,</span>
+        <span class="s2">&quot;Email&quot;</span><span class="p">:</span> <span class="n">Email</span><span class="p">,</span>
+        <span class="s2">&quot;Residence&quot;</span><span class="p">:</span> <span class="n">Residence</span><span class="p">,</span>
+        <span class="s2">&quot;Fav_Game&quot;</span><span class="p">:</span> <span class="n">Movie</span><span class="p">,</span>
    
     <span class="p">})</span>
 
 <span class="k">def</span> <span class="nf">search_data</span><span class="p">(</span><span class="n">firstname</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">infoDb</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">record</span><span class="p">[</span><span class="s2">"FirstName"</span><span class="p">]</span> <span class="o">==</span> <span class="n">firstname</span><span class="p">:</span> <span class="c1">#compares the already existing name to the name inputted with the firstname variable</span>
+        <span class="k">if</span> <span class="n">record</span><span class="p">[</span><span class="s2">&quot;FirstName&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">firstname</span><span class="p">:</span> <span class="c1">#compares the already existing name to the name inputted with the firstname variable</span>
             <span class="k">return</span> <span class="n">record</span>
 
     <span class="k">return</span> <span class="n">NULL</span>
 
 <span class="k">def</span> <span class="nf">data_delete</span><span class="p">(</span><span class="n">firstname</span><span class="p">):</span>
     <span class="n">record</span> <span class="o">=</span> <span class="n">search_data</span><span class="p">(</span><span class="n">firstname</span><span class="p">)</span> <span class="c1">#defines record as the name inputted with the search function</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">record</span> <span class="o">!=</span> <span class="n">NULL</span><span class="p">):</span> <span class="c1">#if the record doesn't equal null (does it exist?) then the next line removes it</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">record</span> <span class="o">!=</span> <span class="n">NULL</span><span class="p">):</span> <span class="c1">#if the record doesn&#39;t equal null (does it exist?) then the next line removes it</span>
         <span class="n">infoDb</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">firstname</span><span class="p">,</span> <span class="s2">"has been deleted!"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">firstname</span><span class="p">,</span> <span class="s2">&quot;has been deleted!&quot;</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Record not found!"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Record not found!&quot;</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
     <span class="n">Continue</span> <span class="o">=</span> <span class="kc">True</span> <span class="c1">#defining continue as true</span>
     <span class="k">while</span> <span class="n">Continue</span><span class="p">:</span>
-        <span class="n">lol</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What would you like to do (add/search/delete, type no if you want to exit)?"</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">lol</span> <span class="o">==</span> <span class="s2">"no"</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">"Come back again!"</span><span class="p">)</span>
+        <span class="n">lol</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What would you like to do (add/search/delete, type no if you want to exit)?&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">lol</span> <span class="o">==</span> <span class="s2">&quot;no&quot;</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Come back again!&quot;</span><span class="p">)</span>
             <span class="n">Continue</span> <span class="o">=</span> <span class="kc">False</span>
-        <span class="k">elif</span> <span class="n">lol</span> <span class="o">==</span> <span class="s2">"add"</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">lol</span> <span class="o">==</span> <span class="s2">&quot;add&quot;</span><span class="p">:</span>
             <span class="n">data_entry</span><span class="p">()</span>
-        <span class="k">elif</span> <span class="n">lol</span> <span class="o">==</span> <span class="s2">"search"</span><span class="p">:</span>
-            <span class="n">firstname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Who do you want to search (firstname)?"</span><span class="p">)</span>
-            <span class="n">record</span> <span class="o">=</span> <span class="n">search_data</span><span class="p">(</span><span class="n">firstname</span><span class="p">)</span> <span class="c1">#defines record as the input "name" and runs it through the search function</span>
+        <span class="k">elif</span> <span class="n">lol</span> <span class="o">==</span> <span class="s2">&quot;search&quot;</span><span class="p">:</span>
+            <span class="n">firstname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Who do you want to search (firstname)?&quot;</span><span class="p">)</span>
+            <span class="n">record</span> <span class="o">=</span> <span class="n">search_data</span><span class="p">(</span><span class="n">firstname</span><span class="p">)</span> <span class="c1">#defines record as the input &quot;name&quot; and runs it through the search function</span>
             <span class="n">print_data2</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
-        <span class="k">elif</span> <span class="n">lol</span> <span class="o">==</span> <span class="s2">"delete"</span><span class="p">:</span>
-            <span class="n">firstname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Who do you want to delete(firstname)"</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">lol</span> <span class="o">==</span> <span class="s2">&quot;delete&quot;</span><span class="p">:</span>
+            <span class="n">firstname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Who do you want to delete(firstname)&quot;</span><span class="p">)</span>
             <span class="n">data_delete</span><span class="p">(</span><span class="n">firstname</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">"Invalid input. Please try again"</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid input. Please try again&quot;</span><span class="p">)</span>
 
     <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">infoDb</span><span class="p">)</span> <span class="c1">#defines length as the number of records</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Total Number of Records: "</span><span class="p">,</span> <span class="n">length</span><span class="p">)</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total Number of Records: &quot;</span><span class="p">,</span> <span class="n">length</span><span class="p">)</span> 
     <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">infoDb</span><span class="p">:</span>
             <span class="n">print_data2</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
  
@@ -588,23 +573,23 @@ Taiyo Iwazaki
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
 <span class="ansi-green-intense-fg ansi-bold">/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb Cell 15</span> in <span class="ansi-cyan-fg">&lt;cell line: 1&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> infoDb.append({
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span>     "FirstName": "Luna",
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span>     "LastName": "Iwazaki",
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span>     "DOB": "Novemeber 19",
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span>     "Residence": "San Diego",
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span>     "Fav_Game": "Snake",
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span>     "Email": "lunaiwazaki@gmail.com",
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> })
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=9'&gt;10&lt;/a&gt;</span> infoDb.append({
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span>     "FirstName": "Taiyo",
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=11'&gt;12&lt;/a&gt;</span>     "LastName": "Iwazaki",
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=0&#39;&gt;1&lt;/a&gt;</span> infoDb.append({
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=1&#39;&gt;2&lt;/a&gt;</span>     &#34;FirstName&#34;: &#34;Luna&#34;,
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=2&#39;&gt;3&lt;/a&gt;</span>     &#34;LastName&#34;: &#34;Iwazaki&#34;,
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=3&#39;&gt;4&lt;/a&gt;</span>     &#34;DOB&#34;: &#34;Novemeber 19&#34;,
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=4&#39;&gt;5&lt;/a&gt;</span>     &#34;Residence&#34;: &#34;San Diego&#34;,
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=5&#39;&gt;6&lt;/a&gt;</span>     &#34;Fav_Game&#34;: &#34;Snake&#34;,
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=6&#39;&gt;7&lt;/a&gt;</span>     &#34;Email&#34;: &#34;lunaiwazaki@gmail.com&#34;,
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span> })
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=9&#39;&gt;10&lt;/a&gt;</span> infoDb.append({
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=10&#39;&gt;11&lt;/a&gt;</span>     &#34;FirstName&#34;: &#34;Taiyo&#34;,
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=11&#39;&gt;12&lt;/a&gt;</span>     &#34;LastName&#34;: &#34;Iwazaki&#34;,
 <span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=15'&gt;16&lt;/a&gt;</span>     "Fav_Game": "Valorent",
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=16'&gt;17&lt;/a&gt;</span> })
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=18'&gt;19&lt;/a&gt;</span> def print_data2(d_rec): #formatting
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=15&#39;&gt;16&lt;/a&gt;</span>     &#34;Fav_Game&#34;: &#34;Valorent&#34;,
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=16&#39;&gt;17&lt;/a&gt;</span> })
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X20sZmlsZQ%3D%3D?line=18&#39;&gt;19&lt;/a&gt;</span> def print_data2(d_rec): #formatting
 
-<span class="ansi-red-fg">NameError</span>: name 'infoDb' is not defined</pre>
+<span class="ansi-red-fg">NameError</span>: name &#39;infoDb&#39; is not defined</pre>
 </div>
 </div>
 
@@ -614,12 +599,9 @@ Taiyo Iwazaki
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Quiz">
-<a class="anchor" href="#Quiz" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quiz<a class="anchor-link" href="#Quiz"> </a>
-</h3>
+<h3 id="Quiz">Quiz<a class="anchor-link" href="#Quiz"> </a></h3>
 </div>
 </div>
 </div>
@@ -633,39 +615,39 @@ Taiyo Iwazaki
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">questions</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Take this quiz to test your vocab!"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Take this quiz to test your vocab!&quot;</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">question_and_answer</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">answer</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Question: "</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Question: &quot;</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
     <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Answer: "</span> <span class="o">+</span> <span class="n">msg</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Answer: &quot;</span> <span class="o">+</span> <span class="n">msg</span><span class="p">)</span>
     
     <span class="k">if</span> <span class="n">answer</span> <span class="o">==</span> <span class="n">msg</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Correct!"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correct!&quot;</span><span class="p">)</span>
         <span class="k">global</span> <span class="n">correct</span>
         <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span> <span class="p">(</span><span class="s2">"Incorrect!"</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Incorrect!&quot;</span><span class="p">)</span>
         
     <span class="k">return</span> <span class="n">msg</span>
  
-<span class="n">Q1</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"What is the definition of INPUT? </span><span class="se">\t</span><span class="s2"> instructions given to a computer </span><span class="se">\t</span><span class="s2"> computer paper </span><span class="se">\t</span><span class="s2"> paper instructions"</span><span class="p">,</span> <span class="s2">"instructions given to a computer"</span><span class="p">)</span>
-<span class="n">Q2</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"What is a squence? </span><span class="se">\t</span><span class="s2"> a line of code </span><span class="se">\t</span><span class="s2"> several lines of code  </span><span class="se">\t</span><span class="s2"> a button"</span><span class="p">,</span> <span class="s2">"several lines of code"</span><span class="p">)</span>
-<span class="n">Q3</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"What is an output? </span><span class="se">\t</span><span class="s2"> information a computer gives </span><span class="se">\t</span><span class="s2"> a computer tab </span><span class="se">\t</span><span class="s2"> going outside"</span><span class="p">,</span> <span class="s2">"information a computer gives"</span><span class="p">)</span>
-<span class="n">Q4</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"What does a variable do? </span><span class="se">\t</span><span class="s2"> gives variety </span><span class="se">\t</span><span class="s2"> a way to store your paper files </span><span class="se">\t</span><span class="s2"> way to name, store data, and reference data"</span><span class="p">,</span> <span class="s2">"way to name, store data, and reference data"</span><span class="p">)</span>
-<span class="n">Q5</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"What are lists? </span><span class="se">\t</span><span class="s2"> something for the grocery </span><span class="se">\t</span><span class="s2"> the square brackets for grouping and ordering </span><span class="se">\t</span><span class="s2"> a square"</span><span class="p">,</span> <span class="s2">"the square brackets for grouping and ordering"</span><span class="p">)</span>
+<span class="n">Q1</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">&quot;What is the definition of INPUT? </span><span class="se">\t</span><span class="s2"> instructions given to a computer </span><span class="se">\t</span><span class="s2"> computer paper </span><span class="se">\t</span><span class="s2"> paper instructions&quot;</span><span class="p">,</span> <span class="s2">&quot;instructions given to a computer&quot;</span><span class="p">)</span>
+<span class="n">Q2</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">&quot;What is a squence? </span><span class="se">\t</span><span class="s2"> a line of code </span><span class="se">\t</span><span class="s2"> several lines of code  </span><span class="se">\t</span><span class="s2"> a button&quot;</span><span class="p">,</span> <span class="s2">&quot;several lines of code&quot;</span><span class="p">)</span>
+<span class="n">Q3</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">&quot;What is an output? </span><span class="se">\t</span><span class="s2"> information a computer gives </span><span class="se">\t</span><span class="s2"> a computer tab </span><span class="se">\t</span><span class="s2"> going outside&quot;</span><span class="p">,</span> <span class="s2">&quot;information a computer gives&quot;</span><span class="p">)</span>
+<span class="n">Q4</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">&quot;What does a variable do? </span><span class="se">\t</span><span class="s2"> gives variety </span><span class="se">\t</span><span class="s2"> a way to store your paper files </span><span class="se">\t</span><span class="s2"> way to name, store data, and reference data&quot;</span><span class="p">,</span> <span class="s2">&quot;way to name, store data, and reference data&quot;</span><span class="p">)</span>
+<span class="n">Q5</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">&quot;What are lists? </span><span class="se">\t</span><span class="s2"> something for the grocery </span><span class="se">\t</span><span class="s2"> the square brackets for grouping and ordering </span><span class="se">\t</span><span class="s2"> a square&quot;</span><span class="p">,</span> <span class="s2">&quot;the square brackets for grouping and ordering&quot;</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'You scored </span><span class="si">{</span><span class="n">correct</span><span class="si">}</span><span class="s1"> /5 correct answers!'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;You scored </span><span class="si">{</span><span class="n">correct</span><span class="si">}</span><span class="s1"> /5 correct answers!&#39;</span><span class="p">)</span>
     
 <span class="n">Quiz</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">"Question 1"</span><span class="p">:</span> <span class="n">Q1</span><span class="p">,</span>
-    <span class="s2">"Question 2"</span><span class="p">:</span> <span class="n">Q2</span><span class="p">,</span>
-    <span class="s2">"Question 3"</span><span class="p">:</span> <span class="n">Q3</span><span class="p">,</span>
-    <span class="s2">"Question 4"</span><span class="p">:</span> <span class="n">Q4</span><span class="p">,</span>
-    <span class="s2">"Question 5"</span><span class="p">:</span> <span class="n">Q5</span>
+    <span class="s2">&quot;Question 1&quot;</span><span class="p">:</span> <span class="n">Q1</span><span class="p">,</span>
+    <span class="s2">&quot;Question 2&quot;</span><span class="p">:</span> <span class="n">Q2</span><span class="p">,</span>
+    <span class="s2">&quot;Question 3&quot;</span><span class="p">:</span> <span class="n">Q3</span><span class="p">,</span>
+    <span class="s2">&quot;Question 4&quot;</span><span class="p">:</span> <span class="n">Q4</span><span class="p">,</span>
+    <span class="s2">&quot;Question 5&quot;</span><span class="p">:</span> <span class="n">Q5</span>
 <span class="p">}</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Here is a record of your quiz answers:"</span><span class="p">,</span><span class="n">Quiz</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Here is a record of your quiz answers:&quot;</span><span class="p">,</span><span class="n">Quiz</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -694,28 +676,28 @@ Question: What is a squence? 	 a line of code 	 several lines of code  	 a butto
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">KeyboardInterrupt</span>                         Traceback (most recent call last)
 <span class="ansi-green-intense-fg ansi-bold">/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb Cell 17</span> in <span class="ansi-cyan-fg">&lt;cell line: 21&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=17'&gt;18&lt;/a&gt;</span>     return msg
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=19'&gt;20&lt;/a&gt;</span> Q1 = question_and_answer("What is the definition of INPUT? \t instructions given to a computer \t computer paper \t paper instructions", "instructions given to a computer")
-<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=20'&gt;21&lt;/a&gt;</span> Q2 = question_and_answer("What is a squence? \t a line of code \t several lines of code  \t a button", "several lines of code")
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=21'&gt;22&lt;/a&gt;</span> Q3 = question_and_answer("What is an output? \t information a computer gives \t a computer tab \t going outside", "information a computer gives")
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=22'&gt;23&lt;/a&gt;</span> Q4 = question_and_answer("What does a variable do? \t gives variety \t a way to store your paper files \t way to name, store data, and reference data", "way to name, store data, and reference data")
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=17&#39;&gt;18&lt;/a&gt;</span>     return msg
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=19&#39;&gt;20&lt;/a&gt;</span> Q1 = question_and_answer(&#34;What is the definition of INPUT? \t instructions given to a computer \t computer paper \t paper instructions&#34;, &#34;instructions given to a computer&#34;)
+<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=20&#39;&gt;21&lt;/a&gt;</span> Q2 = question_and_answer(&#34;What is a squence? \t a line of code \t several lines of code  \t a button&#34;, &#34;several lines of code&#34;)
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=21&#39;&gt;22&lt;/a&gt;</span> Q3 = question_and_answer(&#34;What is an output? \t information a computer gives \t a computer tab \t going outside&#34;, &#34;information a computer gives&#34;)
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=22&#39;&gt;23&lt;/a&gt;</span> Q4 = question_and_answer(&#34;What does a variable do? \t gives variety \t a way to store your paper files \t way to name, store data, and reference data&#34;, &#34;way to name, store data, and reference data&#34;)
 
 <span class="ansi-green-intense-fg ansi-bold">/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb Cell 17</span> in <span class="ansi-cyan-fg">question_and_answer</span><span class="ansi-blue-fg">(prompt, answer)</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span> def question_and_answer(prompt, answer):
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span>     print("Question: " + prompt)
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span>     msg = input()
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span>     print("Answer: " + msg)
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span>     if answer == msg.lower():
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=5&#39;&gt;6&lt;/a&gt;</span> def question_and_answer(prompt, answer):
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=6&#39;&gt;7&lt;/a&gt;</span>     print(&#34;Question: &#34; + prompt)
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span>     msg = input()
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=8&#39;&gt;9&lt;/a&gt;</span>     print(&#34;Answer: &#34; + msg)
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/sony/iwazaki-1/_notebooks/2022-09-05-Lists-and-Dictionaries.ipynb#X22sZmlsZQ%3D%3D?line=10&#39;&gt;11&lt;/a&gt;</span>     if answer == msg.lower():
 
 File <span class="ansi-green-fg">/Applications/anaconda3/lib/python3.9/site-packages/ipykernel/kernelbase.py:1177</span>, in <span class="ansi-cyan-fg">Kernel.raw_input</span><span class="ansi-blue-fg">(self, prompt)</span>
 <span class="ansi-green-intense-fg ansi-bold">   1173</span> if not self._allow_stdin:
 <span class="ansi-green-intense-fg ansi-bold">   1174</span>     raise StdinNotImplementedError(
-<span class="ansi-green-intense-fg ansi-bold">   1175</span>         "raw_input was called, but this frontend does not support input requests."
+<span class="ansi-green-intense-fg ansi-bold">   1175</span>         &#34;raw_input was called, but this frontend does not support input requests.&#34;
 <span class="ansi-green-intense-fg ansi-bold">   1176</span>     )
 <span class="ansi-green-fg">-&gt; 1177</span> return self._input_request(
 <span class="ansi-green-intense-fg ansi-bold">   1178</span>     str(prompt),
-<span class="ansi-green-intense-fg ansi-bold">   1179</span>     self._parent_ident["shell"],
-<span class="ansi-green-intense-fg ansi-bold">   1180</span>     self.get_parent("shell"),
+<span class="ansi-green-intense-fg ansi-bold">   1179</span>     self._parent_ident[&#34;shell&#34;],
+<span class="ansi-green-intense-fg ansi-bold">   1180</span>     self.get_parent(&#34;shell&#34;),
 <span class="ansi-green-intense-fg ansi-bold">   1181</span>     password=False,
 <span class="ansi-green-intense-fg ansi-bold">   1182</span> )
 
@@ -723,9 +705,9 @@ File <span class="ansi-green-fg">/Applications/anaconda3/lib/python3.9/site-pack
 <span class="ansi-green-intense-fg ansi-bold">   1216</span>             break
 <span class="ansi-green-intense-fg ansi-bold">   1217</span> except KeyboardInterrupt:
 <span class="ansi-green-intense-fg ansi-bold">   1218</span>     # re-raise KeyboardInterrupt, to truncate traceback
-<span class="ansi-green-fg">-&gt; 1219</span>     raise KeyboardInterrupt("Interrupted by user") from None
+<span class="ansi-green-fg">-&gt; 1219</span>     raise KeyboardInterrupt(&#34;Interrupted by user&#34;) from None
 <span class="ansi-green-intense-fg ansi-bold">   1220</span> except Exception:
-<span class="ansi-green-intense-fg ansi-bold">   1221</span>     self.log.warning("Invalid Message:", exc_info=True)
+<span class="ansi-green-intense-fg ansi-bold">   1221</span>     self.log.warning(&#34;Invalid Message:&#34;, exc_info=True)
 
 <span class="ansi-red-fg">KeyboardInterrupt</span>: Interrupted by user</pre>
 </div>
@@ -741,13 +723,54 @@ File <span class="ansi-green-fg">/Applications/anaconda3/lib/python3.9/site-pack
 
 
 
-  </div><!-- from https://github.com/utterance/utterances -->
-<script src="https://utteranc.es/client.js"
-        repo="lunaiwa/iwazaki"
-        issue-term="title"
-        label="blogpost-comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script><a class="u-url" href="/iwazaki/python/2022/09/05/Lists-and-Dictionaries.html" hidden></a>
-</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/iwazaki/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://lunaiwa.github.io/iwazaki/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/iwazaki/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>luna&#39;s artist portfolio</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="” https://github.com/nighthawkcoders “" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/iwazaki/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="” https://twitter.com/NighthawkCoding “" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/iwazaki/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="” https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q “" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/iwazaki/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

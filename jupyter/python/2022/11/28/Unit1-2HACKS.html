@@ -1,68 +1,76 @@
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HACKS 1-2 | iwazaki</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="HACKS 1-2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Review ticket for Unit 3 Sections 1 and 2" />
+<meta property="og:description" content="Review ticket for Unit 3 Sections 1 and 2" />
+<link rel="canonical" href="https://lunaiwa.github.io/iwazaki/jupyter/python/2022/11/28/Unit1-2HACKS.html" />
+<meta property="og:url" content="https://lunaiwa.github.io/iwazaki/jupyter/python/2022/11/28/Unit1-2HACKS.html" />
+<meta property="og:site_name" content="iwazaki" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-11-28T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HACKS 1-2" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-28T00:00:00-06:00","datePublished":"2022-11-28T00:00:00-06:00","description":"Review ticket for Unit 3 Sections 1 and 2","headline":"HACKS 1-2","mainEntityOfPage":{"@type":"WebPage","@id":"https://lunaiwa.github.io/iwazaki/jupyter/python/2022/11/28/Unit1-2HACKS.html"},"url":"https://lunaiwa.github.io/iwazaki/jupyter/python/2022/11/28/Unit1-2HACKS.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/iwazaki/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://lunaiwa.github.io/iwazaki/feed.xml" title="iwazaki" /><link rel="shortcut icon" type="image/x-icon" href="/iwazaki/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">HACKS 1-2</h1><p class="page-description">Review ticket for Unit 3 Sections 1 and 2</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-11-28T00:00:00-06:00" itemprop="datePublished">
-        Nov 28, 2022
-      </time>
-       • <span class="read-time" title="Estimated read time">
-    
-    
-      3 min read
-    
-</span></p>
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
 
-    
-      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
-      
-        <a class="category-tags-link" href="/iwazaki/categories/#jupyter">jupyter</a>
-        &nbsp;
-      
-        <a class="category-tags-link" href="/iwazaki/categories/#python">python</a>
-        
-      
-      </p>
-    
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
 
-    
-      
-        <div class="pb-5 d-flex flex-justify-center">
-          <div class="px-2">
+  <div class="wrapper"><a class="site-title" rel="author" href="/iwazaki/">iwazaki</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
 
-    <a href="https://github.com/lunaiwa/iwazaki/tree/master/_notebooks/2022-11-28-Unit1-2HACKS.ipynb" role="button" target="_blank">
-<img class="notebook-badge-image" src="/iwazaki/assets/badges/github.svg" alt="View On GitHub">
-    </a>
-</div>
-
-          <div class="px-2">
-    <a href="https://mybinder.org/v2/gh/lunaiwa/iwazaki/master?filepath=_notebooks%2F2022-11-28-Unit1-2HACKS.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/iwazaki/assets/badges/binder.svg" alt="Open In Binder"/>
-    </a>
-</div>
-
-          <div class="px-2">
-    <a href="https://colab.research.google.com/github/lunaiwa/iwazaki/blob/master/_notebooks/2022-11-28-Unit1-2HACKS.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/iwazaki/assets/badges/colab.svg" alt="Open In Colab"/>
-    </a>
-</div>
-          <div class="px-2">
-  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Flunaiwa%2Fiwazaki%2Fblob%2Fmaster%2F_notebooks%2F2022-11-28-Unit1-2HACKS.ipynb" target="_blank">
-      <img class="notebook-badge-image" src="/iwazaki/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
-  </a>
-</div>
-
-        </div>
-      </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h3"><a href="#Essential-Knowledge-Questions">Essential Knowledge Questions </a></li>
-<li class="toc-entry toc-h3"><a href="#List-Examples">List Examples </a></li>
-<li class="toc-entry toc-h3"><a href="#Create-a-list">Create a list </a></li>
-<li class="toc-entry toc-h3"><a href="#Variables">Variables </a></li>
-<li class="toc-entry toc-h3"><a href="#Number-Input">Number Input </a></li>
-<li class="toc-entry toc-h3"><a href="#Python-Quiz">Python Quiz </a></li>
-<li class="toc-entry toc-h3"><a href="#Simplify-Foods">Simplify Foods </a></li>
-</ul><!--
+        <div class="trigger"><a class="page-link" href="/iwazaki/_pages/API.html">API</a><a class="page-link" href="/iwazaki/about/">About Me</a><a class="page-link" href="/iwazaki/issues/">Week Schedule</a><a class="page-link" href="/iwazaki/search/">Search</a><a class="page-link" href="/iwazaki/issues/">sub</a><a class="page-link" href="/iwazaki/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
@@ -71,211 +79,181 @@
 
 <div class="container" id="notebook-container">
         
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
+<hr />
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Essential-Knowledge-Questions">
-<a class="anchor" href="#Essential-Knowledge-Questions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Essential Knowledge Questions<a class="anchor-link" href="#Essential-Knowledge-Questions"> </a>
-</h3>
+<h3 id="Essential-Knowledge-Questions">Essential Knowledge Questions<a class="anchor-link" href="#Essential-Knowledge-Questions"> </a></h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>1. What is a variable</strong></p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>abstraction inside program that holds value&gt;associated data storage that rep. single value at a time</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>2. What is the best type of data to represent someone's dog's name</strong></p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>variable</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>3. Why is it important to give variables specific names before containing values</strong></p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>call them while coding</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>4. What is the best way to print someone's phone number</strong></p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>string</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>5. Explain what an assignment operator is</strong></p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>the equal sign in coding</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>6. In Collegeboard pseudocode, what symbol is used to assign values to variables?</strong></p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>"&lt;--"</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>7. A variable, x, is initially given a value of 15. Later on, the value for x is changed to 22. If you print x, would the command display 15 or 22?</strong></p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>It will display 22</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>8. What is a list</strong></p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>sequence of elements with each one (element) being a variable</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>9. What is an element</strong></p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>items in a list</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>10. What is an easy way to reference the elements in a list or string</strong></p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>print</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>11. What is an example of string</strong></p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>"Hello World"</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
+<hr />
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="List-Examples">
-<a class="anchor" href="#List-Examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>List Examples<a class="anchor-link" href="#List-Examples"> </a>
-</h3>
+<h3 id="List-Examples">List Examples<a class="anchor-link" href="#List-Examples"> </a></h3>
 </div>
 </div>
 </div>
@@ -286,7 +264,7 @@
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">thanksgivingList</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"cranberry pie"</span><span class="p">,</span> <span class="s2">"casserole"</span><span class="p">,</span> <span class="s2">"mashed potatoes"</span><span class="p">,</span> <span class="s2">"turkey"</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">thanksgivingList</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;cranberry pie&quot;</span><span class="p">,</span> <span class="s2">&quot;casserole&quot;</span><span class="p">,</span> <span class="s2">&quot;mashed potatoes&quot;</span><span class="p">,</span> <span class="s2">&quot;turkey&quot;</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">thanksgivingList</span><span class="p">)</span>
 </pre></div>
 
@@ -300,7 +278,7 @@
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>['cranberry pie', 'casserole', 'mashed potatoes', 'turkey']
+<pre>[&#39;cranberry pie&#39;, &#39;casserole&#39;, &#39;mashed potatoes&#39;, &#39;turkey&#39;]
 </pre>
 </div>
 </div>
@@ -311,19 +289,15 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
+<hr />
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Create-a-list">
-<a class="anchor" href="#Create-a-list" aria-hidden="true"><span class="octicon octicon-link"></span></a>Create a list<a class="anchor-link" href="#Create-a-list"> </a>
-</h3>
+<h3 id="Create-a-list">Create a list<a class="anchor-link" href="#Create-a-list"> </a></h3>
 </div>
 </div>
 </div>
@@ -334,7 +308,7 @@
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">namelist</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Luna"</span><span class="p">,</span> <span class="s2">"Ethan"</span><span class="p">,</span> <span class="s2">"Taiyo"</span><span class="p">,</span> <span class="s2">"Parav"</span><span class="p">,</span> <span class="s2">"Nikhil"</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">namelist</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Luna&quot;</span><span class="p">,</span> <span class="s2">&quot;Ethan&quot;</span><span class="p">,</span> <span class="s2">&quot;Taiyo&quot;</span><span class="p">,</span> <span class="s2">&quot;Parav&quot;</span><span class="p">,</span> <span class="s2">&quot;Nikhil&quot;</span><span class="p">]</span>
 <span class="c1"># printing the end</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">namelist</span><span class="p">)</span>
 </pre></div>
@@ -349,7 +323,7 @@
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>['Luna', 'Ethan', 'Taiyo', 'Parav', 'Nikhil']
+<pre>[&#39;Luna&#39;, &#39;Ethan&#39;, &#39;Taiyo&#39;, &#39;Parav&#39;, &#39;Nikhil&#39;]
 </pre>
 </div>
 </div>
@@ -367,8 +341,8 @@
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">"Luna"</span>
-<span class="n">food</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"grapes"</span><span class="p">,</span> <span class="s2">"apples"</span><span class="p">,</span><span class="s2">"bananas"</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Luna&quot;</span>
+<span class="n">food</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;grapes&quot;</span><span class="p">,</span> <span class="s2">&quot;apples&quot;</span><span class="p">,</span><span class="s2">&quot;bananas&quot;</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">food</span><span class="p">)</span>
 </pre></div>
 
@@ -382,7 +356,7 @@
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Luna ['grapes', 'apples', 'bananas']
+<pre>Luna [&#39;grapes&#39;, &#39;apples&#39;, &#39;bananas&#39;]
 </pre>
 </div>
 </div>
@@ -400,7 +374,7 @@
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">food</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"grapes"</span><span class="p">,</span> <span class="s2">"apples"</span><span class="p">,</span><span class="s2">"bananas"</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">food</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;grapes&quot;</span><span class="p">,</span> <span class="s2">&quot;apples&quot;</span><span class="p">,</span><span class="s2">&quot;bananas&quot;</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">food</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">food</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 </pre></div>
@@ -427,19 +401,15 @@ bananas
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
+<hr />
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Variables">
-<a class="anchor" href="#Variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variables<a class="anchor-link" href="#Variables"> </a>
-</h3>
+<h3 id="Variables">Variables<a class="anchor-link" href="#Variables"> </a></h3>
 </div>
 </div>
 </div>
@@ -450,10 +420,10 @@ bananas
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="s2">"16"</span>
-<span class="n">name</span> <span class="o">=</span> <span class="s2">"Luna"</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="s2">&quot;16&quot;</span>
+<span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Luna&quot;</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s2">" is "</span> <span class="o">+</span> <span class="n">age</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&quot; is &quot;</span> <span class="o">+</span> <span class="n">age</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -477,19 +447,15 @@ bananas
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
+<hr />
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Number-Input">
-<a class="anchor" href="#Number-Input" aria-hidden="true"><span class="octicon octicon-link"></span></a>Number Input<a class="anchor-link" href="#Number-Input"> </a>
-</h3>
+<h3 id="Number-Input">Number Input<a class="anchor-link" href="#Number-Input"> </a></h3>
 </div>
 </div>
 </div>
@@ -500,25 +466,25 @@ bananas
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num1</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Input a number. "</span><span class="p">)</span>
-<span class="n">num2</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Input a number. "</span><span class="p">)</span>
-<span class="n">num3</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Input a number. "</span><span class="p">)</span>
-<span class="n">add</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">"How much would you like to add? "</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num1</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Input a number. &quot;</span><span class="p">)</span>
+<span class="n">num2</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Input a number. &quot;</span><span class="p">)</span>
+<span class="n">num3</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Input a number. &quot;</span><span class="p">)</span>
+<span class="n">add</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How much would you like to add? &quot;</span><span class="p">)</span>
 
 <span class="c1"># Add code</span>
 
 <span class="n">numlist</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">num1</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">num2</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">num3</span><span class="p">)]</span>
 <span class="c1"># shows the original numbers to the user</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Original-&gt;"</span><span class="p">,</span><span class="n">numlist</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Original-&gt;&quot;</span><span class="p">,</span><span class="n">numlist</span><span class="p">)</span>
 <span class="c1"># add the new number to the original input</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Add-&gt;"</span><span class="p">,</span><span class="n">add</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Add-&gt;&quot;</span><span class="p">,</span><span class="n">add</span><span class="p">)</span>
 
 <span class="c1"># code that adds the inputted addend to the other numbers</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">numlist</span><span class="p">)):</span>
     <span class="n">numlist</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span><span class="n">add</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"New-&gt;"</span><span class="p">,</span><span class="n">numlist</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;New-&gt;&quot;</span><span class="p">,</span><span class="n">numlist</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -544,19 +510,15 @@ New-&gt; [14, 24, 34]
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
+<hr />
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Python-Quiz">
-<a class="anchor" href="#Python-Quiz" aria-hidden="true"><span class="octicon octicon-link"></span></a>Python Quiz<a class="anchor-link" href="#Python-Quiz"> </a>
-</h3>
+<h3 id="Python-Quiz">Python Quiz<a class="anchor-link" href="#Python-Quiz"> </a></h3>
 </div>
 </div>
 </div>
@@ -570,39 +532,39 @@ New-&gt; [14, 24, 34]
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">getpass</span><span class="o">,</span> <span class="nn">sys</span>
 
 <span class="k">def</span> <span class="nf">question_with_response</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Question: "</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Question: &quot;</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
     <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">msg</span>
 
 <span class="n">questions</span> <span class="o">=</span> <span class="mi">4</span>
 <span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Hello, '</span> <span class="o">+</span> <span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">" running "</span> <span class="o">+</span> <span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"You will be asked "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" questions."</span><span class="p">)</span>
-<span class="n">question_with_response</span><span class="p">(</span><span class="s2">"Are you ready to take a test?"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello, &#39;</span> <span class="o">+</span> <span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot; running &quot;</span> <span class="o">+</span> <span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You will be asked &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; questions.&quot;</span><span class="p">)</span>
+<span class="n">question_with_response</span><span class="p">(</span><span class="s2">&quot;Are you ready to take a test?&quot;</span><span class="p">)</span>
 
-<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"The purpose of lists and dictionaries are to manage the ____ of a program"</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"complexity"</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
+<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">&quot;The purpose of lists and dictionaries are to manage the ____ of a program&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;complexity&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is correct!&quot;</span><span class="p">)</span>
     <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is incorrect!&quot;</span><span class="p">)</span>
 
-<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"Lists are a form of data ______"</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"abstraction"</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
+<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">&quot;Lists are a form of data ______&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;abstraction&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is correct!&quot;</span><span class="p">)</span>
     <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is incorrect!&quot;</span><span class="p">)</span>
 
-<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"Which brackets are used to assign values to a variable to make a list?"</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"[]"</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
+<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">&quot;Which brackets are used to assign values to a variable to make a list?&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;[]&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is correct!&quot;</span><span class="p">)</span>
     <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is incorrect!&quot;</span><span class="p">)</span> 
 
-<span class="nb">print</span><span class="p">(</span><span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">" you scored "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct</span><span class="p">)</span> <span class="o">+</span><span class="s2">"/"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot; you scored &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct</span><span class="p">)</span> <span class="o">+</span><span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -635,19 +597,15 @@ lunaiwazaki you scored 3/4
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
+<hr />
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Simplify-Foods">
-<a class="anchor" href="#Simplify-Foods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Simplify Foods<a class="anchor-link" href="#Simplify-Foods"> </a>
-</h3>
+<h3 id="Simplify-Foods">Simplify Foods<a class="anchor-link" href="#Simplify-Foods"> </a></h3>
 </div>
 </div>
 </div>
@@ -658,11 +616,11 @@ lunaiwazaki you scored 3/4
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">food1</span> <span class="o">=</span> <span class="s2">"pizza"</span> 
-<span class="n">food2</span> <span class="o">=</span> <span class="s2">"hot dog"</span> 
-<span class="n">food3</span> <span class="o">=</span> <span class="s2">"sushi"</span>
-<span class="n">food4</span> <span class="o">=</span> <span class="s2">"strawberry"</span>
-<span class="n">food5</span> <span class="o">=</span> <span class="s2">"sandwich"</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">food1</span> <span class="o">=</span> <span class="s2">&quot;pizza&quot;</span> 
+<span class="n">food2</span> <span class="o">=</span> <span class="s2">&quot;hot dog&quot;</span> 
+<span class="n">food3</span> <span class="o">=</span> <span class="s2">&quot;sushi&quot;</span>
+<span class="n">food4</span> <span class="o">=</span> <span class="s2">&quot;strawberry&quot;</span>
+<span class="n">food5</span> <span class="o">=</span> <span class="s2">&quot;sandwich&quot;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">food1</span><span class="p">,</span> <span class="n">food2</span><span class="p">,</span> <span class="n">food3</span><span class="p">,</span> <span class="n">food4</span><span class="p">,</span> <span class="n">food5</span><span class="p">)</span>
 </pre></div>
 
@@ -694,7 +652,7 @@ lunaiwazaki you scored 3/4
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">food</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"pizza"</span><span class="p">,</span> <span class="s2">"hotdog"</span><span class="p">,</span> <span class="s2">"sushi"</span><span class="p">,</span> <span class="s2">"strawberry"</span><span class="p">,</span> <span class="s2">"sandwich"</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">food</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;pizza&quot;</span><span class="p">,</span> <span class="s2">&quot;hotdog&quot;</span><span class="p">,</span> <span class="s2">&quot;sushi&quot;</span><span class="p">,</span> <span class="s2">&quot;strawberry&quot;</span><span class="p">,</span> <span class="s2">&quot;sandwich&quot;</span><span class="p">]</span>
 <span class="c1"># change all the foods to share a list and use brackets</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">food</span><span class="p">)</span>
 </pre></div>
@@ -709,7 +667,7 @@ lunaiwazaki you scored 3/4
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>['pizza', 'hotdog', 'sushi', 'strawberry', 'sandwich']
+<pre>[&#39;pizza&#39;, &#39;hotdog&#39;, &#39;sushi&#39;, &#39;strawberry&#39;, &#39;sandwich&#39;]
 </pre>
 </div>
 </div>
@@ -727,7 +685,7 @@ lunaiwazaki you scored 3/4
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">color</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"red"</span><span class="p">,</span> <span class="s2">"orange"</span><span class="p">,</span> <span class="s2">"yellow"</span><span class="p">,</span> <span class="s2">"green"</span><span class="p">,</span> <span class="s2">"blue"</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">color</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="s2">&quot;yellow&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">]</span>
 <span class="c1"># change all foods to color</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
 </pre></div>
@@ -742,7 +700,7 @@ lunaiwazaki you scored 3/4
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>['red', 'orange', 'yellow', 'green', 'blue']
+<pre>[&#39;red&#39;, &#39;orange&#39;, &#39;yellow&#39;, &#39;green&#39;, &#39;blue&#39;]
 </pre>
 </div>
 </div>
@@ -757,13 +715,54 @@ lunaiwazaki you scored 3/4
 
 
 
-  </div><!-- from https://github.com/utterance/utterances -->
-<script src="https://utteranc.es/client.js"
-        repo="lunaiwa/iwazaki"
-        issue-term="title"
-        label="blogpost-comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script><a class="u-url" href="/iwazaki/jupyter/python/2022/11/28/Unit1-2HACKS.html" hidden></a>
-</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/iwazaki/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://lunaiwa.github.io/iwazaki/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/iwazaki/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>luna&#39;s artist portfolio</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="” https://github.com/nighthawkcoders “" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/iwazaki/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="” https://twitter.com/NighthawkCoding “" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/iwazaki/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="” https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q “" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/iwazaki/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
