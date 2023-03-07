@@ -20,7 +20,7 @@ layout: notebook
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include image.html alt="Screen Shot 2023-03-06 at 9 58 57 PM" max-width="432" file="<a href="https://user-images.githubusercontent.com/111661543/223333536-bb2297a8-179a-48ba-9bcc-cce761f65a67.png">https://user-images.githubusercontent.com/111661543/223333536-bb2297a8-179a-48ba-9bcc-cce761f65a67.png</a>" %}</p>
+<p>Struggling on unit 3 details</p>
 
 </div>
 </div>
@@ -30,13 +30,6 @@ layout: notebook
 <p><strong>Q5 Benefits of Upgraded System</strong></p>
 <p>5.1</p>
 <p>Answer is D, Incorrect. The upgraded system selects the appropriate department based on the customer’s issue, so the customer does not have the ability to make an incorrect selection.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include image.html alt="Screen Shot 2023-03-06 at 9 59 50 PM" max-width="294" file="<a href="https://user-images.githubusercontent.com/111661543/223333688-3e003e9f-4973-40c1-b9f5-1e1b35b1067d.png">https://user-images.githubusercontent.com/111661543/223333688-3e003e9f-4973-40c1-b9f5-1e1b35b1067d.png</a>" %}</p>
 
 </div>
 </div>
@@ -61,23 +54,9 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include image.html alt="Screen Shot 2023-03-06 at 10 00 34 PM" max-width="214" file="<a href="https://user-images.githubusercontent.com/111661543/223333804-8179a716-fdd7-40da-8e9a-f1351d5ba2e3.png">https://user-images.githubusercontent.com/111661543/223333804-8179a716-fdd7-40da-8e9a-f1351d5ba2e3.png</a>" %}</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Q33 Loop header to move robot to gray square</strong></p>
 <p>3.8</p>
 <p>Answer is A, Incorrect. This code segment leaves the robot one row above its starting position and one row below the gray square.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include image.html alt="Screen Shot 2023-03-06 at 10 01 17 PM" max-width="216" file="<a href="https://user-images.githubusercontent.com/111661543/223333942-03afb6e0-2ff7-40bb-afcf-eca84d095789.png">https://user-images.githubusercontent.com/111661543/223333942-03afb6e0-2ff7-40bb-afcf-eca84d095789.png</a>" %}</p>
 
 </div>
 </div>
@@ -93,23 +72,9 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include image.html alt="Screen Shot 2023-03-06 at 10 01 56 PM" max-width="214" file="<a href="https://user-images.githubusercontent.com/111661543/223334074-45808df8-014f-4062-9625-295a2c82a329.png">https://user-images.githubusercontent.com/111661543/223334074-45808df8-014f-4062-9625-295a2c82a329.png</a>" %}</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Q38 If statement code that produces the same result</strong></p>
 <p>3.9</p>
 <p>Answer is A, Incorrect. The given code segment displays "positive" when num is positive, displays "negative" when num is negative, and displays "zero" when num is 0. This code segment does not produce the same result for all values of num. For example, "positive zero" is displayed when num is 0.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include image.html alt="Screen Shot 2023-03-06 at 10 02 26 PM" max-width="171" file="<a href="https://user-images.githubusercontent.com/111661543/223334150-b52ad1a5-4b52-4524-8fbb-5842aa239439.png">https://user-images.githubusercontent.com/111661543/223334150-b52ad1a5-4b52-4524-8fbb-5842aa239439.png</a>" %}</p>
 
 </div>
 </div>
@@ -146,13 +111,6 @@ layout: notebook
 <p><strong>Q49 Crowd flow simulation</strong></p>
 <p>3.16</p>
 <p>Answer is A, Incorrect. The model used by a simulation can be modified, both before and after running the simulation. In fact, one of the benefits of using a simulation is the ease of modification.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include image.html alt="Screen Shot 2023-03-06 at 10 03 21 PM" max-width="653" file="<a href="https://user-images.githubusercontent.com/111661543/223334309-5e12a342-0136-4a9d-99be-21692adeb282.png">https://user-images.githubusercontent.com/111661543/223334309-5e12a342-0136-4a9d-99be-21692adeb282.png</a>" %}</p>
 
 </div>
 </div>
