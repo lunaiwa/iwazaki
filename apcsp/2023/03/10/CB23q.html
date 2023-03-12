@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Extracting Information and Compressing Information | iwazaki</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Extracting Information and Compressing Information" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Covering the topics discussed in the quizzes and what the answers can be." />
+<meta property="og:description" content="Covering the topics discussed in the quizzes and what the answers can be." />
+<link rel="canonical" href="https://lunaiwa.github.io/iwazaki/apcsp/2023/03/10/CB23q.html" />
+<meta property="og:url" content="https://lunaiwa.github.io/iwazaki/apcsp/2023/03/10/CB23q.html" />
+<meta property="og:site_name" content="iwazaki" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-03-10T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Extracting Information and Compressing Information" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-10T00:00:00-06:00","datePublished":"2023-03-10T00:00:00-06:00","description":"Covering the topics discussed in the quizzes and what the answers can be.","headline":"Extracting Information and Compressing Information","mainEntityOfPage":{"@type":"WebPage","@id":"https://lunaiwa.github.io/iwazaki/apcsp/2023/03/10/CB23q.html"},"url":"https://lunaiwa.github.io/iwazaki/apcsp/2023/03/10/CB23q.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/iwazaki/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://lunaiwa.github.io/iwazaki/feed.xml" title="iwazaki" /><link rel="shortcut icon" type="image/x-icon" href="/iwazaki/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/iwazaki/">iwazaki</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/iwazaki/_pages/API.html">API</a><a class="page-link" href="/iwazaki/about/">About Me</a><a class="page-link" href="/iwazaki/issues/">Week Schedule</a><a class="page-link" href="/iwazaki/search/">Search</a><a class="page-link" href="/iwazaki/issues/">sub</a><a class="page-link" href="/iwazaki/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-03-10-CB23q.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Data-Compression-Quiz-1-3">Data Compression Quiz 1-3<a class="anchor-link" href="#Data-Compression-Quiz-1-3"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr />
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Lossless Compression :</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Lossy Compression :</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr />
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Q1 : Advantage of lossless over lossy compression</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Skill : 1.D <p>
+Unit 2.2 Daily Video 1</p>
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Which of the following is an advantage of a lossless compression algorithm over a lossy compression algorithm?</strong></p>
+<p><strong>(A)</strong> A lossless compression algorithm can guarantee that compressed information is kept secure, while a lossy compression algorithm cannot.</p>
+<p><strong>(B)</strong> A lossless compression algorithm can guarantee reconstruction of original data, while a lossy compression algorithm cannot.</p>
+<p><strong>(C)</strong> A lossless compression algorithm typically allows for faster transmission speeds than does a lossy compression algorithm.</p>
+<p><strong>(D)</strong> A lossless compression algorithm typically provides a greater reduction in the number of bits stored or transmitted than does a lossy compression algorithm.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(A) Wrong -</strong> Incorrect. The ability to keep data secure is not a primary function of a compression algorithm.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(B) Correct -</strong> Correct. Lossless compression algorithms are guaranteed to be able to reconstruct the original data, while lossy compression algorithms are not.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(C) Wrong -</strong> Incorrect. In situations where transmission time is maximally important, lossy compression algorithms are typically chosen, as lossy compression typically provides a greater reduction in file size.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(D) Wrong -</strong> Incorrect. Lossless compression algorithms usually achieve less reduction in the number of bits stored or transmitted than do lossy compression algorithms.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr />
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Q2 Compression algorithm for storing a data file</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Skill : 1.D <p>
+Unit 2.2 Daily Video 1</p>
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>A user wants to save a data file on an online storage site. The user wants to reduce the size of the file, if possible, and wants to be able to completely restore the file to its original version. Which of the following actions best supports the user’s needs?</strong></p>
+<p><strong>(A)</strong> Compressing the file using a lossless compression algorithm before uploading it</p>
+<p><strong>(B)</strong> Compressing the file using a lossy compression algorithm before uploading it</p>
+<p><strong>(C)</strong> Compressing the file using both lossy and lossless compression algorithms before uploading it</p>
+<p><strong>(D)</strong> Uploading the original file without using any compression algorithm</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(A) Correct -</strong> 
+Correct. Lossless compression algorithms allow for complete reconstruction of the original data and typically reduce the size of the data.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(B) Wrong -</strong> Incorrect. While a lossy compression algorithm will reduce the size of the data, it does not allow for complete reconstruction of the original data.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(C) Wrong -</strong> Incorrect. Applying lossy compression the to file will prevent the user from restoring it to its original version.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(D) Wrong -</strong> Incorrect. Uploading the original file allows complete reconstruction of the original data but does not reduce the size of the file.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr />
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Q3 True statement about compression</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Skill : 1.D <p>
+Unit 2.2 Daily Video 1</p>
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>A programmer is developing software for a social media platform. The programmer is planning to use compression when users send attachments to other users. Which of the following is a true statement about the use of compression?</strong></p>
+<p><strong>(A)</strong> Lossless compression of video files will generally save more space than lossy compression of video files.</p>
+<p><strong>(B)</strong> Lossless compression of an image file will generally result in a file that is equal in size to the original file.</p>
+<p><strong>(C)</strong> Lossy compression of an image file generally provides a greater reduction in transmission time than lossless compression does.</p>
+<p><strong>(D)</strong> Sound clips compressed with lossy compression for storage on the platform can be restored to their original quality when they are played.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(A) Wrong -</strong> Incorrect. Lossy data compression algorithms can usually provide a greater reduction in the space required than lossless compression algorithms can.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(B) Wrong -</strong> Incorrect. Lossless compression usually results in a file that is smaller in size than the original file.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(C) Correct -</strong> Correct. Although fewer bits may be stored, information is not necessarily lost when lossy compression is applied to an image.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(D) Wrong -</strong> Incorrect. Lossy compression algorithms allow only an approximation of the original data to be reconstructed.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr />
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr />
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Extracting-Information-from-Data-Quiz-1-6">Extracting Information from Data Quiz 1-6<a class="anchor-link" href="#Extracting-Information-from-Data-Quiz-1-6"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr />
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Q1 Challenge due to lack of unique ID</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Skill : 5.D <p>
+Unit 2.3 Daily Video 1-2</p>
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>A researcher is analyzing data about students in a school district to determine whether there is a relationship between grade point average and number of absences. The researcher plans on compiling data from several sources to create a record for each student.</strong></p>
+<p><strong>The researcher has access to a database with the following information about each student.</strong></p>
+<ul>
+<li>Last name</li>
+<li>First name</li>
+<li>Grade level (9, 10, 11, or 12)</li>
+<li>Grade point average (on a 0.0 to 4.0 scale)</li>
+</ul>
+<p><strong>The researcher also has access to another database with the following information about each student.</strong></p>
+<ul>
+<li>First name</li>
+<li>Last name</li>
+<li>Number of absences from school</li>
+<li>Number of late arrivals to school</li>
+</ul>
+<p><strong>Upon compiling the data, the researcher identifies a problem due to the fact that neither data source uses a unique ID number for each student. Which of the following best describes the problem caused by the lack of unique ID numbers?</strong></p>
+<p><strong>(A)</strong> Students who have the same name may be confused with each other.</p>
+<p><strong>(B)</strong> Students who have the same grade point average may be confused with each other.</p>
+<p><strong>(C)</strong> Students who have the same grade level may be confused with each other.</p>
+<p><strong>(D)</strong> Students who have the same number of absences may be confused with each other.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(A) Correct -</strong> Correct. A unique identifier would be required in order to distinguish between two students with the same first and last names.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(B) Wrong -</strong> Incorrect. It is expected that many students in the school district have the same grade point average as each other. These students can be distinguished from each other using their first and last name, except in cases where two students have the same first and last name.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(C) Wrong -</strong> Incorrect. It is expected that many students in the school district have the grade level as each other. These students can be distinguished from each other using their first and last names, except in cases where two students have the same first and last name.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(D) Wrong -</strong> Incorrect. It is expected that many students in the school district have the same number of absences as each other. These students can be distinguished from each other using their first and last name, except in cases where two students have the same first and last name.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr />
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Q2 Challenge in analyzing data from many counties</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Skill : 5.D <p>
+Unit 2.3 Daily Video 1-2</p>
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>A team of researchers wants to create a program to analyze the amount of pollution reported in roughly 3,000 counties across the United States. The program is intended to combine county data sets and then process the data. Which of the following is most likely to be a challenge in creating the program?</strong></p>
+<p><strong>(A)</strong> A computer program cannot combine data from different files.</p>
+<p><strong>(B)</strong> Different counties may organize data in different ways.</p>
+<p><strong>(C)</strong> The number of counties is too large for the program to process.</p>
+<p><strong>(D)</strong> The total number of rows of data is too large for the program to process.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(A) Wrong -</strong> Incorrect. Computer programs can accept and process multiple data files as input.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(B) Correct -</strong> Correct. It will be a challenge to clean the data from the different counties to make the data uniform. The way pollution data is captured and organized may vary significantly from county to county.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(C) Wrong -</strong> Incorrect. Even if the number of data sets is large, they can all be processed with a computer program.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(D) Wrong -</strong> Incorrect. Even if the data sets are large, they can be processed with a computer program.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr />
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Q3 Challenges with city data entered by users</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Skill : 5.D <p>
+Unit 2.3 Daily Video 1-2</p>
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>A student is creating a Web site that is intended to display information about a city based on a city name that a user enters in a text field. Which of the following are likely to be challenges associated with processing city names that users might provide as input?</strong></p>
+<p><strong>Select two answers.</strong></p>
+<p><strong>(A)</strong> Users might attempt to use the Web site to search for multiple cities.</p>
+<p><strong>(B)</strong> Users might enter abbreviations for the names of cities.</p>
+<p><strong>(C)</strong> Users might misspell the name of the city.</p>
+<p><strong>(D)</strong> Users might be slow at typing a city name in the text field.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(A) Wrong -</strong> Incorrect. A user entering data into the Web site to search for multiple cities does not directly affect the quality of the data. If the Web site is working as intended, users should be able to use it as many times as they want.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(B) Correct -</strong> Correct. Different users may abbreviate city names differently. This may require the student to clean the data to make it uniform before it can be processed.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(C) Correct -</strong> Correct. Misspelled city names will not be an exact match to information stored by the Web site. This may require the student to clean the data to make it uniform before it can be processed.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(D) Wrong -</strong> Incorrect. A user’s typing speed does not directly affect the quality of the data. Until a city name is entered, the Web site cannot search for information.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr />
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Q4 Determine artist with the most concert attendees</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Skill : 5.B <p>
+Unit 2.3 Daily Video 1-2</p>
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>A database of information about shows at a concert venue contains the following information.</strong></p>
+<ul>
+<li>Name of artist performing at the show</li>
+<li>Date of show</li>
+<li>Total dollar amount of all tickets sold</li>
+</ul>
+<p><strong>Which of the following additional pieces of information would be most useful in determining the artist with the greatest attendance during a particular month?</strong></p>
+<p><strong>(A)</strong> Average ticket price</p>
+<p><strong>(B)</strong> Length of the show in minutes</p>
+<p><strong>(C)</strong> Start time of the show</p>
+<p><strong>(D)</strong> Total dollar amount of food and drinks sold during the show</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(A) Correct -</strong> Correct. The attendance for a particular show can be calculated dividing the total dollar amount of all tickets sold by the average ticket price.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(B) Wrong -</strong> Incorrect. The length of the show is not useful for determining attendance at a show.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(C) Wrong -</strong> Incorrect. The start time of the show is not useful for determining attendance at a show.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(D) Wrong -</strong> Incorrect. The total dollar amount of food and drinks sold during a show may be correlated with the attendance at the show, but cannot be used to determine the exact number of attendees.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr />
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Q5 Information determined using dashboard metadata</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Skill : 5.B <p>
+Unit 2.3 Daily Video 1-2</p>
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>A camera mounted on the dashboard of a car captures an image of the view from the driver’s seat every second. Each image is stored as data. Along with each image, the camera also captures and stores the car’s speed, the date and time, and the car’s GPS location as metadata. Which of the following can best be determined using only the data and none of the metadata?</strong></p>
+<p><strong>(A)</strong> The average number of hours per day that the car is in use</p>
+<p><strong>(B)</strong> The car’s average speed on a particular day</p>
+<p><strong>(C)</strong> The distance the car traveled on a particular day</p>
+<p><strong>(D)</strong> The number of bicycles the car passed on a particular day</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(A) Wrong -</strong> Incorrect. The average number of hours per day of use would be based on speed, date, and time, which are part of the metadata.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(B) Wrong -</strong> Incorrect. The calculation of average speed would be based on speed and time, which are part of the metadata.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(C) Wrong -</strong> Incorrect. The calculation of distance traveled on a particular day would be based on GPS location, date, and time, which are part of the metadata.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(D) Correct -</strong> Correct. Determining the number of bicycles the car encountered would require the use of image recognition software to examine the images collected by the camera. The images are the data collected and no metadata would be required.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr />
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Q6 Information from student work habit survey</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Skill : 5.B <p>
+Unit 2.3 Daily Video 1-2</p>
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>A teacher sends students an anonymous survey in order to learn more about the students’ work habits. The survey contains the following questions.</strong></p>
+<ul>
+<li>On average, how long does homework take you each night (in minutes) ?</li>
+<li>On average, how long do you study for each test (in minutes) ?</li>
+<li>Do you enjoy the subject material of this class (yes or no) ?</li>
+</ul>
+<p><strong>Which of the following questions about the students who responded to the survey can the teacher answer by analyzing the survey results?</strong></p>
+<p>I. Do students who enjoy the subject material tend to spend more time on homework each night than the other students do?
+II. Do students who spend more time on homework each night tend to spend less time studying for tests than the other students do?
+III. Do students who spend more time studying for tests tend to earn higher grades in the class than the other students do?</p>
+<p><strong>(A)</strong> I only</p>
+<p><strong>(B)</strong> III only</p>
+<p><strong>(C)</strong> I and II</p>
+<p><strong>(D)</strong> I and III</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(A) Wrong -</strong> Incorrect. Question II can be answered because the teacher can detect a correlation between responses to questions 1 and 2 on the survey.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(B) Wrong -</strong> Incorrect. Question I can be answered because the teacher can detect a correlation between responses to questions 1 and 3 on the survey. Question II can be answered because the teacher can detect a correlation between responses to questions 1 and 2 on the survey. Question III cannot be answered because the survey is anonymous and the teacher cannot compare student grades with the responses to the survey questions.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(C) Correct -</strong> Correct. Question I can be answered because the teacher can detect a correlation between responses to questions 1 and 3 on the survey. Question II can be answered because the teacher can detect a correlation between responses to questions 1 and 2 on the survey. Question III cannot be answered because the survey is anonymous and the teacher cannot compare student grades with the responses to the survey questions.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(D) Wrong -</strong> Incorrect. Question II can be answered because the teacher can detect a correlation between responses to questions 1 and 2 on the survey. Question III cannot be answered because the survey is anonymous and the teacher cannot compare student grades with the responses to the survey questions.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr />
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr />
+
+</div>
+</div>
+</div>
+&lt;/div&gt;
+ 
+
+</p></div></div></div></p></div></div></div></p></div></div></div></p></div></div></div></p></div></div></div></p></div></div></div></p></div></div></div></p></div></div></div></p></div></div></div></div>
+
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/iwazaki/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://lunaiwa.github.io/iwazaki/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/iwazaki/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>luna&#39;s artist portfolio</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="” https://github.com/nighthawkcoders “" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/iwazaki/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="” https://twitter.com/NighthawkCoding “" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/iwazaki/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="” https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q “" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/iwazaki/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

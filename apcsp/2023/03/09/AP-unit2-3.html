@@ -81,19 +81,6 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Files-To-Get---X">Files To Get - X<a class="anchor-link" href="#Files-To-Get---X"> </a></h1><p>Save this file to your <strong>_notebooks</strong> folder</p>
-<p>wget <a href="https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/2023-03-09-AP-unit2-3.ipynb">https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/2023-03-09-AP-unit2-3.ipynb</a></p>
-<p>Save these files into a subfolder named <strong>files</strong> in your <strong>_notebooks</strong> folder</p>
-<p>wget <a href="https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/files/data.csv">https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/files/data.csv</a></p>
-<p>wget <a href="https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/files/grade.json">https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/files/grade.json</a></p>
-<p>Save this image into a subfolder named <strong>images</strong> in your <strong>_notebooks</strong> folder</p>
-<p>wget <a href="https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/images/table_dataframe.png">https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/images/table_dataframe.png</a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Pandas-and-DataFrames">Pandas and DataFrames<a class="anchor-link" href="#Pandas-and-DataFrames"> </a></h1><blockquote><p>In this lesson we will be exploring data analysis using Pandas.</p>
 </blockquote>
 <ul>
@@ -137,7 +124,7 @@ window.onload = wrap_img;
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[6], line 2</span>
+Cell <span class="ansi-green-fg">In[1], line 2</span>
 <span class="ansi-green-intense-fg ansi-bold">      1</span> &#39;&#39;&#39;Pandas is used to gather data sets through its DataFrames implementation&#39;&#39;&#39;
 <span class="ansi-green-fg">----&gt; 2</span> import pandas as pd
 
@@ -175,33 +162,12 @@ Cell <span class="ansi-green-fg">In[6], line 2</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="c1"># What part of the data set needs to be cleaned?</span>
+<span class="c1"># the grade part of the the data needs to be cleaned since some of the inputs are letters and not numbers, the gpa also needs to be cleaned cause some of the gpas may be unweighted, </span>
 <span class="c1"># From PBL learning, what is a good time to clean data?  Hint, remember Garbage in, Garbage out?</span>
+<span class="c1"># a good time to clean the data is when the garbage comes in and not out the less the garbage is being able to be put in the data set the better</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[8], line 2</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> # reads the JSON file and converts it to a Pandas DataFrame
-<span class="ansi-green-fg">----&gt; 2</span> df = pd.read_json(&#39;files/grade.json&#39;)
-<span class="ansi-green-intense-fg ansi-bold">      4</span> print(df)
-<span class="ansi-green-intense-fg ansi-bold">      5</span> # What part of the data set needs to be cleaned?
-<span class="ansi-green-intense-fg ansi-bold">      6</span> # From PBL learning, what is a good time to clean data?  Hint, remember Garbage in, Garbage out?
-
-<span class="ansi-red-fg">NameError</span>: name &#39;pd&#39; is not defined</pre>
-</div>
-</div>
-
 </div>
 </div>
 
