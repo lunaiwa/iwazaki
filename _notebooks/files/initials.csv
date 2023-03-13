@@ -1,41 +1,7 @@
-number,initals
-1,A.B
-2,C.D
-3,E.F
-4,G.H
-5,I.J
-6,K.L
-7,M.N
-8,O.P
-9,Q.R
-10,S.T
-11,U.V
-12,W.X
-13,Y.Z
-14,A.B
-15,C.D
-16,E.F
-17,G.H
-18,I.J
-19,K.L
-20,M.N
-21,O.P
-22,Q.R
-23,S.T
-24,U.V
-25,W.X
-26,Y.Z
-27,A.B
-28,C.D
-29,E.F
-30,G.H
-31,I.J
-32,K.L
-33,M.N
-34,O.P
-35,Q.R
-36,S.T
-37,U.V
-38,W.X
-39,Y.Z
-40,A.B
+number,initals,car
+1,A.B, SUV
+2,C.D, Minivan
+3,E.F, Luxury
+4,G.H, Sedan
+5,I.J, Coupe
+
