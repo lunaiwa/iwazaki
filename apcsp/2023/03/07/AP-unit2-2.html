@@ -616,7 +616,9 @@ Scaled size:  (320, 240)
 <span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="c1"># blurring of the image use the def blur()</span>
+<span class="c1"># chat gpt has more in depth</span>
 <span class="k">def</span> <span class="nf">blur</span><span class="p">(</span><span class="n">I</span><span class="p">):</span>
+
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">I</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">I</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
             <span class="n">I</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="n">I</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">I</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">I</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">I</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">I</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span><span class="o">/</span><span class="mf">8.0</span>
@@ -627,7 +629,7 @@ Scaled size:  (320, 240)
 <span class="n">blur</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
 <span class="n">blur</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
 <span class="n">blur</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
-<span class="c1">#this is required so the image will show and not just numbers</span>
+<span class="c1">#this is required so the image will show and not just numbers aka binary</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
 <span class="n">image</span>
 </pre></div>
