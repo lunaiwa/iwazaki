@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Computer Science and Information Systems (CSIS) | iwazaki</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Computer Science and Information Systems (CSIS)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Presentation which goes over multiple engineering systems" />
+<meta property="og:description" content="Presentation which goes over multiple engineering systems" />
+<link rel="canonical" href="https://lunaiwa.github.io/iwazaki/presentation/2023/03/28/Presentation.html" />
+<meta property="og:url" content="https://lunaiwa.github.io/iwazaki/presentation/2023/03/28/Presentation.html" />
+<meta property="og:site_name" content="iwazaki" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-03-28T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Computer Science and Information Systems (CSIS)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-28T00:00:00-05:00","datePublished":"2023-03-28T00:00:00-05:00","description":"Presentation which goes over multiple engineering systems","headline":"Computer Science and Information Systems (CSIS)","mainEntityOfPage":{"@type":"WebPage","@id":"https://lunaiwa.github.io/iwazaki/presentation/2023/03/28/Presentation.html"},"url":"https://lunaiwa.github.io/iwazaki/presentation/2023/03/28/Presentation.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/iwazaki/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://lunaiwa.github.io/iwazaki/feed.xml" title="iwazaki" /><link rel="shortcut icon" type="image/x-icon" href="/iwazaki/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/iwazaki/">iwazaki</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/iwazaki/_pages/API.html">API</a><a class="page-link" href="/iwazaki/about/">About Me</a><a class="page-link" href="/iwazaki/issues/">Week Schedule</a><a class="page-link" href="/iwazaki/search/">Search</a><a class="page-link" href="/iwazaki/issues/">sub</a><a class="page-link" href="/iwazaki/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-03-28-Presentation.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Summary">Summary<a class="anchor-link" href="#Summary"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>According to the speaker, CSUSM is an excellent choice for students interested in pursuing a career in engineering or computer science. The university is known for its high-quality programs, experienced faculty, and modern facilities. Additionally, CSUSM is located in a region that is home to many thriving tech companies, providing students with opportunities to gain practical experience and network with industry professionals.</p>
+<p>The speaker also emphasized the value of a CSUSM education in terms of career prospects. Graduates of the engineering and computer science program are in high demand, and many go on to work for top companies in the tech industry. Furthermore, CSUSM has a strong record of alumni success, with graduates often achieving high salaries and positions of leadership.</p>
+<p>Overall, the speech made a compelling case for why students interested in engineering or computer science should consider joining CSUSM. With its exceptional programs, talented faculty, and supportive community, the university seems like an excellent choice for those looking to build a successful career in these fields.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="STEM-AT-CSUSM">STEM AT CSUSM<a class="anchor-link" href="#STEM-AT-CSUSM"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Speakers">Speakers<a class="anchor-link" href="#Speakers"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Speakers:</strong></p>
+<ul>
+<li>John does computer science and recently graduated</li>
+<li>Ashley degree in applied physics and recently graduated</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Ashley:</strong></p>
+<ul>
+<li>Works in quantum computing group</li>
+<li>Took APPhysics and got a D in first trimester but kept doing it cause she loved it</li>
+<li>Wasn't easy transition and failed Calc 1 and 3</li>
+<li>Never let the failures define her and kept going on</li>
+<li>Inspired to go for a PHD for material sciences and engineering</li>
+<li>Doesn't matter if bad score or struggle since they don't define </li>
+<li>CSUSM was a great support system and opened many doors for her </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>John:</strong></p>
+<ul>
+<li>From Escondido</li>
+<li>Was a diliquent</li>
+<li>Started at Palomar college the week after graduating</li>
+<li>Math and COmputer science</li>
+<li>During pandemic started CSUSM</li>
+<li>Was interesting since only saw campus the last trimester there</li>
+<li>6 years to get PHD and is taking a mini gap year</li>
+<li>Computer science degree is versitile </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Fun-Facts">Fun Facts<a class="anchor-link" href="#Fun-Facts"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>One of the newer Cal States and is the 21 out of 23 </li>
+<li>Lots of new buildings and there are more to come </li>
+<li>Lots of new buildings for engineering and biology</li>
+<li>Highest turnover from social economic status</li>
+<li>San Diego has lots of industries wanting to hire new students</li>
+<li>Lots of stairs (LEG DAY!)</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Path-Ways">Path Ways<a class="anchor-link" href="#Path-Ways"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Chemical Education</li>
+<li>Minor in electronics</li>
+<li>Minor in applied physics</li>
+<li>Biological Sciences</li>
+<li>Wildlife Science</li>
+<li>Computer Science</li>
+<li>Option in Computer Information Systems</li>
+<li>Cybersecurity</li>
+<li>Minor in mathematics</li>
+<li>Electrical Engineering</li>
+<li>ECT.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Departments">Departments<a class="anchor-link" href="#Departments"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><strong>Physics</strong> <p>
+  Dr. Stephen Tsul&lt;/li&gt;
+<li><strong>Chemistry and BioChemistry</strong> <p>
+  Dr. Sajith Jayasinghe&lt;/li&gt;
+<li><strong>Biotechnology</strong> <p>
+  Dr. Moorthy Palanki&lt;/li&gt;
+<li><strong>Biological Sciences</strong> <p>
+  Dr. Matthew Escobar&lt;/li&gt;
+<li><strong>Math</strong> <p>
+  Dr. Amber Puha&lt;/li&gt;
+<li><strong>Computer Science</strong> <p>
+  Dr. Ali Ahmadina&lt;/li&gt;
+<li><strong>Software Engineering</strong> <p>
+  Dr.Simon Fan&lt;/li&gt;
+<li><strong>Electrical Engineering</strong> <p>
+  Dr.Reza Kamali Sarvestan&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Clubs">Clubs<a class="anchor-link" href="#Clubs"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Cybersecurity Club</li>
+<li>Robotics Club</li>
+<li>3D Printing Club</li>
+<li>Women in STEM Club</li>
+<li>Society of Women Engineer Club</li>
+<li>Society of Physics Club</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Internship">Internship<a class="anchor-link" href="#Internship"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Internships: period of work experience offered by an organization for a limited period of time</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Join clubs (they give applying)</li>
+<li>Net working</li>
+<li>Checking your emails</li>
+<li>Google </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Tips:</strong></p>
+<ul>
+<li>Try to avoid when they are unpaid because there is many oppertunities that provide for a paid intern</li>
+<li>Get help from faculty</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Programs">Programs<a class="anchor-link" href="#Programs"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Many can better interests, <strong>Summer Scholars Program</strong> can gain better interest and gain money 500 for full time and 300 for half time and get paid while pursuing interests</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Quantum bridge program 4 week program and get paid a 15000 siphon</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Research">Research<a class="anchor-link" href="#Research"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Cancer Cell</li>
+<li>Quantum </li>
+<li>AI </li>
+<li>Micro Plastics</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Paying-For-College">Paying For College<a class="anchor-link" href="#Paying-For-College"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Grant vs Scholarship: A grant is government funded while a scholarship is usally privatly funded</p>
+<p>6 months after you graduate college you have to pay your loans</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Subsided Loan</strong> does not acure interest while you are in school at lease half time or during deferment periods</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Unsubsided Loans</strong> does acure interes while yo are in school and during grace periods</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Life-After-CSUSM">Life After CSUSM<a class="anchor-link" href="#Life-After-CSUSM"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Many go into the private industry like general atomics, and other companies but some go into the public like teaching since CSUSM is a very teaching based school</p>
+
+</div>
+</div>
+</div>
+&lt;/div&gt;
+ 
+
+</p></li></p></li></p></li></p></li></p></li></p></li></p></li></p></li></ul></div></div></div></div>
+
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/iwazaki/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://lunaiwa.github.io/iwazaki/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/iwazaki/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>luna&#39;s artist portfolio</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="” https://github.com/nighthawkcoders “" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/iwazaki/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="” https://twitter.com/NighthawkCoding “" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/iwazaki/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="” https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q “" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/iwazaki/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
