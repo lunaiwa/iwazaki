@@ -72,20 +72,6 @@ layout: notebook
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>{1, 2, 3}
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     {% endraw %}
 
@@ -143,20 +129,6 @@ layout: notebook
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>{&#39;title&#39;: &#39;Lover&#39;, &#39;artist&#39;: &#39;Taylor Swift&#39;, &#39;year&#39;: 2019, &#39;genre&#39;: [&#39;Pop&#39;, &#39;Synth-pop&#39;], &#39;tracks&#39;: {1: &#39;I Forgot That You Existed&#39;, 2: &#39;Cruel Summer&#39;, 3: &#39;Lover&#39;, 4: &#39;The Man&#39;, 5: &#39;The Archer&#39;, 6: &#39;I Think He Knows&#39;, 7: &#39;Miss Americana &amp; The Heartbreak Prince&#39;, 8: &#39;Paper Rings&#39;, 9: &#39;Cornelia Street&#39;, 10: &#39;Death By A Thousand Cuts&#39;, 11: &#39;London Boy&#39;, 12: &#34;Soon You&#39;ll Get Better (feat. Dixie Chicks)&#34;, 13: &#39;False God&#39;, 14: &#39;You Need To Calm Down&#39;, 15: &#39;Afterglow&#39;, 16: &#39;Me! (feat. Brendon Urie of Panic! At The Disco)&#39;, 17: &#34;It&#39;s Nice To Have A Friend&#34;, 18: &#39;Daylight&#39;}}
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     {% endraw %}
 
@@ -176,21 +148,6 @@ layout: notebook
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>{1: &#39;I Forgot That You Existed&#39;, 2: &#39;Cruel Summer&#39;, 3: &#39;Lover&#39;, 4: &#39;The Man&#39;, 5: &#39;The Archer&#39;, 6: &#39;I Think He Knows&#39;, 7: &#39;Miss Americana &amp; The Heartbreak Prince&#39;, 8: &#39;Paper Rings&#39;, 9: &#39;Cornelia Street&#39;, 10: &#39;Death By A Thousand Cuts&#39;, 11: &#39;London Boy&#39;, 12: &#34;Soon You&#39;ll Get Better (feat. Dixie Chicks)&#34;, 13: &#39;False God&#39;, 14: &#39;You Need To Calm Down&#39;, 15: &#39;Afterglow&#39;, 16: &#39;Me! (feat. Brendon Urie of Panic! At The Disco)&#39;, 17: &#34;It&#39;s Nice To Have A Friend&#34;, 18: &#39;Daylight&#39;}
-{1: &#39;I Forgot That You Existed&#39;, 2: &#39;Cruel Summer&#39;, 3: &#39;Lover&#39;, 4: &#39;The Man&#39;, 5: &#39;The Archer&#39;, 6: &#39;I Think He Knows&#39;, 7: &#39;Miss Americana &amp; The Heartbreak Prince&#39;, 8: &#39;Paper Rings&#39;, 9: &#39;Cornelia Street&#39;, 10: &#39;Death By A Thousand Cuts&#39;, 11: &#39;London Boy&#39;, 12: &#34;Soon You&#39;ll Get Better (feat. Dixie Chicks)&#34;, 13: &#39;False God&#39;, 14: &#39;You Need To Calm Down&#39;, 15: &#39;Afterglow&#39;, 16: &#39;Me! (feat. Brendon Urie of Panic! At The Disco)&#39;, 17: &#34;It&#39;s Nice To Have A Friend&#34;, 18: &#39;Daylight&#39;}
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     {% endraw %}
 
@@ -207,21 +164,6 @@ layout: notebook
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The Man
-The Man
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -247,20 +189,6 @@ The Man
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>{&#39;title&#39;: &#39;Lover&#39;, &#39;artist&#39;: &#39;Taylor Swift&#39;, &#39;year&#39;: 2019, &#39;genre&#39;: [&#39;Pop&#39;, &#39;Synth-pop&#39;], &#39;tracks&#39;: {1: &#39;I Forgot That You Existed&#39;, 2: &#39;Cruel Summer&#39;, 3: &#39;Lover&#39;, 4: &#39;The Man&#39;, 5: &#39;The Archer&#39;, 6: &#39;I Think He Knows&#39;, 7: &#39;Miss Americana &amp; The Heartbreak Prince&#39;, 8: &#39;Paper Rings&#39;, 9: &#39;Cornelia Street&#39;, 10: &#39;Death By A Thousand Cuts&#39;, 11: &#39;London Boy&#39;, 12: &#34;Soon You&#39;ll Get Better (feat. Dixie Chicks)&#34;, 13: &#39;False God&#39;, 14: &#39;You Need To Calm Down&#39;, 15: &#39;Afterglow&#39;, 16: &#39;Me! (feat. Brendon Urie of Panic! At The Disco)&#39;, 17: &#34;It&#39;s Nice To Have A Friend&#34;, 18: &#39;Daylight&#39;}, &#39;producer&#39;: [&#39;Taylor Swift&#39;, &#39;Jack Antonoff&#39;, &#39;Joel Little&#39;, &#39;Taylor Swift&#39;, &#39;Louis Bell&#39;, &#39;Frank Dukes&#39;]}
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -290,20 +218,6 @@ The Man
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>{&#39;title&#39;: &#39;Lover&#39;, &#39;artist&#39;: &#39;Taylor Swift&#39;, &#39;year&#39;: 2019, &#39;genre&#39;: [&#39;Pop&#39;, &#39;Synth-pop&#39;], &#39;tracks&#39;: {1: &#39;I Forgot That You Existed&#39;, 2: &#39;Cruel Summer&#39;, 3: &#39;Lover&#39;, 4: &#39;The Man&#39;, 5: &#39;The Archer&#39;, 6: &#39;I Think He Knows&#39;, 7: &#39;Miss Americana &amp; The Heartbreak Prince&#39;, 8: &#39;Paper Rings&#39;, 9: &#39;Cornelia Street&#39;, 10: &#39;Death By A Thousand Cuts&#39;, 11: &#39;London Boy&#39;, 12: &#34;Soon You&#39;ll Get Better (feat. Dixie Chicks)&#34;, 13: &#39;False God&#39;, 14: &#39;You Need To Calm Down&#39;, 15: &#39;Afterglow&#39;, 16: &#39;Me! (feat. Brendon Urie of Panic! At The Disco)&#39;, 17: &#34;It&#39;s Nice To Have A Friend&#34;, 18: &#39;Daylight&#39;, 19: &#39;All Of The Girls You Loved Before&#39;}, &#39;producer&#39;: [&#39;Taylor Swift&#39;, &#39;Jack Antonoff&#39;, &#39;Joel Little&#39;, &#39;Taylor Swift&#39;, &#39;Louis Bell&#39;, &#39;Frank Dukes&#39;]}
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     {% endraw %}
 
@@ -324,25 +238,6 @@ The Man
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>title: Lover
-artist: Taylor Swift
-year: 2019
-genre: [&#39;Pop&#39;, &#39;Synth-pop&#39;]
-tracks: {1: &#39;I Forgot That You Existed&#39;, 2: &#39;Cruel Summer&#39;, 3: &#39;Lover&#39;, 4: &#39;The Man&#39;, 5: &#39;The Archer&#39;, 6: &#39;I Think He Knows&#39;, 7: &#39;Miss Americana &amp; The Heartbreak Prince&#39;, 8: &#39;Paper Rings&#39;, 9: &#39;Cornelia Street&#39;, 10: &#39;Death By A Thousand Cuts&#39;, 11: &#39;London Boy&#39;, 12: &#34;Soon You&#39;ll Get Better (feat. Dixie Chicks)&#34;, 13: &#39;False God&#39;, 14: &#39;You Need To Calm Down&#39;, 15: &#39;Afterglow&#39;, 16: &#39;Me! (feat. Brendon Urie of Panic! At The Disco)&#39;, 17: &#34;It&#39;s Nice To Have A Friend&#34;, 18: &#39;Daylight&#39;, 19: &#39;All Of The Girls You Loved Before&#39;}
-producer: [&#39;Taylor Swift&#39;, &#39;Jack Antonoff&#39;, &#39;Joel Little&#39;, &#39;Taylor Swift&#39;, &#39;Louis Bell&#39;, &#39;Frank Dukes&#39;]
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -384,45 +279,6 @@ producer: [&#39;Taylor Swift&#39;, &#39;Jack Antonoff&#39;, &#39;Joel Little&#39
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>TITLE: Lover
-ARTIST: Taylor Swift
-YEAR: 2019
-GENRE:
-Pop
-Synth-pop
-TRACKS:
-1.I Forgot That You Existed
-2.Cruel Summer
-3.Lover
-4.The Man
-5.The Archer
-6.I Think He Knows
-7.Miss Americana &amp; The Heartbreak Prince
-8.Paper Rings
-9.Cornelia Street
-10.Death By A Thousand Cuts
-11.London Boy
-12.Soon You&#39;ll Get Better (feat. Dixie Chicks)
-13.False God
-14.You Need To Calm Down
-15.Afterglow
-16.Me! (feat. Brendon Urie of Panic! At The Disco)
-17.It&#39;s Nice To Have A Friend
-18.Daylight
-19.All Of The Girls You Loved Before
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     {% endraw %}
 
@@ -450,20 +306,6 @@ TRACKS:
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Invalid Search
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -542,50 +384,6 @@ TRACKS:
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>
- Select an option from the list below:
-title
-artist
-year
-genre
-tracks
-producer
-
- Title: Lover 
-
-
- Select an option from the list below:
-title
-artist
-year
-genre
-tracks
-producer
-
- Genre(s):
-- Pop
-- Synth-pop
-
- Select an option from the list below:
-title
-artist
-year
-genre
-tracks
-producer
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     {% endraw %}
 
@@ -608,6 +406,229 @@ producer
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Own-Album">Own Album<a class="anchor-link" href="#Own-Album"> </a></h3>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">noway_album</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;No Way!!!&quot;</span><span class="p">,</span>
+<span class="c1"># lists for the genre and the artists []</span>
+    <span class="s2">&quot;artist&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;EW&quot;</span><span class="p">,</span> <span class="s2">&quot;KV&quot;</span><span class="p">,</span> <span class="s2">&quot;PBC&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;year&quot;</span><span class="p">:</span> <span class="mi">2022</span><span class="p">,</span>
+    <span class="s2">&quot;genre&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Rap&quot;</span><span class="p">,</span> <span class="s2">&quot;Hip-Hop&quot;</span><span class="p">],</span>
+<span class="c1"># dictionary for the tracks {}</span>
+    <span class="s2">&quot;tracks&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;Cash Sh*t&quot;</span><span class="p">,</span>
+        <span class="mi">2</span><span class="p">:</span> <span class="s2">&quot;Doja&quot;</span><span class="p">,</span>
+        <span class="mi">3</span><span class="p">:</span> <span class="s2">&quot;The Grinch&quot;</span><span class="p">,</span>
+        <span class="mi">4</span><span class="p">:</span> <span class="s2">&quot;#miles&quot;</span><span class="p">,</span>
+        <span class="mi">5</span><span class="p">:</span> <span class="s2">&quot;Took Her To The O&quot;</span><span class="p">,</span>
+        <span class="mi">6</span><span class="p">:</span> <span class="s2">&quot;Top&quot;</span><span class="p">,</span>
+        <span class="mi">7</span><span class="p">:</span> <span class="s2">&quot;Disaster&quot;</span><span class="p">,</span>
+        <span class="mi">8</span><span class="p">:</span> <span class="s2">&quot;North Memphis&quot;</span><span class="p">,</span>
+        <span class="mi">9</span><span class="p">:</span> <span class="s2">&quot;Runnin&quot;</span><span class="p">,</span>
+        <span class="mi">10</span><span class="p">:</span> <span class="s2">&quot;Hardy Boys&quot;</span><span class="p">,</span>
+        <span class="mi">11</span><span class="p">:</span> <span class="s2">&quot;STATS&quot;</span><span class="p">,</span>
+        <span class="mi">12</span><span class="p">:</span> <span class="s2">&quot;Drunk And Nasty&quot;</span><span class="p">,</span>
+        <span class="mi">13</span><span class="p">:</span> <span class="s2">&quot;Watch This - ARIZONATEARS&quot;</span><span class="p">,</span>
+        <span class="mi">14</span><span class="p">:</span> <span class="s2">&quot;Fast&quot;</span><span class="p">,</span>
+        <span class="mi">15</span><span class="p">:</span> <span class="s2">&quot;Time To Live&quot;</span><span class="p">,</span>
+        <span class="mi">16</span><span class="p">:</span> <span class="s2">&quot;Twin Nem&quot;</span><span class="p">,</span>
+        <span class="mi">17</span><span class="p">:</span> <span class="s2">&quot;R.I.P.&quot;</span><span class="p">,</span>
+        <span class="mi">18</span><span class="p">:</span> <span class="s2">&quot;16&quot;</span><span class="p">,</span>
+        <span class="mi">20</span><span class="p">:</span> <span class="s2">&quot;ILoveUIHateU&quot;</span><span class="p">,</span>
+        <span class="mi">21</span><span class="p">:</span> <span class="s2">&quot;vent&quot;</span><span class="p">,</span>
+        <span class="mi">22</span><span class="p">:</span> <span class="s2">&quot;TURN IT UP&quot;</span><span class="p">,</span>
+        <span class="mi">23</span><span class="p">:</span> <span class="s2">&quot;booman&quot;</span><span class="p">,</span>
+        <span class="mi">24</span><span class="p">:</span> <span class="s2">&quot;D*MN HOMIE (feat. Lil Yachty)&quot;</span><span class="p">,</span>
+        <span class="mi">25</span><span class="p">:</span> <span class="s2">&quot;BENZO&quot;</span><span class="p">,</span>
+        <span class="mi">26</span><span class="p">:</span> <span class="s2">&quot;Maytag (Tax Free)&quot;</span><span class="p">,</span>
+        <span class="mi">27</span><span class="p">:</span> <span class="s2">&quot;HONEST&quot;</span><span class="p">,</span>
+        <span class="mi">28</span><span class="p">:</span> <span class="s2">&quot;Tonka 2&quot;</span><span class="p">,</span>
+        <span class="mi">29</span><span class="p">:</span> <span class="s2">&quot;Dreaming&quot;</span><span class="p">,</span>
+        <span class="mi">30</span><span class="p">:</span> <span class="s2">&quot;Talk&quot;</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="c1"># Printing the dictionary</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">noway_album</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;title&#39;: &#39;No Way!!!&#39;, &#39;artist&#39;: [&#39;EW&#39;, &#39;KV&#39;, &#39;PBC&#39;], &#39;year&#39;: 2022, &#39;genre&#39;: [&#39;Rap&#39;, &#39;Hip-Hop&#39;], &#39;tracks&#39;: {1: &#39;Cash Sh*t&#39;, 2: &#39;Doja&#39;, 3: &#39;The Grinch&#39;, 4: &#39;#miles&#39;, 5: &#39;Took Her To The O&#39;, 6: &#39;Top&#39;, 7: &#39;Disaster&#39;, 8: &#39;North Memphis&#39;, 9: &#39;Runnin&#39;, 10: &#39;Hardy Boys&#39;, 11: &#39;STATS&#39;, 12: &#39;Drunk And Nasty&#39;, 13: &#39;Watch This - ARIZONATEARS&#39;, 14: &#39;Fast&#39;, 15: &#39;Time To Live&#39;, 16: &#39;Twin Nem&#39;, 17: &#39;R.I.P.&#39;, 18: &#39;16&#39;, 20: &#39;ILoveUIHateU&#39;, 21: &#39;vent&#39;, 22: &#39;TURN IT UP&#39;, 23: &#39;booman&#39;, 24: &#39;D*MN HOMIE (feat. Lil Yachty)&#39;, 25: &#39;BENZO&#39;, 26: &#39;Maytag (Tax Free)&#39;, 27: &#39;HONEST&#39;, 28: &#39;Tonka 2&#39;, 29: &#39;Dreaming&#39;, 30: &#39;Talk&#39;}}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">search</span><span class="p">():</span>
+    <span class="n">search</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What would you like to know about the album?&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">noway_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Property not found. Please try again. </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">noway_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">lower</span><span class="p">()))</span>
+
+<span class="c1"># Define the options as a list</span>
+<span class="n">options</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">noway_album</span><span class="o">.</span><span class="n">items</span><span class="p">():</span> <span class="c1"># iterate using a for loop for key and value</span>
+    <span class="n">options</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="o">.</span><span class="n">lower</span><span class="p">()))</span>
+
+<span class="c1"># Define the menu function</span>
+<span class="k">def</span> <span class="nf">menu</span><span class="p">():</span>
+    <span class="c1"># Display the menu options</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> Select an option from the list below:&#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">option</span> <span class="ow">in</span> <span class="n">options</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">option</span><span class="p">)</span>
+
+    <span class="c1"># Get the user&#39;s choice</span>
+    <span class="n">search</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What would you like to know about the album from the list of properties shown? Type the full word or press enter to exit.&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+    <span class="c1"># Find the selected option in the options list</span>
+    <span class="n">selected_option</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">for</span> <span class="n">option</span> <span class="ow">in</span> <span class="n">options</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">search</span> <span class="o">==</span> <span class="nb">str</span><span class="p">(</span><span class="n">option</span><span class="p">):</span>
+            <span class="n">selected_option</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">option</span><span class="p">)</span>
+            <span class="k">break</span>
+    
+
+    <span class="k">if</span> <span class="n">selected_option</span> <span class="o">==</span> <span class="s2">&quot;title&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> Title: </span><span class="si">{</span><span class="n">noway_album</span><span class="p">[</span><span class="n">options</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span><span class="si">}</span><span class="s1"> </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        
+    <span class="k">elif</span> <span class="n">selected_option</span> <span class="o">==</span> <span class="s2">&quot;artist&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> Artist(s): &quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">noway_album</span><span class="p">[</span><span class="s1">&#39;artist&#39;</span><span class="p">]:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;- </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        
+    <span class="k">elif</span> <span class="n">selected_option</span> <span class="o">==</span> <span class="s2">&quot;year&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> Year: </span><span class="si">{</span><span class="n">noway_album</span><span class="p">[</span><span class="n">options</span><span class="p">[</span><span class="mi">2</span><span class="p">]]</span><span class="si">}</span><span class="s1"> </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        
+    <span class="k">elif</span> <span class="n">selected_option</span> <span class="o">==</span> <span class="s2">&quot;genre&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> Genre(s):&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">noway_album</span><span class="p">[</span><span class="s1">&#39;genre&#39;</span><span class="p">]:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;- </span><span class="si">{</span><span class="n">g</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            
+    <span class="k">elif</span> <span class="n">selected_option</span> <span class="o">==</span> <span class="s2">&quot;tracks&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> Tracks:&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">track_number</span><span class="p">,</span> <span class="n">track_title</span> <span class="ow">in</span> <span class="n">noway_album</span><span class="p">[</span><span class="s1">&#39;tracks&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">track_number</span><span class="si">}</span><span class="s2">) </span><span class="si">{</span><span class="n">track_title</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            
+    <span class="k">elif</span> <span class="n">selected_option</span> <span class="o">==</span> <span class="s2">&quot;producer&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> Producer(s):&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">noway_album</span><span class="p">[</span><span class="s1">&#39;producer&#39;</span><span class="p">]:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;- </span><span class="si">{</span><span class="n">p</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            
+    <span class="k">elif</span> <span class="n">search</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+        <span class="k">return</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> Property not found. Please try again. </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Repeat the menu</span>
+    <span class="n">menu</span><span class="p">()</span>
+
+
+<span class="n">menu</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+ Select an option from the list below:
+title
+artist
+year
+genre
+tracks
+
+ Title: No Way!!! 
+
+
+ Select an option from the list below:
+title
+artist
+year
+genre
+tracks
+
+ Artist(s): 
+- EW
+- KV
+- PBC
+
+ Select an option from the list below:
+title
+artist
+year
+genre
+tracks
+
+ Year: 2022 
+
+
+ Select an option from the list below:
+title
+artist
+year
+genre
+tracks
+
+ Genre(s):
+- Rap
+- Hip-Hop
+
+ Select an option from the list below:
+title
+artist
+year
+genre
+tracks
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 </div>
  
 
