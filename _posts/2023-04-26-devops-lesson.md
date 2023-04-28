@@ -27,7 +27,8 @@ layout: notebook
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">socket</span>
 
 <span class="c1"># Change the following host and see what IP it prints!</span>
-<span class="n">host</span> <span class="o">=</span> <span class="s2">&quot;google.com&quot;</span>
+<span class="c1"># Host changed to GitHub</span>
+<span class="n">host</span> <span class="o">=</span> <span class="s2">&quot;github.com&quot;</span>
 <span class="n">ip</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">gethostbyname</span><span class="p">(</span><span class="n">host</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">ip</span><span class="p">)</span>
@@ -43,7 +44,7 @@ layout: notebook
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>142.250.189.14
+<pre>192.30.255.112
 </pre>
 </div>
 </div>
@@ -89,10 +90,18 @@ layout: notebook
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Check-In">Check-In<a class="anchor-link" href="#Check-In"> </a></h2><ol>
-<li>What is an IP address?</li>
-<li>What is a TCP port?</li>
+<h2 id="[x]-Check-In">[x] Check-In<a class="anchor-link" href="#[x]-Check-In"> </a></h2><ol>
+<li><strong>What is an IP address?</strong></li>
 </ol>
+<ul>
+<li>Internet Protocol (IP)</li>
+</ul>
+<p>Unique address that identifies a device on the internet or a local network</p>
+<ol>
+<li><strong>What is a TCP port?</strong></li>
+</ol>
+<p>Represents an application or service-specific endpoint identifier</p>
+<p><em>Port</em>: Logistical construct that identifies a specific process or a type of network service</p>
 
 </div>
 </div>
@@ -164,7 +173,8 @@ Transfer-Encoding: chunked
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
 
 <span class="c1"># Change the URL to whatever you&#39;d like</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://google.com&quot;</span><span class="p">)</span>
+<span class="c1"># Changed the URL into a github URL</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://github.com/&quot;</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Status code:&quot;</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Headers:&quot;</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">headers</span><span class="p">)</span>
@@ -175,6 +185,31 @@ Transfer-Encoding: chunked
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Status code: 200
+Headers: {&#39;Server&#39;: &#39;GitHub.com&#39;, &#39;Date&#39;: &#39;Fri, 28 Apr 2023 07:23:44 GMT&#39;, &#39;Content-Type&#39;: &#39;text/html; charset=utf-8&#39;, &#39;Vary&#39;: &#39;X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Language, Accept-Encoding, Accept, X-Requested-With&#39;, &#39;content-language&#39;: &#39;en-US&#39;, &#39;ETag&#39;: &#39;W/&#34;3a322c7ba8fdbcbd77f768b5f9f3f454&#34;&#39;, &#39;Cache-Control&#39;: &#39;max-age=0, private, must-revalidate&#39;, &#39;Strict-Transport-Security&#39;: &#39;max-age=31536000; includeSubdomains; preload&#39;, &#39;X-Frame-Options&#39;: &#39;deny&#39;, &#39;X-Content-Type-Options&#39;: &#39;nosniff&#39;, &#39;X-XSS-Protection&#39;: &#39;0&#39;, &#39;Referrer-Policy&#39;: &#39;origin-when-cross-origin, strict-origin-when-cross-origin&#39;, &#39;Content-Security-Policy&#39;: &#34;default-src &#39;none&#39;; base-uri &#39;self&#39;; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src &#39;self&#39; uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events *.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ wss://*.actions.githubusercontent.com github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com github.githubassets.com; font-src github.githubassets.com; form-action &#39;self&#39; github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors &#39;none&#39;; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src &#39;self&#39; data: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com objects-origin.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com *.githubusercontent.com; manifest-src &#39;self&#39;; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github.githubassets.com; script-src github.githubassets.com; style-src &#39;unsafe-inline&#39; github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/&#34;, &#39;Content-Encoding&#39;: &#39;gzip&#39;, &#39;Set-Cookie&#39;: &#39;_gh_sess=o5D7fuPPpw0RTfJ%2F01DYHfVHhCsLpKRxDYLzi7CQOinzRb1daoAi65GxhxDx9NXjtXCiFhUSSXnT1IpGTbNUf%2F0GT9QJfzpsY%2BRKa46mksgLkpVwIlVW%2BRWJ3ue0TqeJXN566zg4LWyNAsj76p7BWwWQSaFmDk2Am3Y7JqMIVbU6ldPcoo4fL1Dl0RXk7fpOXfc%2FI6D6T5HrmtKG4UPW7l1P%2Fw25cZlVfc83qT37eWZul2FPdvOq4HL%2FJ9q3dOa7UDARozh%2B67oS1OKB5IBpnw%3D%3D--jTkIqDI3aM0MYC%2F3--oKG68modmUYrQNIwF02fYQ%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax, _octo=GH1.1.29733226.1682666634; Path=/; Domain=github.com; Expires=Sun, 28 Apr 2024 07:23:54 GMT; Secure; SameSite=Lax, logged_in=no; Path=/; Domain=github.com; Expires=Sun, 28 Apr 2024 07:23:54 GMT; HttpOnly; Secure; SameSite=Lax&#39;, &#39;Accept-Ranges&#39;: &#39;bytes&#39;, &#39;Transfer-Encoding&#39;: &#39;chunked&#39;, &#39;X-GitHub-Request-Id&#39;: &#39;E49C:63EF:30D98E4:330187E:644B748A&#39;}
+Response text: 
+
+
+
+
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;  data-a11y-animated-images=&#34;system&#34;&gt;
+  &lt;head&gt;
+    &lt;meta charse
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -201,6 +236,31 @@ Transfer-Encoding: chunked
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Cool site&lt;/title&gt;
+&lt;meta name=&#34;description&#34; content=&#34;cool site for apcsp&#34;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+Hello, this is my cool site. Check out my products:
+&lt;a href=&#34;/products&#34;&gt;Products!!&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -240,11 +300,36 @@ Transfer-Encoding: chunked
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
-<h2 id="Check-In">Check In<a class="anchor-link" href="#Check-In"> </a></h2><ol>
-<li>Research 1 HTTP header and describe, in detail, its purpose.</li>
-<li>Write a line in a sample NGINX configuration that will add that specific header to the <code>/information</code> location</li>
-<li>Explain the purpose of the load balancing performed by NGINX</li>
-<li>Modify the following code block to obtain the value of the secret header on <code>/products</code> of the AWS site</li>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="[x]-Check-In">[x] Check In<a class="anchor-link" href="#[x]-Check-In"> </a></h2><ol>
+<li><strong>Research 1 HTTP header and describe, in detail, its purpose.</strong></li>
+</ol>
+<p>HTTP Header: <em>Allow</em></p>
+<p><em>Allow</em>: lists the set of methods supported by a resource</p>
+<ul>
+<li>header must be sent if server responds wit 405</li>
+<li>an empty allow header indicates that the resource allows no request methods</li>
+</ul>
+<p>allow:<http-methods>
+allow: GET, POST, HEAD</p>
+<ol>
+<li><strong>Write a line in a sample NGINX configuration that will add that specific header to the <code>/information</code> location</strong></li>
+</ol>
+<p>location /information {
+    add_header X-Header "XHEADER";
+}</p>
+<p>//Will add 'X-Header' with value of 'XHEADER' to any responses sent from '/information' location</p>
+<ol>
+<li><strong>Explain the purpose of the load balancing performed by NGINX</strong></li>
+</ol>
+<p>It maximizes the speed and capacity utilization and ensures that no server is overworked. Overwork = degredation in performance.</p>
+<ol>
+<li><strong>Modify the following code block to obtain the value of the secret header on <code>/products</code> of the AWS site</strong></li>
 </ol>
 
 </div>
@@ -261,10 +346,24 @@ Transfer-Encoding: chunked
 
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;http://&quot;</span> <span class="o">+</span> <span class="n">aws</span><span class="o">+</span> <span class="s2">&quot;/products&quot;</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The secret header is:&quot;</span><span class="p">,</span> <span class="s2">&quot;...&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Secret Header:&quot;</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">headers</span><span class="p">[</span><span class="s1">&#39;X-Cooler-Header&#39;</span><span class="p">])</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Secret Header: This is my secret header!
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -274,8 +373,8 @@ Transfer-Encoding: chunked
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Hacks">Hacks<a class="anchor-link" href="#Hacks"> </a></h1><ul>
-<li>Complete the above check-in questions and change the hosts (0.1)</li>
-<li>Complete the above code-segment to retrieve the secret header (0.1)</li>
+<li>[x] Complete the above check-in questions and change the hosts (0.1)</li>
+<li>[x] Complete the above code-segment to retrieve the secret header (0.1)</li>
 </ul>
 <h2 id="Bonus-(0.05)">Bonus (0.05)<a class="anchor-link" href="#Bonus-(0.05)"> </a></h2><p>Create a diagram showing the layers of abstraction that allow us to use HTTP (IP, TCP, etc.)</p>
 
@@ -284,22 +383,50 @@ Transfer-Encoding: chunked
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="CORS-Hacks">CORS Hacks<a class="anchor-link" href="#CORS-Hacks"> </a></h1><ol>
-<li>Explain what CORS is and what it stands for</li>
-<li>Describe how you would be able to implement CORS into your own websites</li>
-<li>Describe why you would want to implement CORS into your own websites</li>
-<li>How could use CORS to benefit yourself in the future?</li>
+<h1 id="[x]-CORS-Hacks">[x] CORS Hacks<a class="anchor-link" href="#[x]-CORS-Hacks"> </a></h1><ol>
+<li><strong>Explain what CORS is and what it stands for</strong></li>
 </ol>
-<p>Total: 0.2 points</p>
-<h1 id="KASM-Hacks">KASM Hacks<a class="anchor-link" href="#KASM-Hacks"> </a></h1><ol>
-<li>What is the purpose of "sudo" when running commands in terminal?</li>
-<li>What are some commands which allow us to look at how the storage of a machine is set up as?</li>
-<li>What do you think are some alternatives to running "curl -O" to get the zip file for KASM?</li>
-<li>What kind of commands do you think the "install.sh" command has and why is it necessary to call it?</li>
-<li>Explain in at least 3-4 sentences how deploying KASM is related to/requires other topics talked about in the lesson and/or potential ways to add things mentioned in the lesson to this guide.</li>
+<ul>
+<li>Cross-Origin Resource Sharing (CORS)</li>
+</ul>
+<p>Enables the control to access resources outside of a domain.</p>
+<ol>
+<li><strong>Describe how you would be able to implement CORS into your own websites</strong></li>
 </ol>
-<p>Total: 0.2 points</p>
-<h1 id="AWS/RDS-Hacks">AWS/RDS Hacks<a class="anchor-link" href="#AWS/RDS-Hacks"> </a></h1><p>See the <a href="https://firestorm0986.github.io/SLAAT/posts/sqlite-aws/">setup post</a></p>
+<p>Include CORS into header to create custom headers, can use Postman to request and check response headers.</p>
+<ol>
+<li><strong>Describe why you would want to implement CORS into your own websites</strong></li>
+</ol>
+<p>Implementing CORS would mean users will be protected from malicious data.</p>
+<ol>
+<li><strong>How could use CORS to benefit yourself in the future?</strong></li>
+</ol>
+<p>Adding CORS would mean adding more protection to the users and protecting the user data.</p>
+<h1 id="[x]-KASM-Hacks">[x] KASM Hacks<a class="anchor-link" href="#[x]-KASM-Hacks"> </a></h1><ol>
+<li><strong>What is the purpose of "sudo" when running commands in terminal?</strong></li>
+</ol>
+<p>'Sudo' allows the terminal to have admin access.</p>
+<ol>
+<li><strong>What are some commands which allow us to look at how the storage of a machine is set up as?</strong></li>
+</ol>
+<ul>
+<li>'df': shows disk space on file system</li>
+<li>'du': shows disk usage of files</li>
+<li>'mount': shows currently mounted file systems and their mount points</li>
+</ul>
+<ol>
+<li><strong>What do you think are some alternatives to running "curl -O" to get the zip file for KASM?</strong></li>
+</ol>
+<p>Using 'wget' is the fastest and easiest way that we use in class.</p>
+<ol>
+<li><strong>What kind of commands do you think the "install.sh" command has and why is it necessary to call it?</strong></li>
+</ol>
+<p>KASM and some other apps require the install.sh to work.</p>
+<ol>
+<li><strong>Explain in at least 3-4 sentences how deploying KASM is related to/requires other topics talked about in the lesson and/or potential ways to add things mentioned in the lesson to this guide.</strong></li>
+</ol>
+<p>Deploying KASM is related to other topics talked about in the lesson because it involves managing and configuring virtual machines, which requires knowledge of networking and system admin. To set up KASM, you need to create a virtual machine, install the necessary software, and configure the networking settings. You may need to set up security measures such as encryption. To add to this guide, you could explain the basics of networking, as well as how to configure security measures like encryption.</p>
+<h1 id="NOT-DOING-ANYMORE">NOT DOING ANYMORE<a class="anchor-link" href="#NOT-DOING-ANYMORE"> </a></h1><h1 id="AWS/RDS-Hacks">AWS/RDS Hacks<a class="anchor-link" href="#AWS/RDS-Hacks"> </a></h1><p>See the <a href="https://firestorm0986.github.io/SLAAT/posts/sqlite-aws/">setup post</a></p>
 <ul>
 <li>Create your own database in the EC2 I have created (ec2-database-connect)<ul>
 <li>name it with your first and last name (example: aditya-nawandhar) (0.1)</li>
