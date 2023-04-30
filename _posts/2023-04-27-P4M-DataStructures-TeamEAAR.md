@@ -468,7 +468,7 @@ orange
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Hacks-(0.3)">Hacks (0.3)<a class="anchor-link" href="#Hacks-(0.3)"> </a></h2><ul>
+<h2 id="[x]-Hacks-(0.3)">[x] Hacks (0.3)<a class="anchor-link" href="#[x]-Hacks-(0.3)"> </a></h2><ul>
 <li>Make your own list and manipulate it via accessing specific elements, adding or removing elements, etc.</li>
 <li>Extra: Make an interactable visualization that can manipulate elements in a list such as the one demonstrated in our flask repository</li>
 </ul>
@@ -476,6 +476,44 @@ orange
 </div>
 </div>
 </div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">team</span><span class="o">=</span> <span class="p">[</span><span class="s1">&#39;luna&#39;</span><span class="p">,</span> <span class="s1">&#39;emma&#39;</span><span class="p">,</span> <span class="s1">&#39;ellie&#39;</span><span class="p">,</span> <span class="s1">&#39;claire&#39;</span><span class="p">,</span> <span class="s1">&#39;annika&#39;</span><span class="p">,</span> <span class="s1">&#39;grace&#39;</span> <span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">team</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">team</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">team</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="n">team</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;emma&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">team</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;luna&#39;, &#39;emma&#39;, &#39;ellie&#39;, &#39;claire&#39;, &#39;annika&#39;, &#39;grace&#39;]
+emma
+[&#39;emma&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Iteration-(Alex)">Iteration (Alex)<a class="anchor-link" href="#Iteration-(Alex)"> </a></h2><p>What is iteration?</p>
@@ -636,7 +674,7 @@ d
 <ul>
 <li>Machine learning algorithms often involve iterative processes to train models and improve their accuracy. For example, in a gradient descent algorithm, you might iterate over a set of training data to update the model's parameters and minimize the loss function.</li>
 </ul>
-<h2 id="Popcorn-hack-(0.3)">Popcorn hack (0.3)<a class="anchor-link" href="#Popcorn-hack-(0.3)"> </a></h2><ul>
+<h2 id="[x]-Popcorn-hack-(0.3)">[x] Popcorn hack (0.3)<a class="anchor-link" href="#[x]-Popcorn-hack-(0.3)"> </a></h2><ul>
 <li>Make a list related to your CPT project</li>
 <li>Make a while loop that will print each term in the list</li>
 <li>Make a for loop that will print each term in the list</li>
@@ -651,7 +689,7 @@ d
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Popcorn-Hacks-List">Popcorn Hacks List<a class="anchor-link" href="#Popcorn-Hacks-List"> </a></h1>
+<h1 id="[x]-Popcorn-Hacks-List">[x] Popcorn Hacks List<a class="anchor-link" href="#[x]-Popcorn-Hacks-List"> </a></h1>
 </div>
 </div>
 </div>
@@ -662,10 +700,10 @@ d
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">12389899</span><span class="p">,</span> <span class="mi">2234567</span><span class="p">,</span> <span class="mi">3888889</span><span class="p">,</span> <span class="mi">4882042</span><span class="p">,</span> <span class="mi">5814028</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">license</span> <span class="o">=</span> <span class="p">[</span><span class="mi">12389899</span><span class="p">,</span> <span class="mi">2234567</span><span class="p">,</span> <span class="mi">3888889</span><span class="p">,</span> <span class="mi">4882042</span><span class="p">,</span> <span class="mi">5814028</span><span class="p">]</span>
 
 
-<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">my_list</span><span class="p">:</span>
+<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">license</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
     
 <span class="n">num</span> <span class="o">=</span> <span class="mi">0</span>
@@ -712,12 +750,12 @@ d
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
-<span class="n">my_list</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
-<span class="n">my_list</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">license</span> <span class="o">=</span> <span class="p">[</span><span class="mi">12389899</span><span class="p">,</span> <span class="mi">2234567</span><span class="p">,</span> <span class="mi">3888889</span><span class="p">,</span> <span class="mi">4882042</span><span class="p">,</span> <span class="mi">5814028</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">license</span><span class="p">)</span>
+<span class="n">license</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">license</span><span class="p">)</span>
+<span class="n">license</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">license</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -730,9 +768,9 @@ d
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[1, 2, 3, 4, 5]
-[1, 2, 3, 4]
-[1, 3, 4]
+<pre>[12389899, 2234567, 3888889, 4882042, 5814028]
+[12389899, 2234567, 3888889, 4882042]
+[12389899, 3888889, 4882042]
 </pre>
 </div>
 </div>
@@ -803,12 +841,25 @@ d
 <pre><code>students = ['advay', 'amay', 'rohin', 'alex', 'ethan']</code></pre>
 <hr>
 <h1 id="Check-In:">Check In:<a class="anchor-link" href="#Check-In:"> </a></h1><ul>
-<li>Of the above code segments, which is a list and which is a dictionary?</li>
-<li>What is a dictionary and how is it used?</li>
-<li>What is a 2D Array?</li>
-<li>How are 2D Arrays different from 1D Arrays or Lists and what can they be used for?</li>
+<li><strong>Of the above code segments, which is a list and which is a dictionary?</strong></li>
 </ul>
-<h2 id="Manipulating-Dictionaries">Manipulating Dictionaries<a class="anchor-link" href="#Manipulating-Dictionaries"> </a></h2>
+<p>popcorn hacks can be rewritten as a dictionary
+license_dict = {12389899: 1, 2234567: 2, 3888889: 3, 4882042: 3, 5814028: 4}
+print(license_dict[2])</p>
+<ul>
+<li><strong>What is a dictionary and how is it used?</strong></li>
+</ul>
+<p>a data structure used to store key-value pairs</p>
+<ul>
+<li><strong>What is a 2D Array?</strong></li>
+</ul>
+<p>data structure that represents a collection of elements organized into rows and columns &gt;&gt; can be visualized in game form like tik-tak-toe</p>
+<ul>
+<li><strong>How are 2D Arrays different from 1D Arrays or Lists and what can they be used for?</strong></li>
+</ul>
+<p>1D array is a sequence of values that can be accessed using a single index, a 2D array is organized into rows and columns and requires two indices to access each value. 
+2D arrays are useful for representing data in a table or grid-like format, while 1D arrays are useful for representing sequences of related values.</p>
+
 </div>
 </div>
 </div>
@@ -831,12 +882,12 @@ d
         <span class="n">grocery_dict</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">=</span> <span class="n">price</span>
 
 <span class="c1"># print the grocery list and total cost</span>
-<span class="n">total_cost</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">total_cost</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">grocery_dict</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your grocery list:&quot;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">item</span><span class="p">,</span> <span class="n">price</span> <span class="ow">in</span> <span class="n">grocery_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- </span><span class="si">{}</span><span class="s2">: $</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">price</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total cost: $</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">total_cost</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- </span><span class="si">{}</span><span class="s2">: $</span><span class="si">{:.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">price</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total cost: $</span><span class="si">{:.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">total_cost</span><span class="p">))</span>
     
     <span class="c1"># ask the user to choose an action</span>
     <span class="n">action</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What would you like to do? (add/remove/done) &quot;</span><span class="p">)</span>
@@ -862,8 +913,8 @@ d
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Final grocery list:&quot;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">item</span><span class="p">,</span> <span class="n">price</span> <span class="ow">in</span> <span class="n">grocery_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- </span><span class="si">{}</span><span class="s2">: $</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">price</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total cost: $</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">total_cost</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- </span><span class="si">{}</span><span class="s2">: $</span><span class="si">{:.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">price</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total cost: $</span><span class="si">{:.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">total_cost</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -879,7 +930,7 @@ d
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[2], line 9</span>
+Cell <span class="ansi-green-fg">In[6], line 9</span>
 <span class="ansi-green-intense-fg ansi-bold">      7</span>         break
 <span class="ansi-green-intense-fg ansi-bold">      8</span>     else:
 <span class="ansi-green-fg">----&gt; 9</span>         price = float(input(&#34;Enter the price of {}: &#34;.format(item)))
