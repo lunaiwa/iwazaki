@@ -2,6 +2,8 @@
 keywords: fastai
 description: A guide to data structures such as lists, dictionaries, 2D arrays, and iteration
 title: Data Structures Guide
+toc: true
+categories: [APCSP]
 author: Team EAAR, Ethan Tran, Alex Kumar, Advay Shindikar, Amay Advani, Rohin Sood
 nb_path: _notebooks/2023-04-27-DataStructures.ipynb
 layout: notebook
