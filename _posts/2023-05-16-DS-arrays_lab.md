@@ -740,6 +740,81 @@ For loop with shortcut (*) row expansion
 </div>
     {% endraw %}
 
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">* Creator: Nighthawk Coding Society</span>
+<span class="sd">Sailing Ship Animation (programatic method)</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">time</span> <span class="c1"># used for delay</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">clear_output</span>  <span class="c1"># jupyter specific clear</span>
+
+
+<span class="c1"># ANSI Color Codes</span>
+<span class="n">OCEAN_COLOR</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[33m</span><span class="se">\u001B</span><span class="s2">[2D&quot;</span>
+<span class="n">SHIP_COLOR</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[31m</span><span class="se">\u001B</span><span class="s2">[2D&quot;</span>
+<span class="n">RESET_COLOR</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\u001B</span><span class="s2">[0m</span><span class="se">\u001B</span><span class="s2">[2D&quot;</span>
+
+<span class="k">def</span> <span class="nf">ship_print</span><span class="p">(</span><span class="n">position</span><span class="p">):</span>  <span class="c1"># print ship with colors and leading spaces according to position</span>
+    <span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">RESET_COLOR</span><span class="p">)</span>
+    
+    <span class="n">sp</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span> <span class="o">*</span> <span class="n">position</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">&quot; 0 &quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">&quot;000 &quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">&quot;0000 &quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">&quot;|| &quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">OCEAN_COLOR</span> <span class="o">+</span> <span class="s2">&quot;--&quot;</span><span class="o">*</span><span class="mi">32</span> <span class="o">+</span> <span class="n">RESET_COLOR</span><span class="p">)</span>
+
+
+
+<span class="k">def</span> <span class="nf">ship</span><span class="p">():</span>  <span class="c1"># ship function, loop/controller for animation speed and times</span>
+    <span class="c1"># loop control variables</span>
+    <span class="n">start</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># start at zero</span>
+    <span class="n">distance</span> <span class="o">=</span> <span class="mi">60</span>  <span class="c1"># how many times to repeat</span>
+    <span class="n">step</span> <span class="o">=</span> <span class="mi">2</span>  <span class="c1"># count by 2</span>
+
+    <span class="c1"># loop purpose is to animate ship sailing</span>
+    <span class="k">for</span> <span class="n">position</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">distance</span><span class="p">,</span> <span class="n">step</span><span class="p">):</span>
+        <span class="n">ship_print</span><span class="p">(</span><span class="n">position</span><span class="p">)</span>  <span class="c1"># call to function with parameter</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">2</span><span class="p">)</span>
+
+        
+<span class="n">ship</span><span class="p">()</span> <span class="c1"># activate/call ship function</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+                                                           0 
+                                                          000 
+                                                          0000 
+                                                          || 
+<span class="ansi-yellow-fg">----------------------------------------------------------------</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 </div>
  
 
